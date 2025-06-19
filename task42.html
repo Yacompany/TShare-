@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+        border:border-box;
+    }
+    .main{
+        height: 100vh;
+        width:100%;
+        background-image:url('https://www.tastingtable.com/img/gallery/strawberry-chicken-salad-recipe/l-intro-1638823285.jpg');
+        background-size:100% 100%;
+        background-attachment: fixed;
+    }
+    .copy{
+        height:100vh;
+        width:100%;
+        background-color:rgba(0, 0, 0, .7);
+        float:left;
+    }
+    h1{
+        text-align: center;
+       margin:170px auto;
+       font-size:80px;
+       color:white;
+       font-style:oblique;
+    }
+    .footer{
+        height:50vh;
+        width:100%;
+        background-color:gray;
+        margin-top:15px;
+       justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+
+    }
+    .footer1{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+    @media screen and (max-width:1200px) {
+            .footer1{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer1{
+                width:90%;
+
+            }
+        }
+    .footer2{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin-top:20px;
+    }
+    @media screen and (max-width:1200px) {
+            .footer2{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer2{
+                width:90%;
+
+            }
+        }
+        .footer2:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+.footer2:hover .overlay {
+  opacity: 5;
+}
+        body{
+            background-color:gray;
+        }
+        .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .footer1:hover .overlay {
+  opacity: 5;
+}
+.footer1:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+m{
+    color:lawngreen;
+}
+n{
+ color:red;
+}
+.j99 span{
+        animation:amin 1s linear forwards;
+        opacity:0;
+        display:inline-block;
+       
+    }
+    @keyframes amin{
+        0%{
+            opacity: 0;
+            transform: rotatey(-90deg);
+            filter:blur(10px);
+        }
+        100%{
+            opacity: 1;
+            transform: rotatey(0deg);
+            filter:blur(0);
+        }
+    }
+    .j99 span:nth-child(1){
+        animation-delay: 0.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+       
+        
+    }
+    .j99 span:nth-child(2){
+        animation-delay: 1s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(3){
+        animation-delay: 1.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(4){
+        animation-delay: 2s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(5){
+        animation-delay: 2.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(6){
+        animation-delay: 3s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(7){
+        animation-delay: 3.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(8){
+        animation-delay: 4s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(9){
+        animation-delay: 4.5s;
+        color:red;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(10){
+        animation-delay: 5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(11){
+        animation-delay: 5.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(12){
+        animation-delay: 6s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(13){
+        animation-delay: 6.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(14){
+        animation-delay: 7s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(15){
+        animation-delay: 7.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(16){
+        animation-delay: 8s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(17){
+        animation-delay: 8.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(18){
+        animation-delay: 9s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(19){
+        animation-delay: 9.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(20){
+        animation-delay: 10s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+   
+  
+  </style>
+</head>
+<body>
+    <div class="main">
+        <div class="copy">
+            <h1 class="j99">
+                <span>I</span>
+                <span>N</span>
+                <span>D</span>
+                <span>I</span>
+                <span>A</span>
+                <span>N, </span>
+                <span>Q</span>
+                <span>U</span>
+                <span>I</span>
+                <span>C</span>
+                <span>K, </span><br>
+                <span>E</span>
+                <span>A</span>
+                <span>S</span>
+                <span>Y, </span>
+                <span>M</span>
+                <span>E</span>
+                <span>A</span>
+                <span>L</span>
+              
+             
+            </h1>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1"><a href="task233.html"><img src="https://www.livingsmartandhealthy.com/wp-content/uploads/2023/08/dalia.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Daliya</b></div></a></div>
+        <div class="footer1"><a href="task234.html"><img src="https://www.funfoodfrolic.com/wp-content/uploads/2022/06/Masala-Khichid-Blog.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Vegetable Khichdi</b></div></a></div>
+        <div class="footer1"><a href="task235.html"><img src="https://www.mrishtanna.com/wp-content/uploads/2018/04/poha-indian-breakfast-recipe.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Poha</b></div></a></div>  
+        <div class="footer1"><a href="task236.html"><img src="https://www.cookwithmanali.com/wp-content/uploads/2019/03/Rice-and-Dal-Instant-Pot-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Dal And Rice</b></div></a></div>  
+      
+        <div class="footer2"><a href="task237.html"><img src="https://ministryofcurry.com/wp-content/uploads/2023/11/Kolkatta-Egg-Roll-4.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Egg Roll</b></div></a></div>
+        <div class="footer2"><a href="task238.html"><img src="https://www.indianveggiedelight.com/wp-content/uploads/2022/08/curd-rice-featured.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Curd Rice</b></div></a></div>
+        <div class="footer2"><a href="task239.html"><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2018/09/rava-dosa-recipe-1.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Rava Dosa</b></div></a></div>  
+        <div class="footer2"><a href="task240.html"><img src="https://www.indianveggiedelight.com/wp-content/uploads/2022/12/besan-chilla-recipe-featured.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Besan Ka Cheela</b></div></a></div>  
+       
+        <div class="footer2"><a href="task241.html"><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2014/07/suji-halwa-recipe.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Suji Ka Sheera</b></div></a></div>
+        <div class="footer2"><a href="task242.html"><img src="https://assets.bonappetit.com/photos/63cb14735125107865c0fe8f/1:1/w_2560%2Cc_limit/012023-pav-bhaji-lede.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Pav Bhaji</b></div></a></div>
+        <div class="footer2"><a href="task243.html"><img src="https://www.africanbites.com/wp-content/uploads/2015/03/IMG_3762-1-533x650.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Bhajias</b></div></a></div>  
+        <div class="footer2"><a href="task244.html"><img src="https://rakskitchen.net/wp-content/uploads/2014/05/vaangi-baath.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Lemon Rice And Curd</b></div></a></div>  
+       
+        <div class="footer2"><a href="task245.html"><img src="https://palatesdesire.com/wp-content/uploads/2022/05/Indian-chicken-pulao-recipe@palates-desire-1.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Chicken Pulao</b></div></a></div>
+        <div class="footer2"><a href="task246.html"><img src="https://i.pinimg.com/736x/12/08/57/1208571b2e0258ead9abb839c73800d7.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Mewa Dudh</b></div></a></div>
+        <div class="footer2"><a href="task247.html"><img src="https://www.cookwithmanali.com/wp-content/uploads/2018/01/Peanut-Chikki-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Shengdana Chikki</b></div></a></div>  
+        <div class="footer2"><a href="task248.html"><img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Egg-Bhurji.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Eggs Bhujia</b></div></a></div>  
+       
+        <div class="footer2"><a href="task249.html"><img src="https://www.harighotra.co.uk/images/recipes/hero/beetroot_carrot_shorba_hero.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Carrot And Beetroot Shorba</b></div></a></div>
+        <div class="footer2"><a href="task250.html"><img src="https://maayeka.com/wp-content/uploads/2016/10/Mix-fruit-chutney-relish.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Mix Fruit Chutney</b></div></a></div>
+        <div class="footer2"><a href="task251.html"><img src="https://www.indianveggiedelight.com/wp-content/uploads/2020/08/mango-lassi-featured-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Mango Lassi</b></div></a></div>  
+        <div class="footer2"><a href="task252.html"><img src="https://www.sharmispassions.com/wp-content/uploads/2014/10/DoodhPeda3-475x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Dry Milk Peda</b></div></a></div>  
+     
+    </div>
+</body>
+</html>

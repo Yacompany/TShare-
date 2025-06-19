@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .a{
+        height:530px;
+        width:100%;
+        /* background-color:gray; */
+        background-image:url('Manipur.png');
+        background-size:100% 100%;
+        margin-top:1%;
+    }
+    .b{
+        /* height:50px;
+        width:100%;
+        background-color:gray; */
+        text-align:center;
+        font-size:40px;
+        color:red;
+        padding-top:1%;
+        text-shadow:1px 3px 0px black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .c{
+        height:350px;
+        width:100%;
+        background-color:gray;
+        margin-top:1%;
+        font-style: oblique;
+        text-align:center;
+        padding-top:5px;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px red;
+    }
+    .d{
+        height:40px;
+        width:100%;
+        background-color:gray;
+        text-align:center;
+        font-style: oblique;
+        margin-top:1%;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px aqua;
+    }
+    .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            margin:8px;
+           overflow: hidden;
+            box-sizing:border-box;
+            animation-name:mona;
+            transition:all ease 0s;
+            /* animation-duration:2s;
+            animation-iteration-count: 1; */
+        }
+        .f:hover img{
+            transition:all ease 1s;
+            transform: scale(1.2);
+        }
+        /* @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        } */
+        .f:hover .overlay {
+  opacity: 5;
+}
+@media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+        body{
+            background-color:gray;
+        }
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:5%;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+    /* body{
+        background-color:gray;
+    } */
+  </style>
+</head>
+<body>
+    <div class="b"><b>MANIPUR CUISINE</b></div>
+    <div class="a">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635788.8146235286!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705152100251!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="c"><b>ABOUT</b></div>
+    <div class="d"><b>ALL DISHES</b></div>
+    <div class="b20">
+        <div class="f"><a href="task569.html"><img src="https://miro.medium.com/v2/resize:fit:1400/1*T9Lpu9oBHvUCGczEfwuEug.jpeg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Singju</b></div></a></div>
+        <div class="f"><a href="task570.html"><img src="https://www.mycurryveda.com/wp-content/uploads/2020/03/CK2.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chak Hao Kheer</b></div></a></div>
+        <div class="f"><a href="task571.html"><img src="https://img-global.cpcdn.com/recipes/988715c2f9010b32/680x482cq70/vegetable-with-dry-fish-stewchamthongoil-free-recipe-recipe-main-photo.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chamthong</b></div></a></div>
+        <div class="f"><a href="task572.html"><img src="https://i.pinimg.com/originals/db/b3/6a/dbb36a9c485d1cccbab1e750a8a62705.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Morok Metpa</b></div></a></div>
+        
+        <div class="f"><a href="task573.html"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Yongchaak_eromba_%282%29.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Eromba</b></div></a></div>
+        <div class="f"><a href="task574.html"><img src="https://qph.cf2.quoracdn.net/main-qimg-c82642f5e65af3b4dbe0cf245700ab70-lq"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Paaknam</b></div></a></div>
+        <div class="f"><a href="task575.html"><img src="https://www.lathiskitchen.org/wp-content/uploads/2019/01/20190114_134324-01-1.jpeg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kangmet</b></div></a></div>
+        <div class="f"><a href="task576.html"><img src="https://www.licious.in/blog/wp-content/uploads/2021/12/Licious-Blog-Shoot11700-scaled.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Nga Thongba</b></div></a></div>
+       
+        <div class="f"><a href="task577.html"><img src="https://www.crazymasalafood.com/wp-content/images/2021/12/Uttithougba.jpg.webp"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Oottithougba</b></div></a></div>
+        <div class="f"><a href="task578.html"><img src="https://1.bp.blogspot.com/-o7mAoICEgPg/VuwY_heC1_I/AAAAAAAAAe4/KOqMVzvELwkQj6uRnKtrtYgcEChEcRStw/s1600/IMG_20160318_125549.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Peruk Kangsu</b></div></a></div>
+        <div class="f"><a href="task579.html"><img src="https://i.ytimg.com/vi/GutPNAibyM8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBaM_uPbbydOMdOiuTRdzXW6xCYaA"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chagempomba</b></div></a></div>
+        <div class="f"><a href="task580.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfK04KeMGCrw2hzto9AfKNj2vGRq0xRHTTsoBvrauul8M3O-D6x5CXcpbl0hYRX6S3Xjg&usqp=CAU"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Champhut</b></div></a></div>
+       
+        <div class="f"><a href="task581.html"><img src="https://static1.squarespace.com/static/578753d7d482e9c3a909de40/578756a859cc6802a0ce9dfd/6638d4b5dc7f233d81d4bd60/1717311221847/Maroi+thongba+%28chives+curry%29.jpg?format=1500w"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Maroi Thongba</b></div></a></div>
+        <div class="f"><a href="task582.html"><img src="https://cookwithrenu.com/wp-content/uploads/2019/01/Sana-Thongba_Manipuri-Paneer-curry_2.png"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Sana Thongba</b></div></a></div>
+        <div class="f"><a href="task583.html"><img src="https://themagicsaucepan.com/wp-content/uploads/2014/04/13914152994_b6955d0e1a_b-768x1024.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mangal Ooti</b></div></a></div>
+        <div class="f"><a href="task584.html"><img src="https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/693512346/sweet-potatoes.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Tan</b></div></a></div>
+       
+        <div class="f"><a href="task585.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl_sunitha/Manipuri_Style_Chak_Angouba_Recipe_Vegetable_Pulao_Recipe_.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Chak Angouba</b></div></a></div>
+        <div class="f"><a href="task586.html"><img src="https://i.pinimg.com/originals/32/20/8d/32208de5930b166ec3ec1e358f6552a7.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kelli Channa</b></div></a></div>
+        <div class="f"><a href="task587.html"><img src="https://www.e-paolive.net/galleries/images/News_Related/2010/10/Maroi_20101019.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Maroi Nakuppi Kaura</b></div></a></div>
+        <div class="f"><a href="task588.html"><img src="https://www.laekitchen.com/wp-content/uploads/2018/01/khamen-asinba-thongba-2-600x600.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Khamen Ashinba Athumba Thongba</b></div></a></div>
+    </div>
+</body>
+</html>

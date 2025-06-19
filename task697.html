@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <style>
+    .a{
+        height: 220px;
+        width:100%;
+        background-color:gray;
+        margin-top:10px;
+    }
+    h1{
+        text-align: center;
+        font-size:47px;
+        font-style: oblique;
+        color:lawngreen;
+        font-weight:bold;
+        text-shadow: 2px 3px 0px red;
+    }
+    .b{
+        height: 450px;
+        width: 45%;
+        background-color:gray;
+       background-image: url('data:image/jpeg;base64,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');
+       background-size: 100% 100%;
+        margin: 30px auto;
+        border-radius:5px;
+    }
+    @media screen and (max-width:1200px) {
+            .b{
+                width:100%;
+                
+            }
+        }
+       body{
+        background-color:gray;
+       }
+       .c{
+        height: 150px;
+        width:100%;
+        margin-top:4%;
+        
+       }
+       .b1{
+        height: 250px;
+        width: 100%;
+       }
+       p{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-style:oblique;
+        color:white;
+       }
+       .size{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 2%;
+        padding-top: 10px;
+        font-style:oblique;
+        color:white;
+       }
+     
+       .d1{
+        height: 550px;
+        width:50%;
+        /* overflow-x:hidden; */
+        margin-top:1%;
+        float: left;
+        /* background-color: rgb(25, 24, 24); */
+       }
+       .d2{
+        height: 750px;
+        width:100%;
+        float: left;
+       margin-top:1%;
+       overflow-x:hidden;
+        /* background-color: rgb(45, 44, 44); */
+       }
+
+       
+       .d3{
+        height: 350px;
+        width:100%;
+        float: left;
+        overflow-x:auto;
+        margin-top:1%;
+        background-color:gray;
+       }
+     
+       /* .d4{
+        height: 350px;
+        width:100%;
+        border-radius:5px;
+        overflow-x:auto;
+        margin-top:3%;
+        background-color: rgb(28, 28, 28);
+       } */
+       .d5{
+        height: 350px;
+        width:100%;
+       float: left;
+        overflow-x:auto;
+        margin-top:1%;
+        background-color:gray;
+       }
+     
+       @media screen and (max-width:1200px) {
+            .d1{
+                width:100%;
+                
+            }
+        }
+      
+        h2{
+            text-align: center;
+            color:lawngreen;
+            font-size: 38px;
+            padding-top: 10px;
+            font-style: oblique;
+            text-shadow:1px 2px 0px red;
+        }
+        h3{
+            text-align: center;
+            color:aqua;
+            font-weight: bold;
+            font-size: 25px;
+            padding-top: 10px;
+            text-shadow: 1px 2px 0px red;
+            font-style:oblique;
+            
+        }
+        .e{
+            height: 150px;
+            width: 100%;
+            background-color:gray;
+            margin-top:1%;
+            float: left;
+        }
+        .g{
+            text-align:center;
+        font-size: 20px;
+        /* padding-left:20%;
+        padding-right: 1%; */
+        color:white;
+        padding-top: 20px;
+        overflow:hidden;
+        text-shadow:1px 1px 0px  black;
+      
+        }
+   </style>
+</head>
+<body>
+    <div class="a"><h1>BAAH GAAJ BHOOT JOLOKIA DI GHAORI</h1></div>
+    <div class="b"></div>
+    <div class="b1">
+        <p>You may have tried sesame flavoured chicken before, but have you ever tried Til Diya Murgi Mangxo? This Assamese dish is exceptional because of its use of black sesame seeds, which makes the Til Diya Murgi Mangxo a flavourful dish with a unique look.</p>
+    </div>
+    <div class="c"><h1>INGREDIENT'S</h1>
+    <!-- <p class="size">
+        1. 1 cup wheat flour.<br>
+        2. 1/2 cup pigeon peas.<br>
+        3. 1 large onion chopped.<br>
+        4. 8-10 cloves of garlic chopped.<br>
+        5. 2 tomatoes chopped.<br>
+        6. 3 green chillies chopped.<br>
+        7. 1 bay leaf.<br>
+        8. 1 pinch asafoetida.<br>
+        9. 1 teaspoon turmeric powder.<br>
+       10. 1 teaspoon cumin powder.<br>
+       11. 1 teaspoon garam masala.<br>
+       12. 1 teaspoon vegetable masala.<br>
+       13. salt as per taste.<br>
+       14. A little coriander.<br>
+       15. oil as required.
+    </p> -->
+    </div>
+   
+ 
+            <div class="d1"><h2>Items No</h2>
+                <p class="g">
+                    1. chicken.<br>---------------
+                    2. onions.<br>
+                    3. black sesame seeds .<br>
+                    4. black peppercorns .<br>
+                    5. ginger-garlic paste .<br>
+                    6. green chillies, chopped .<br>
+                    7. turmeric powder .
+                   
+                
+                    
+                  
+                  
+                
+                    
+                  
+                   
+              
+
+                  
+                </p>
+            </div>
+        <div class="d1"><h2>Item Quantity</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. 1 kilo.<br>
+                    2. 5 large.<br>
+                    3. ½ cup.<br>
+                    4. 9-10 black.<br>
+                    5. 3 tbsp.<br>
+                    6. 10 green.<br>
+                  
+                   
+                
+                     
+                  
+                    
+                  
+                    
+                    
+                    
+                
+               
+                     
+                   
+                   
+                </p>
+            <!-- </marquee> -->
+        </div>
+    
+        <div class="d5"><h2>Equipment Name Used In Dish</h2></div>
+        <div class="d2"><h2>Method Of Cocking</h2>
+       <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+        <p class="g">
+            1. Heat a pan and dry roast the black sesame seeds in it until they release their aroma. <br>-----
+            2. Soak the roasted sesame seeds in some water for 10 minutes, then drain and grind into a fine paste with the black peppercorns. <br>
+            3. Now, heat the mustard oil in a large wok. <br>
+            4. Add the onions and ginger garlic paste, and saute until the onions start turning brown. <br>
+            5. Add the chicken and saute for 2-3 minutes. <br>
+            6. Now add the turmeric powder, cumin powder, green chillies and salt. <br>
+            7. Mix well and continue to saute for another 5 minutes.  <br>
+            8. Now add the water and continue cooking the chicken while covered. 
+           
+            
+
+
+            
+            
+        </p>
+    <!-- </marquee> -->
+        </div>
+        <div class="d3"><h2>Nutrition Value</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. Protein ---- <br>
+                    2. Carbohydrate ---- <br>
+                    3. Calcium ---- <br>
+                    4. Energy ---- <br>
+                    5. Iron ---- <br>
+                    6. Mineral ---- <br>
+                    7. Fta ---- 
+                    
+                </p>
+            <!-- </marquee> -->
+        </div>
+        <div class="e"><h3>NOTE</h3></div>
+    
+   
+</body>
+</html>
+
+

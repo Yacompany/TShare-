@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .a{
+        height:600px;
+        width:100%;
+        /* background-color:gray; */
+        background-image:url('Uttarakhand.png');
+        background-size:100% 100%;
+        margin-top:1%;
+    }
+    .b{
+        /* height:50px;
+        width:100%;
+        background-color:gray; */
+        text-align:center;
+        font-size:40px;
+        color:red;
+        padding-top:1%;
+        text-shadow:1px 3px 0px black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .c{
+        height:350px;
+        width:100%;
+        background-color:gray;
+        margin-top:1%;
+        font-style:oblique;
+        text-align:center;
+        padding-top:5px;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px red;
+    }
+    .d{
+        height:40px;
+        width:100%;
+        background-color:gray;
+        text-align:center;
+        font-style:oblique;
+        margin-top:1%;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px aqua;
+    }
+    .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            margin:8px;
+           overflow: hidden;
+            box-sizing:border-box;
+            animation-name:mona;
+            transition:all ease 0s;
+            /* animation-duration:2s;
+            animation-iteration-count: 1; */
+        }
+        .f:hover img{
+            transition:all ease 1s;
+            transform: scale(1.2);
+        }
+        /* @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        } */
+        .f:hover .overlay {
+  opacity: 5;
+}
+@media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+        body{
+            background-color:gray;
+        }
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:5%;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+    /* body{
+        background-color:gray;
+    } */
+  </style>
+</head>
+<body>
+    <div class="b"><b>UTTARAKHANAD CUISINE</b></div>
+    <div class="a">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635788.8146235286!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705152100251!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="c"><b>ABOUT</b></div>
+    <div class="d"><b>ALL DISHES</b></div>
+    <div class="b20">
+        <div class="f"><a href="task429.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl-archanaskitchen.com/Mande_Roti_Recipe_.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Mande Roti</b></div></a></div>
+        <div class="f"><a href="task430.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2022/04/Bhang-Ki-Chutney-2-3.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Bhangjeera Ki Chutney</b></div></a></div>
+        <div class="f"><a href="task431.html"><img src="https://static.toiimg.com/thumb/59107074.cms?width=800&height=800&imgsize=1316465"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Lesu</b></div></a></div>
+        <div class="f"><a href="task432.html"><img src="https://www.funfoodfrolic.com/wp-content/uploads/2022/09/Gahat-Dal-Blog.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gahat Ki Daal</b></div></a></div>
+        
+        <div class="f"><a href="task433.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2suMwiG9It3vYYTeNLaofGcF_lGyjOdYvqg&s"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Gahat Soup</b></div></a></div>
+        <div class="f"><a href="task434.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKuuV-27xt-TUUPIGYwOkhgCMHwFMIJDou-MxhGUpjVi3gBrBZ3SZ_Rmvcke1C0kMD3j0fUFU2-gP3d1bzUjNVJ0Tv3owl57kRF72seLeJrWHrEUS3QdwFUw6eCSHvjx7d_sA46GuMvdNUKa3uYCo9JIstZKIpNrI1SBBqg74wDZ2xu_0ELD33-N8h/s1248/Screenshot_20230319-141057_Gallery.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Urad Ke Pakore</b></div></a></div>
+        <div class="f"><a href="task435.html"><img src="https://www.sugarspicelifestyle.com/wp-content/uploads/2018/09/20180819_101938-scaled.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Rusks</b></div></a></div>
+        <div class="f"><a href="task436.html"><img src="https://img-global.cpcdn.com/recipes/3abcd1069b6c7e0a/680x482cq70/chainsoo-recipe-main-photo.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chainsoo</b></div></a></div>
+       
+        <div class="f"><a href="task437.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/ruby_pathak-yahoo.com/Uttarkhand_Style_Mixed_Bhaddu_Dal.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Mixed Bhaddu Dal</b></div></a></div>
+        <div class="f"><a href="task438.html"><img src="https://greenbowl2soul.com/wp-content/uploads/2020/03/aloo-ke-gutke_1.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Aloo Ka Gutuk</b></div></a></div>
+        <div class="f"><a href="task439.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2017/10-oct/Uttaranchal_Style_Garwhali_Kafuli_Recipe_Spinach_Curry-9378.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kafuli</b></div></a></div>
+        <div class="f"><a href="task440.html"><img src="https://c.ndtvimg.com/2023-06/uforlt3o_raita_625x300_29_June_23.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kumooni Raita</b></div></a></div>
+       
+        <div class="f"><a href="task441.html"><img src="https://tushitamediawork.com/wp-content/uploads/2022/12/Sisuank-Saag.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Sisunak Saag</b></div></a></div>
+        <div class="f"><a href="task442.html"><img src="https://i.pinimg.com/originals/d9/e7/a6/d9e7a60a6f37723e41ed508864c76b7d.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Phaanu</b></div></a></div>
+        <div class="f"><a href="task443.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/umar/Aloo_Dal_Pakoras.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Aloo Dak Pakora</b></div></a></div>
+        <div class="f"><a href="task444.html"><img src="https://static.toiimg.com/thumb/61932498.cms?imgsize=426175&width=800&height=800"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Jhangore Ki Kheer</b></div></a></div>
+       
+        <div class="f"><a href="task445.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl-archanaskitchen.com/Kumano_Style_Palak__Methi_Ka_Kapa_Recipe.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Kaapa Recipe</b></div></a></div>
+        <div class="f"><a href="task446.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl-archanaskitchen.com/North_Kumaon_Thechwani_Recipe.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Tichwani</b></div></a></div>
+        <div class="f"><a href="task447.html"><img src="https://www.uttarakhandfoods.com/wp-content/uploads/2018/05/final.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Snai Hui Mooli Nimbu</b></div></a></div>
+        <div class="f"><a href="task448.html"><img src="https://www.funfoodfrolic.com/wp-content/uploads/2023/05/Badi-Bhaat-Blog.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Baadi</b></div></a></div>
+
+         <div class="f"><a href="task626.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2018/Rajasthani_Dal_Bati_Churma_Recipe-5.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Bati Ki Churkani</b></div></a></div>
+        <div class="f"><a href="task627.html"><img src="https://livewithpassionn.wordpress.com/wp-content/uploads/2018/08/curry-e1535701474990.jpg?w=720"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Dabka</b></div></a></div>
+        <div class="f"><a href="task628.html"><img src="https://www.uttarakhandfoods.com/wp-content/uploads/2017/05/gaderi-1.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gadera Ki Sabji</b></div></a></div>
+        <div class="f"><a href="task623.html"><img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/naheed-alam20190330211049053.jpeg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Badeel</b></div></a></div>
+
+        <div class="f"><a href="task621.html"><img src="https://fusionkitchentales.com/wp-content/uploads/2020/04/Red-Rice-Kheer-with-Candied-Cashew-Nuts-scaled.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Lal Chaval Kheer</b></div></a></div>
+         <!-- <div class="f"><a href="task618.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Nithya_Anantham/Hara_Chana_Masala_Recipe_400.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Hara Dhaniya Cholia</b></div></a></div> -->
+          <!-- <div class="f"><a href="task616.html"><img src="https://vegecravings.com/wp-content/uploads/2017/07/malpua-recipe-step-by-step-instructions-17.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Malpua</b></div></a></div> -->
+    </div>
+</body>
+</html>

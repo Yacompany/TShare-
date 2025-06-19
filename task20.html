@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .a{
+        height:530px;
+        width:100%;
+        /* background-color:gray; */
+        background-image:url('Mizoram.png');
+        background-size:100% 100%;
+        margin-top:1%;
+    }
+    .b{
+        /* height:50px;
+        width:100%;
+        background-color:gray; */
+        text-align:center;
+        font-size:40px;
+        color:red;
+        padding-top:1%;
+        text-shadow:1px 3px 0px black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .c{
+        height:350px;
+        width:100%;
+        background-color:gray;
+        margin-top:1%;
+        font-style: oblique;
+        text-align:center;
+        padding-top:5px;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px red;
+    }
+    .d{
+        height:40px;
+        width:100%;
+        background-color:gray;
+        text-align:center;
+        font-style: oblique;
+        margin-top:1%;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px aqua;
+    }
+    .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            margin:8px;
+            overflow:hidden;
+            box-sizing:border-box;
+            animation-name:mona;
+            transition:all ease 0s;
+            /* animation-duration:2s;
+            animation-iteration-count: 1; */
+        }
+        .f img:hover {
+            transition:all ease 0.5s;
+            transform: scale(1.2);
+          
+        }
+        /* @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        } */
+        .f:hover .overlay {
+  opacity: 5;
+}
+@media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+        body{
+            background-color:gray;
+        }
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:5%;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+    /* body{
+        background-color:gray;
+    } */
+  </style>
+</head>
+<body>
+    <div class="b"><b>MIZORAM CUISINE</b></div>
+    <div class="a">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635788.8146235286!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705152100251!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="c"><b>ABOUT</b></div>
+    <div class="d"><b>ALL DISHES</b></div>
+    <div class="b20">
+        <div class="f"><a href="task529.html"><img src="https://images.slurrp.com/prod/rich_article/kwxhjwjlwoe.webp?impolicy=slurrp-20210601&width=1200&height=675"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Bai</b></div></a></div>
+        <div class="f"><a href="task530.html"><img src="https://pbs.twimg.com/media/Et3f6yzWQAI2y5J.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Vawksa Rep</b></div></a></div>
+        <div class="f"><a href="task531.html"><img src="https://geekrobocook.com/wp-content/uploads/2021/04/Fried-veg-momos-1200x900.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Momos</b></div></a></div>
+        <div class="f"><a href="task532.html"><img src="https://static.toiimg.com/thumb/59593236.cms?imgsize=475974&width=800&height=800"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>koat Pitha</b></div></a></div>
+        
+        <div class="f"><a href="task533.html"><img src="https://img-global.cpcdn.com/recipes/302dbedec79b395c/400x400cq70/photo.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Ehhum Han</b></div></a></div>
+        <div class="f"><a href="task534.html"><img src="https://i0.wp.com/news.jugaadin.com/wp-content/uploads/2020/09/Panch-Phoron-Tarkari.jpg?ssl=1"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Panch Phoran Tarkari</b></div></a></div>
+        <div class="f"><a href="task535.html"><img src="https://pbs.twimg.com/media/EsRXag3W4Ak8os1.jpg:large"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chhangban</b></div></a></div>
+        <div class="f"><a href="task536.html"><img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/alka-jena145675447956d44f2ed9a94.jpeg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Missa Mach Poora</b></div></a></div>
+       
+        <div class="f"><a href="task537.html"><img src="https://www.simplyrecipes.com/thmb/1glZQ-QL1LqLES9zB5IvgUHrjpo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Spanish-Migas-Eggs-LEAD-5-646c0407d0474974a0cbefe4ea7907c0.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Migo Daland Egg</b></div></a></div>
+        <div class="f"><a href="task538.html"><img src="https://cdn.vegetariantimes.com/wp-content/uploads/2011/12/bamboo-shoot-mushroom-and-long-bean-stir-fry-dec-2011-crop.jpg?width=730"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Bambo Shoot Fry</b></div></a></div>
+        <div class="f"><a href="task539.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sawhchiar.jpg/640px-Sawhchiar.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Sawhchiar</b></div></a></div>
+        <div class="f"><a href="task540.html"><img src="https://www.shiokmanrecipes.com/wp-content/uploads/2017/06/Shiokman-Recipes-F-500x500.png"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Benkang</b></div></a></div>
+       
+        <div class="f"><a href="task541.html"><img src="https://www.chintravel.com.mm/en/wp-content/uploads/2020/09/Mythum-Salad-67-300x250.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Sampiou</b></div></a></div>
+        <div class="f"><a href="task542.html"><img src="https://junifoods.com/wp-content/uploads/2022/12/Aloo-Chop-1.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Aloo Chop</b></div></a></div>
+        <div class="f"><a href="task543.html"><img src="https://www.travelplaceindia.com/wp-content/uploads/2019/07/Indomie_Mie_Goreng_Iga_Penyet_2.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Artui Chhipchhuan Chow</b></div></a></div>
+        <div class="f"><a href="task544.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Deboshruti.ghosh/Mizoram_Style_Hmarcha_rawt_Recipe_Roasted_Green_Chilli_Chutney-3.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Hmarcha Rawt</b></div></a></div>
+       
+        <div class="f"><a href="task545.html"><img src="https://i0.wp.com/poemeblog.com/wp-content/uploads/2019/05/IMG_3085.jpg?resize=960%2C698&ssl=1"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Zu</b></div></a></div>
+        <div class="f"><a href="task546.html"><img src="https://www.picturethisai.com/wiki-image/1080/154089953310015514.jpeg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Labrusca Grape Wine</b></div></a></div>
+        <div class="f"><a href="task547.html"><img src="https://fearlesseating.net/wp-content/uploads/2022/05/Mohinga-Recipe-Burmese-Fish-Noodle-Soup.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mohinga Tauh</b></div></a></div>
+        <div class="f"><a href="task548.html"><img src="https://mizohican-blog.s3.ap-south-1.amazonaws.com/Pic_chp_0701-0800/773-Sanpiau/sanpiau-06.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Sanpiau</b></div></a></div>
+    </div>
+</body>
+</html>

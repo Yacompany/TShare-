@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <style>
+    .a{
+        height: 220px;
+        width:100%;
+        background-color:gray;
+        margin-top:10px;
+    }
+    h1{
+        text-align: center;
+        font-size:47px;
+        font-style: oblique;
+        color:lawngreen;
+        font-weight:bold;
+        text-shadow: 2px 3px 0px red;
+    }
+    .b{
+        height: 450px;
+        width: 45%;
+        background-color:gray;
+       background-image: url('data:image/jpeg;base64,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');
+       background-size: 100% 100%;
+        margin: 30px auto;
+        border-radius:5px;
+    }
+    @media screen and (max-width:1200px) {
+            .b{
+                width:100%;
+                
+            }
+        }
+       body{
+        background-color:gray;
+       }
+       .c{
+        height: 150px;
+        width:100%;
+        margin-top:4%;
+        
+       }
+       .b1{
+        height: 250px;
+        width: 100%;
+       }
+       p{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-style:oblique;
+        color:white;
+       }
+       .size{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 2%;
+        padding-top: 10px;
+        font-style:oblique;
+        color:white;
+       }
+     
+       .d1{
+        height: 550px;
+        width:50%;
+        /* overflow-x:hidden; */
+        margin-top:1%;
+        float: left;
+        /* background-color: rgb(25, 24, 24); */
+       }
+       .d2{
+        height: 750px;
+        width:100%;
+        float: left;
+       margin-top:1%;
+       overflow-x:hidden;
+        /* background-color: rgb(45, 44, 44); */
+       }
+
+       
+       .d3{
+        height: 350px;
+        width:100%;
+        float: left;
+        overflow-x:auto;
+        margin-top:1%;
+        background-color:gray;
+       }
+     
+       /* .d4{
+        height: 350px;
+        width:100%;
+        border-radius:5px;
+        overflow-x:auto;
+        margin-top:3%;
+        background-color: rgb(28, 28, 28);
+       } */
+       .d5{
+        height: 350px;
+        width:100%;
+       float: left;
+        overflow-x:auto;
+        margin-top:1%;
+        background-color:gray;
+       }
+     
+       @media screen and (max-width:1200px) {
+            .d1{
+                width:100%;
+                
+            }
+        }
+      
+        h2{
+            text-align: center;
+            color:lawngreen;
+            font-size: 38px;
+            padding-top: 10px;
+            font-style: oblique;
+            text-shadow:1px 2px 0px red;
+        }
+        h3{
+            text-align: center;
+            color:aqua;
+            font-weight: bold;
+            font-size: 25px;
+            padding-top: 10px;
+            text-shadow: 1px 2px 0px red;
+            font-style:oblique;
+            
+        }
+        .e{
+            height: 150px;
+            width: 100%;
+            background-color:gray;
+            margin-top:1%;
+            float: left;
+        }
+        .g{
+            text-align:center;
+        font-size: 20px;
+        /* padding-left:20%;
+        padding-right: 1%; */
+        color:white;
+        padding-top: 20px;
+        overflow:hidden;
+        text-shadow:1px 1px 0px  black;
+      
+        }
+   </style>
+</head>
+<body>
+    <div class="a"><h1>PAIYOKH</h1></div>
+    <div class="b"></div>
+    <div class="b1">
+        <p>The Indian version of a sweet pudding is what we refer to as Kheer. It is basically a milk-based dessert, which has other ingredients, sweetener and flavorings added to it. The most classic version of this dessert is the rich Rice Kheer, where you slow-cook rice grains, whole milk and sugar to perfection.</p>
+    </div>
+    <div class="c"><h1>INGREDIENT'S</h1>
+    <!-- <p class="size">
+        1. 1 cup wheat flour.<br>
+        2. 1/2 cup pigeon peas.<br>
+        3. 1 large onion chopped.<br>
+        4. 8-10 cloves of garlic chopped.<br>
+        5. 2 tomatoes chopped.<br>
+        6. 3 green chillies chopped.<br>
+        7. 1 bay leaf.<br>
+        8. 1 pinch asafoetida.<br>
+        9. 1 teaspoon turmeric powder.<br>
+       10. 1 teaspoon cumin powder.<br>
+       11. 1 teaspoon garam masala.<br>
+       12. 1 teaspoon vegetable masala.<br>
+       13. salt as per taste.<br>
+       14. A little coriander.<br>
+       15. oil as required.
+    </p> -->
+    </div>
+   
+ 
+            <div class="d1"><h2>Items No</h2>
+                <p class="g">
+                    1. basmati rice.<br>
+                    2. whole milk.<br>
+                    3. sugar.<br>
+                    4. green cardamom powder.<br>
+                    5. saffron strands.<br>
+                    6. chopped or sliced almonds or blanched almonds.<br>
+                    7. chopped or sliced cashews. 
+                  
+               
+                   
+                
+                    
+                  
+                  
+                
+                    
+                  
+                   
+              
+
+                  
+                </p>
+            </div>
+        <div class="d1"><h2>Item Quantity</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. 1 cup.<br>
+                    2. 1 litre.<br>
+                    3. 6 tablespoons.<br>
+                    4. ½ teaspoon.<br>
+                    5. 1 pinch.<br>
+                    6. 1 tablespoon.<br>
+                    7. 1 tablespoon.
+                   
+                   
+                   
+                
+                     
+                  
+                    
+                  
+                    
+                    
+                    
+                
+               
+                     
+                   
+                   
+                </p>
+            <!-- </marquee> -->
+        </div>
+    
+        <div class="d5"><h2>Equipment Name Used In Dish</h2></div>
+        <div class="d2"><h2>Method Of Cocking</h2>
+       <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+        <p class="g">
+            1. Rinse ¼ cup basmati rice a couple of times in fresh water and then soak in enough water for 15 to 20 minutes.<br>
+            2. While the rice grains are soaking, take 1-litre full-fat milk in a heavy wide pan or saucepan or kadai.<br>
+            3. Keep the pan on low to medium-low heat. Stir at intervals so that the milk does not burn at the bottom of the pan.<br>
+            4. Let the milk come to a boil.<br>
+            5. Take 1 tablespoon milk from the pan in a small bowl. Let the milk become warm. Then, add a few saffron strands to the milk. Keep aside.<br>
+            6. After the milk begins to boil, drain all the water from the rice and add it to the boiling milk.<br>
+            7. Mix very well with a spoon.
+
+
+          
+           
+
+            
+            
+        </p>
+    <!-- </marquee> -->
+        </div>
+        <div class="d3"><h2>Nutrition Value</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. Protein ---- <br>
+                    2. Carbohydrate ---- <br>
+                    3. Calcium ---- <br>
+                    4. Energy ---- <br>
+                    5. Iron ---- <br>
+                    6. Mineral ---- <br>
+                    7. Fta ---- 
+                    
+                </p>
+            <!-- </marquee> -->
+        </div>
+        <div class="e"><h3>NOTE</h3></div>
+    
+   
+</body>
+</html>
+
+

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <style>
+    .a{
+        height: 220px;
+        width:100%;
+        background-color:gray;
+        margin-top:10px;
+    }
+    h1{
+        text-align: center;
+        font-size:47px;
+        font-style: oblique;
+        color:lawngreen;
+        font-weight:bold;
+        text-shadow: 2px 3px 0px red;
+    }
+    .b{
+        height: 450px;
+        width: 45%;
+        background-color:gray;
+       background-image: url('https://www.cookoverheels.com/wp-content/uploads/2020/03/30-min-Dhaba-Style-Kadhai-Paneer.jpg');
+       background-size: 100% 100%;
+        margin: 30px auto;
+        border-radius:5px;
+    }
+    @media screen and (max-width:1200px) {
+            .b{
+                width:100%;
+                
+            }
+        }
+       body{
+        background-color:gray;
+       }
+       .c{
+        height: 150px;
+        width:100%;
+        margin-top:4%;
+        
+       }
+       .b1{
+        height: 250px;
+        width: 100%;
+       }
+       p{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-style:oblique;
+        color:white;
+       }
+       .size{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 2%;
+        padding-top: 10px;
+        font-style:oblique;
+        color:white;
+       }
+     
+       .d1{
+        height: 700px;
+        width:50%;
+        /* overflow-x:hidden; */
+        margin-top:1%;
+        float: left;
+        /* background-color: rgb(25, 24, 24); */
+       }
+       .d2{
+        height: 700px;
+        width:100%;
+        float: left;
+       margin-top:1%;
+       overflow-x:hidden;
+        /* background-color: rgb(45, 44, 44); */
+       }
+
+       
+       .d3{
+        height: 350px;
+        width:100%;
+        float: left;
+        overflow-x:auto;
+        margin-top:1%;
+        background-color:gray;
+       }
+     
+       /* .d4{
+        height: 350px;
+        width:100%;
+        border-radius:5px;
+        overflow-x:auto;
+        margin-top:3%;
+        background-color: rgb(28, 28, 28);
+       } */
+       .footer{
+        min-height:100vh;
+        width:100%;
+        background-color:gray;
+        margin-top:5%;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        /* background-color: red; */
+
+    }
+    .footer1{
+        height:40vh;
+        width:16%;
+        margin-left:4px;
+        border-radius:10px;
+        box-shadow:-2px -2px 1px gray,-4px -4px 2px aqua;
+        margin-top:1%;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+    @media screen and (max-width:1200px) {
+            .footer1{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer1{
+                width:90%;
+
+            }
+        }
+    .footer2{
+        height:40vh;
+        width:16%;
+        margin-left:4px;
+        margin-top:1%;
+        border-radius:10px;
+        box-shadow:-2px -2px 1px gray,-4px -4px 2px aqua;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        /* margin-top:20px; */
+    }
+    @media screen and (max-width:1200px) {
+            .footer2{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer2{
+                width:90%;
+
+            }
+        }
+        .footer2:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+.footer2:hover .overlay {
+  opacity: 5;
+}
+        body{
+            background-color:gray;
+        }
+        .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  /* opacity:0; */
+  color:black;
+ text-shadow:1px 0px 0px red;
+  font-size: 16px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .footer1:hover .overlay {
+  opacity: 5;
+}
+.footer1:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+     
+       @media screen and (max-width:1200px) {
+            .d1{
+                width:100%;
+                
+            }
+        }
+      
+        h2{
+            text-align: center;
+            color:lawngreen;
+            font-size: 38px;
+            padding-top: 10px;
+            font-style: oblique;
+            text-shadow:1px 2px 0px red;
+        }
+        h3{
+            text-align: center;
+            color:aqua;
+            font-weight: bold;
+            font-size: 25px;
+            padding-top: 10px;
+            text-shadow: 1px 2px 0px red;
+            font-style:oblique;
+            
+        }
+        .e{
+            height: 150px;
+            width: 100%;
+            background-color:gray;
+            margin-top:1%;
+            float: left;
+        }
+        .g{
+            text-align:center;
+        font-size: 20px;
+        /* padding-left:20%;
+        padding-right: 1%; */
+        color:white;
+        padding-top: 20px;
+        overflow:hidden;
+        text-shadow:1px 1px 0px  black;
+      
+        }
+   </style>
+</head>
+<body>
+    <div class="a"><h1>KADHAI PANEER</h1></div>
+    <div class="b"></div>
+    <div class="b1">
+        <p>Stuffed capsicum recipe with step by step photos. This is a Punjabi style delicious bharwa shimla mirch preparation in which capsicum (bell pepper) are stuffed with spiced mashed potatoes filling and then further cooked.</p>
+    </div>
+    <div class="c"><h1>INGREDIENT'S</h1>
+    <!-- <p class="size">
+        1. 1 cup wheat flour.<br>
+        2. 1/2 cup pigeon peas.<br>
+        3. 1 large onion chopped.<br>
+        4. 8-10 cloves of garlic chopped.<br>
+        5. 2 tomatoes chopped.<br>
+        6. 3 green chillies chopped.<br>
+        7. 1 bay leaf.<br>
+        8. 1 pinch asafoetida.<br>
+        9. 1 teaspoon turmeric powder.<br>
+       10. 1 teaspoon cumin powder.<br>
+       11. 1 teaspoon garam masala.<br>
+       12. 1 teaspoon vegetable masala.<br>
+       13. salt as per taste.<br>
+       14. A little coriander.<br>
+       15. oil as required.
+    </p> -->
+    </div>
+   
+ 
+            <div class="d1"><h2>Items No</h2>
+                <p class="g">
+                    1. large shimla mirch.<br>
+                    2. potatoes.<br>
+                    3. steamed or cooked peas.<br>
+                    4. onion.<br> 
+                    5. chili.<br>
+                    6. cumin.<br>
+                    7. turmeric powder.<br>
+                    8. red chili powder.<br>
+                    9. asafoetida.<br>
+                   10. dry mango powder.<br>
+                   11. Garam Masala.<br>
+                   12. coriander leaves.<br>
+                   13. oil for sauteing the onions.<br>
+                   14. oil for sauteing the capsicum.<br>
+                   15. salt.
+                  
+                  
+              
+                  
+                
+                 
+                  
+                   
+                   
+                  
+                </p>
+            </div>
+        <div class="d1"><h2>Item Quantity</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. 4 to 5 medium.<br>
+                    2. 4 to 5 medium.<br>
+                    3. ⅓ to ½ cup.<br>
+                    4. 1 small.<br>
+                    5. 1.<br>
+                    6. ½ teaspoon.<br>
+                    7. ¼ teaspoon.<br>
+                    8. ¼ teaspoon. <br>
+                    9. 1 pinch.<br>
+                   10. ½ teaspoon.<br>
+                   11. ¼ to ½ teaspoon.<br>
+                   12. 2 teaspoon.<br>
+                   13. 1 tablespoon.<br>
+                   14. 1 or 1.5 tablespoon.<br>
+                
+                  
+                   
+                    
+                   
+                   
+                </p>
+            <!-- </marquee> -->
+        </div>
+    
+        <h1>Equipment Name Used In Dish</h1>
+        <div class="footer">
+
+            <div class="footer1"><a href="#"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnWEU8gMRZZ-e16CoZMMVc42fu0DS9Aw8BVgWGGc1hb8eTVbmFW82ym1P9yTicQGv_w32JTmYC9eeI0mWBzV0kBCv4Suhi9uiQelRYAKGbbnpr2hf-m3Oztt6f0_mmbdQ2KUPnQ4eKED0/s1600/sil.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Sheelbata</b></div></a></div>
+            <div class="footer1"><a href="#"><img src="https://i.ebayimg.com/images/g/vUwAAOSwZwFhkcBG/s-l1200.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kinfe</b></div></a></div>
+            <!-- <div class="footer1"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0564/2223/6320/products/1037721-BESS-LID-28CM-RED.png?v=1630982849"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Lid</b></div></a></div>   -->
+            <div class="footer1"><a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2022/5/BQ/LS/LQ/93757655/spices-mini-grader-machine.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Grinding Machine</b></div></a></div>  
+          
+            <div class="footer2"><a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2023/8/333091491/PE/YX/GE/1937173/stainless-steel-bowls-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Small Size Bowl</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://www.tredyfoods.com/cdn/shop/products/Basting-Extra-Deep-Ladle-Size-6.jpg?v=1637366664"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Ladle</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://www.pringle.in/cdn/shop/products/pringle-trendy-3-jar-mixer-grinder-with-550-w-for-24-months-powerful-motor-304-grade-stainless-steel-blade-2-stainless-steel-100-copper-motor-783905.jpg?v=1695393876"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Mixer</b></div></a></div>  
+            <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/910wnxdmfhL._AC_UF894,1000_QL80_.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Choppring Bard</b></div></a></div>  
+           
+            <div class="footer2"><a href="#"><img src="https://cdn.moglix.com/p/mHOnu31W3JsJE-xxlarge.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kadhai</b></div></a></div>
+            <!-- <div class="footer2"><a href="#"><img src="https://5.imimg.com/data5/YI/LZ/NS/SELLER-28408967/stainless-steel-palta.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Palta</b></div></a></div> -->
+            <!-- <div class="footer2"><a href="#"><img src="https://bhalaria.in/cdn/shop/files/SMOOTH-DESIGN-DINNER-SPOON-_6-Pcs-Set_-1000-X1000_1000x.jpg?v=1696566463"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Spoon</b></div></a></div> -->
+            <div class="footer2"><a href="#"><img src="https://5.imimg.com/data5/IC/NJ/MY-6830673/pure-copper-bottle.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Perforated Spoon</b></div></a></div>
+            <!-- <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/61L5ku-COLL._AC_UF894,1000_QL80_.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Flour Sieve</b></div></a></div> -->
+            <!-- <div class="footer2"><a href="#"><img src="https://www.kvchospitals.in/wp-content/uploads/2019/01/medical_shop_5.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Hand Cloves</b></div></a></div> -->
+            <div class="footer2"><a href="#"><img src="https://glenindia.com/cdn/shop/files/4-Burner-Gas-Stove-CT1044HFBBAI_15476c61-b61e-4430-848c-8ebd5a599326_700x700.jpg?v=1708774773"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Gas Burner</b></div></a></div>
+            <!-- <div class="footer2"><a href="#"><img src="https://grydle-sync.com/wp-content/uploads/2021/05/Utility-Tongs.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tong</b></div></a></div> -->
+       
+
+
+
+
+        <div class="d2"><h2>Method Of Cocking</h2>
+       <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+        <p class="g">
+            1. First, Rinse 4 to 5 medium-sized potatoes very well in fresh water. Then boil the potatoes till they are completely tender and cooked thoroughly. Peel and grate the potatoes. Keep aside.<br>
+            2. Slice off the tops of 4 to 5 medium to large sized capsicum. Remove the seeds. Rinse them in water and pat dry with a kitchen towel. Keep aside.<br>
+            3. In a small frying pan, heat 1 tablespoon oil. Fry ½ teaspoon cumin first on low heat. Then add ¼ cup finely chopped onion.<br>
+            4. Saute the onions stirring often till translucent. Add 1 chopped green chili (approx ½ to 1 teaspoon).<br>
+            5. Add the potatoes and mix everything.<br>
+            6. Stir well and then add 2 teaspoons of chopped coriander leaves. Mix again and let this spiced potato stuffing become warm or cool down.<br>
+            7. With a spoon or with your hands, stuff the potato mixture in the capsicum.<br>
+            8. Now you can bake them or saute in a pan. I have mentioned the baking instructions in the recipe card details below.<br>
+            9. Cover the pan with its lid and allow the stuffed capsicum to cook on a low heat.<br>
+           10. You will have to check often after every 5 to 6 minutes and keep on changing the sides of the capsicum so that all sides are cooked well. Check, turn the sides and cover the pan again.
+           
+           
+            
+            
+        </p>
+    <!-- </marquee> -->
+        </div>
+        <div class="d3"><h2>Nutrition Value</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. Protein ---- <br>
+                    2. Carbohydrate ---- <br>
+                    3. Calcium ---- <br>
+                    4. Energy ---- <br>
+                    5. Iron ---- <br>
+                    6. Mineral ---- <br>
+                    7. Fta ---- 
+                    
+                </p>
+            <!-- </marquee> -->
+        </div>
+        <div class="e"><h3>NOTE</h3></div>
+    
+   
+</body>
+</html>
+
+

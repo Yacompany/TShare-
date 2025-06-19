@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .a{
+        height:550px;
+        width:100%;
+        /* background-color:gray; */
+        background-image:url('Sikkim.png');
+        background-size:100% 100%;
+        margin-top:1%;
+    }
+    .b{
+        /* height:50px;
+        width:100%;
+        background-color:gray; */
+        text-align:center;
+        font-size:40px;
+        color:red;
+        padding-top:1%;
+        text-shadow:1px 3px 0px black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .c{
+        height:350px;
+        width:100%;
+        background-color:gray;
+        margin-top:1%;
+        text-align:center;
+        padding-top:5px;
+        font-size:35px;
+        color:black;
+        font-style: oblique;
+        text-shadow:2px 2px 0px red;
+    }
+    .d{
+        height:40px;
+        width:100%;
+        background-color:gray;
+        text-align:center;
+        font-style: oblique;
+        margin-top:1%;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px aqua;
+    }
+    .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            margin:8px;
+           overflow: hidden;
+            box-sizing:border-box;
+            animation-name:mona;
+            transition:all ease 0s;
+            /* animation-duration:2s;
+            animation-iteration-count: 1; */
+        }
+        .f:hover img{
+            transition:all ease 1s;
+            transform: scale(1.2);
+        }
+        /* @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        } */
+        .f:hover .overlay {
+  opacity: 5;
+}
+@media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+        body{
+            background-color:gray;
+        }
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:5%;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+    /* body{
+        background-color:gray;
+    } */
+  </style>
+</head>
+<body>
+    <div class="b"><b>SIKKIM CUISINE</b></div>
+    <div class="a">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635788.8146235286!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705152100251!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="c"><b>ABOUT</b></div>
+    <div class="d"><b>ALL DISHES</b></div>
+    <div class="b20">
+        <div class="f"><a href="task349.html"><img src="https://junifoods.com/wp-content/uploads/2022/12/Tibetan-Meat-Pie-Shapale-%E0%A4%B8%E0%A4%AF%E0%A4%BE%E0%A4%AB%E0%A4%BE%E0%A4%B2%E0%A5%87.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Pork Shaphalay</b></div></a></div>
+        <div class="f"><a href="task350.html"><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2016/09/whole-wheat-veg-momos-recipe-1.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Momo</b></div></a></div>
+        <div class="f"><a href="task351.html"><img src="https://ofbambooshootsndalle.wordpress.com/wp-content/uploads/2013/05/18062011198.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Phing</b></div></a></div>
+        <div class="f"><a href="task352.html"><img src="https://media.licdn.com/dms/image/D4E12AQFJIvWNLHVM3Q/article-cover_image-shrink_720_1280/0/1677414024264?e=2147483647&v=beta&t=qv4EH_m2tKY2MqporkiSvaUCgsgplRCxSiV7p4zRCmo"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Wachipa</b></div></a></div>
+        
+        <div class="f"><a href="task353.html"><img src="https://myfoodstory.com/wp-content/uploads/2021/02/Instant-Pot-Chicken-Thukpa-2-500x500.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Thukpa</b></div></a></div>
+        <div class="f"><a href="task354.html"><img src="https://junifoods.com/wp-content/uploads/2023/08/Bamboo-Shoot-Curry-Main-Pic.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Bamboo Shoot Curry</b></div></a></div>
+        <!-- <div class="f"><a href="task355.html"><img src="https://asianmarketsphilly.files.wordpress.com/2018/11/img_8544.jpg?w=584"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gundruk</b></div></a></div> -->
+        <div class="f"><a href="task356.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/09/3e/b5/photo5jpg.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Sinki</b></div></a></div>
+       
+        <div class="f"><a href="task357.html"><img src="https://simplytibetan.com/wp-content/uploads/2012/01/khabsey-sml.jpg?w=640"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Khabsey</b></div></a></div>
+        <div class="f"><a href="task358.html"><img src="https://i.pinimg.com/originals/71/8c/37/718c37acab2c54885fa6c2a45b75c610.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Phagshapa</b></div></a></div>
+        <div class="f"><a href="task359.html"><img src="https://savvybites.co.uk/wp-content/uploads/2024/01/Coconut-Pork-Curry-2.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Pork Curry</b></div></a></div>
+        <!-- <div class="f"><a href="task360.html"><img src="https://therecipeart.com/wp-content/uploads/2022/11/chhurpi.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Niguru With Churpi</b></div></a></div> -->
+       
+        <div class="f"><a href="task361.html"><img src="https://washburnreview.org/wp-content/uploads/2023/03/sel-roti.jpeg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Sel Rooti</b></div></a></div>
+        <!-- <div class="f"><a href="task362.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/a6/c2/75/homemade-mok-mok-dumplings.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gya Kho</b></div></a></div> -->
+        <div class="f"><a href="task363.html"><img src="https://wfg32p.s3.amazonaws.com/media/dishes/dhindo_1789-reg.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Dhindo</b></div></a></div>
+        <div class="f"><a href="task364.html"><img src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2019/03/Lang-Lang-Wide.jpg?ssl=1"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Lang Lang</b></div></a></div>
+       
+        <div class="f"><a href="task365.html"><img src="https://www.crazymasalafood.com/wp-content/images/Masauyra-Curry.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Kinema Curry</b></div></a></div>
+        <div class="f"><a href="task366.html"><img src="https://www.icampinmykitchen.com/wp-content/uploads/2014/04/DSC_0603-003.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kodo Ko Roti</b></div></a></div>
+        <div class="f"><a href="task367.html"><img src="https://i.pinimg.com/originals/3e/aa/ee/3eaaee1c6eecbcf632e388df8729b7aa.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Phulaurah</b></div></a></div>
+        <div class="f"><a href="task368.html"><img src="https://chalo-travels.com/wp-content/uploads/2022/01/Day-12-Sikkim-Shimi-Ka-Achar-with-Tel-Roti.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Shimi Ka Achar</b></div></a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <style>
+    .a{
+        height: 220px;
+        width:100%;
+        background-color:gray;
+        margin-top:10px;
+    }
+    h1{
+        text-align: center;
+        font-size:47px;
+        font-style: oblique;
+        color:lawngreen;
+        font-weight:bold;
+        text-shadow: 2px 3px 0px red;
+    }
+    .b{
+        height: 450px;
+        width: 45%;
+        background-color:gray;
+       background-image: url('https://rakskitchen.net/wp-content/uploads/2022/11/bedmi-poori-recipe.jpg');
+       background-size: 100% 100%;
+        margin: 30px auto;
+        border-radius:5px;
+    }
+    @media screen and (max-width:1200px) {
+            .b{
+                width:100%;
+                
+            }
+        }
+       body{
+        background-color:gray;
+       }
+       .c{
+        height: 150px;
+        width:100%;
+        margin-top:4%;
+        
+       }
+       .b1{
+        height: 250px;
+        width: 100%;
+       }
+       p{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-style:oblique;
+        color:white;
+       }
+       .size{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 2%;
+        padding-top: 10px;
+        font-style:oblique;
+        color:white;
+       }
+     
+       .d1{
+        height: 600px;
+        width:50%;
+        /* overflow-x:hidden; */
+        margin-top:1%;
+        float: left;
+        /* background-color: rgb(25, 24, 24); */
+       }
+       .d2{
+        height: 800px;
+        width:100%;
+        float: left;
+       margin-top:1%;
+       overflow-x:hidden;
+        /* background-color: rgb(45, 44, 44); */
+       }
+
+       
+       .d3{
+        height: 350px;
+        width:100%;
+        float: left;
+        overflow-x:auto;
+        margin-top:1%;
+        background-color:gray;
+       }
+     
+       /* .d4{
+        height: 350px;
+        width:100%;
+        border-radius:5px;
+        overflow-x:auto;
+        margin-top:3%;
+        background-color: rgb(28, 28, 28);
+       } */
+       .footer{
+        min-height:100vh;
+        width:100%;
+        background-color:gray;
+        margin-top:5%;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        /* background-color: red; */
+
+    }
+    .footer1{
+        height:40vh;
+        width:16%;
+        margin-left:4px;
+        border-radius:10px;
+        box-shadow:-2px -2px 1px gray,-4px -4px 2px aqua;
+        margin-top:1%;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+    @media screen and (max-width:1200px) {
+            .footer1{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer1{
+                width:90%;
+
+            }
+        }
+    .footer2{
+        height:40vh;
+        width:16%;
+        margin-left:4px;
+        margin-top:1%;
+        border-radius:10px;
+        box-shadow:-2px -2px 1px gray,-4px -4px 2px aqua;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        /* margin-top:20px; */
+    }
+    @media screen and (max-width:1200px) {
+            .footer2{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer2{
+                width:90%;
+
+            }
+        }
+        .footer2:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+.footer2:hover .overlay {
+  opacity: 5;
+}
+        body{
+            background-color:gray;
+        }
+        .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  /* opacity:0; */
+  color:black;
+ text-shadow:1px 0px 0px red;
+  font-size: 16px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .footer1:hover .overlay {
+  opacity: 5;
+}
+.footer1:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+     
+       @media screen and (max-width:1200px) {
+            .d1{
+                width:100%;
+                
+            }
+        }
+      
+        h2{
+            text-align: center;
+            color:lawngreen;
+            font-size: 38px;
+            padding-top: 10px;
+            font-style: oblique;
+            text-shadow:1px 2px 0px red;
+        }
+        h3{
+            text-align: center;
+            color:aqua;
+            font-weight: bold;
+            font-size: 25px;
+            padding-top: 10px;
+            text-shadow: 1px 2px 0px red;
+            font-style:oblique;
+            
+        }
+        .e{
+            height: 150px;
+            width: 100%;
+            background-color:gray;
+            margin-top:1%;
+            float: left;
+        }
+        .g{
+            text-align:center;
+        font-size: 20px;
+        /* padding-left:20%;
+        padding-right: 1%; */
+        color:white;
+        padding-top: 20px;
+        overflow:hidden;
+        text-shadow:1px 1px 0px  black;
+      
+        }
+   </style>
+</head>
+<body>
+    <div class="a"><h1>BEDMI PURI SABJI</h1></div>
+    <div class="b"></div>
+    <div class="b1">
+        <p>Shab Deg is a traditional Kashmiri Kofta Curry dish cooked with Turnips in a heavy bottomed deg/handi/vessel on charcoal fire. This recipe is a forgotten meat recipe from Kashmir which lost it’s authenticity with time.</p>
+    </div>
+    <div class="c"><h1>INGREDIENT'S</h1>
+    <!-- <p class="size">
+        1. 1 cup wheat flour.<br>
+        2. 1/2 cup pigeon peas.<br>
+        3. 1 large onion chopped.<br>
+        4. 8-10 cloves of garlic chopped.<br>
+        5. 2 tomatoes chopped.<br>
+        6. 3 green chillies chopped.<br>
+        7. 1 bay leaf.<br>
+        8. 1 pinch asafoetida.<br>
+        9. 1 teaspoon turmeric powder.<br>
+       10. 1 teaspoon cumin powder.<br>
+       11. 1 teaspoon garam masala.<br>
+       12. 1 teaspoon vegetable masala.<br>
+       13. salt as per taste.<br>
+       14. A little coriander.<br>
+       15. oil as required.
+    </p> -->
+    </div>
+   
+ 
+            <div class="d1"><h2>Items No</h2>
+                <p class="g">
+                    1. Turnips.<br>
+                    2. Poppy seeds.<br>
+                    3. Almonds.<br>
+                    4. Wheat Flour Dough.<br> 
+                    5. Mutton Mine.<br>
+                    6. Kashmiri Red Chili Powder.<br>
+                    7. Ginger Garlic Paste.<br>
+                    8. besan.<br>
+                    9. Almond and Poppy Paste.<br>
+                   10.  Corinader.<br>
+                  
+                 
+                  
+                   
+                   
+                  
+                </p>
+            </div>
+        <div class="d1"><h2>Item Quantity</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. 4-5 .<br>
+                    2. 1 tbsp.<br>
+                    3. 2 tbsp.<br>
+                    4. 1 lobe.<br> 
+                    5. 500 gms.<br>
+                    6. 1.5 tsp.<br>
+                    7. 2 tbsp.<br>
+                    8. 2 tbsp.<br>
+                    9. 1/2 tbsp.<br>
+                   10. 2 tbsp.<br>
+                 
+                   
+                   
+               
+                    
+                   
+                   
+                </p>
+            <!-- </marquee> -->
+        </div>
+    
+        <h1>Equipment Name Used In Dish</h1>
+        <div class="footer">
+
+            <div class="footer1"><a href="#"><img src="https://cdn.moglix.com/p/Em2bmwYhQUPMZ-xxlarge.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kadhai</b></div></a></div>
+            <div class="footer1"><a href="#"><img src="https://i.ebayimg.com/images/g/vUwAAOSwZwFhkcBG/s-l1200.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kinfe</b></div></a></div>
+            <!-- <div class="footer1"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0564/2223/6320/products/1037721-BESS-LID-28CM-RED.png?v=1630982849"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Lid</b></div></a></div>   -->
+            <div class="footer1"><a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2022/5/BQ/LS/LQ/93757655/spices-mini-grader-machine.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Grinding Machine</b></div></a></div>  
+          
+            <div class="footer2"><a href="#"><img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/64a55c505184fbf5974b0f91/1.png"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Water Jug</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://www.tredyfoods.com/cdn/shop/products/Basting-Extra-Deep-Ladle-Size-6.jpg?v=1637366664"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Ladle</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://cpimg.tistatic.com/05059663/b/4/Vegetable-Peeler.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Peelar</b></div></a></div>  
+            <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/910wnxdmfhL._AC_UF894,1000_QL80_.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Choppring Bard</b></div></a></div>  
+           
+            <div class="footer2"><a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2023/7/329722397/KE/FA/NU/127692962/aluminium-small-handi.png"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Small Handi</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/61FPqc29L4L._AC_UF894,1000_QL80_.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Roling Pin</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://bhalaria.in/cdn/shop/files/SMOOTH-DESIGN-DINNER-SPOON-_6-Pcs-Set_-1000-X1000_1000x.jpg?v=1696566463"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Spoon</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://m.ebhandar.com/media/catalog/product/cache/7/image/500x500/9df78eab33525d08d6e5fb8d27136e95/s/t/stainless_steel_collander_small_sized.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Small Colander</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/212oPPmkj0L.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Brothel (Chakla)</b></div></a></div>
+            <!-- <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/212oPPmkj0L.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Brothel (Chakla)</b></div></a></div> -->
+            <div class="footer2"><a href="#"><img src="https://5.imimg.com/data5/IC/NJ/MY-6830673/pure-copper-bottle.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Perforated Spoon</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/41sFaS9GRaL.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Parat</b></div></a></div>
+       
+
+
+
+        <div class="d2"><h2>Method Of Cocking</h2>
+       <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+        <p class="g">
+            1. Collect all the ingredients on your counter and do the preparations mentioned like, grind Almond and Poppy to make a paste and keep aside. Peel and wash the turnips, cut into half or four quadrants and keep aside. Soak saffron in milk and keep in fridge to get more intense color.<br>
+            2. Take a large mixing bowl and combine all the ingredients required for making kofta and mix well to make a dough. Pinch a lemon sized ball from the dough, roll it and shape into kofta and keep aside.<br>
+            3. Heat ghee in a heavy bottomed vessel known as DEG and fry the turnips till they are golden in color. Collect them and keep aside.<br>
+            4. In the remaining ghee add caraways seeds, cardamom and cloves and wait till they crackle.<br>
+            5. Add goat meat and fry for atleast 5 mins.<br>
+            6. Now add ginger garlic paste and saute for another couple of minutes.<br>
+            7. Season it with chili powder, coriander powder and salt. Mix well and add whisked curd/yogurt. Keep stirring till curd incorporates with the spices well.<br>
+            8. Add garam masala powder and some water, give a quick stir and simmer the gas. Cover the lid and let it cook on low flame till one hour.<br>
+            9. Add water (preferably warm) and fried onions. Mix and add turnips and meat balls.<br>
+           10. Check salt again and adjust if needed.<br>
+           11. Cover the deg with a lid that fits well and seal the sides with dough.<br>
+           12. Let the deg be on very low flame for another 2 hours.<br>
+           13. Once the curry is done, break the seal carefully and open the lid.<br>
+           14. Stir in the saffron milk and garnish with some finely chopped coriander or kasuri methi and drizzle some cream/malai all over.<br>
+           15. Serve hot with rice, naan or sheermal.<br>
+
+
+
+            
+            
+        </p>
+    <!-- </marquee> -->
+        </div>
+        <div class="d3"><h2>Nutrition Value</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. Protein ---- <br>
+                    2. Carbohydrate ---- <br>
+                    3. Calcium ---- <br>
+                    4. Energy ---- <br>
+                    5. Iron ---- <br>
+                    6. Mineral ---- <br>
+                    7. Fta ---- 
+                    
+                </p>
+            <!-- </marquee> -->
+        </div>
+        <div class="e"><h3>NOTE</h3></div>
+    
+   
+</body>
+</html>
+
+

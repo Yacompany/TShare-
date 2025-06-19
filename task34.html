@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+        border:border-box;
+    }
+    .main{
+        height: 100vh;
+        width:100%;
+        background-image:url('https://img.delicious.com.au/6HzlqtaR/del/2016/07/vermouth-mussels-with-olives-and-nettle-butter-33190-1.jpg');
+        background-size:cover;
+        background-attachment: fixed;
+    }
+    .copy{
+        height:100vh;
+        width:100%;
+        background-color:rgba(0, 0, 0, .7);
+        float:left;
+    }
+    h1{
+        text-align: center;
+       margin:150px auto;
+       font-size:60px;
+       color:white;
+       font-style:oblique;
+    }
+    .footer{
+        height:56vh;
+        width:100%;
+        /* background-color:rgba(0, 0, 0, 7); */
+        margin-top:0px;
+       justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+
+    }
+    .footer1{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin-top:20px;
+    }
+    @media screen and (max-width:1200px) {
+            .footer1{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer1{
+                width:90%;
+
+            }
+        }
+    .footer2{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin-top:20px;
+    }
+    @media screen and (max-width:1200px) {
+            .footer2{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer2{
+                width:90%;
+
+            }
+        }
+        .footer2:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+.footer2:hover .overlay {
+  opacity: 5;
+}
+        body{
+            background-color:rgba(0, 0, 0, .9);
+        }
+        .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .footer1:hover .overlay {
+  opacity: 5;
+}
+.footer1:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+m{
+    color:lawngreen;
+}
+n{
+ color:red;
+}
+.j99 span{
+        animation:amin 1s linear forwards;
+        opacity:0;
+        display:inline-block;
+       
+    }
+    @keyframes amin{
+        0%{
+            opacity: 0;
+            transform: rotatey(-90deg);
+            filter:blur(10px);
+        }
+        100%{
+            opacity: 1;
+            transform: rotatey(0deg);
+            filter:blur(0);
+        }
+    }
+    .j99 span:nth-child(1){
+        animation-delay: 0.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+       
+        
+    }
+    .j99 span:nth-child(2){
+        animation-delay: 1s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(3){
+        animation-delay: 1.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(4){
+        animation-delay: 2s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(5){
+        animation-delay: 2.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(6){
+        animation-delay: 3s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(7){
+        animation-delay: 3.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(8){
+        animation-delay: 4s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(9){
+        animation-delay: 4.5s;
+        color:red;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(10){
+        animation-delay: 5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(11){
+        animation-delay: 5.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(12){
+        animation-delay: 6s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(13){
+        animation-delay: 6.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(14){
+        animation-delay: 7s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(15){
+        animation-delay: 7.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(16){
+        animation-delay: 8s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(17){
+        animation-delay: 8.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(18){
+        animation-delay: 9s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(19){
+        animation-delay: 9.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(20){
+        animation-delay: 10s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+    <div class="main">
+        <div class="copy">
+            <h1 class="j99">
+                <span>I</span>
+                <span>N</span>
+                <span>D</span>
+                <span>I</span>
+                <span>A</span>
+                <span>N, </span>
+                <span>I</span>
+                <span>M</span>
+                <span>M</span>
+                <span>U</span>
+                <span>N</span>
+                <span>I</span>
+                <span>T</span>
+                <span>Y, </span><br>
+                <span>B</span>
+                <span>O</span>
+                <span>O</span>
+                <span>S</span>
+                <span>T</span>
+            </h1>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1"><a href="task253.html"><img src="https://images.slurrp.com/webstories/wp-content/uploads/2024/01/cropped-Amla-Murabba-1.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Jaggery Amla Murbba</b></div></a></div>
+        <div class="footer1"><a href="task254.html"><img src="https://www.thespruceeats.com/thmb/Gk2Hs3UC9Us3H0w_yxrdNVFqz7s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spinach-and-rosemary-soup-in-bowl-with-swirl-of-cream-and-flowering-rosemary-sprig-garnish-149269249-588b54cd5f9b5874ee1e98cf.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Dal Palak Shorba</b></div></a></div>
+        <div class="footer1"><a href="task255.html"><img src="https://i.pinimg.com/736x/50/79/10/507910e9a26af2054ce2238d6d04d7d4.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Chana Ghughari</b></div></a></div>  
+        <div class="footer1"><a href="task256.html"><img src="https://latinhoneyshop.com/cdn/shop/articles/golden_honey_milk_mug.JPEG?v=1586805388"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Turmeric Hony Milk</b></div></a></div>  
+      
+        <div class="footer2"><a href="task257.html"><img src="https://www.netmeds.com/images/product-v1/600x600/1014461/herbal_canada_pure_aloevera_amla_juice_500_ml_0_0.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tulsi Aloevera Sharbat</b></div></a></div>
+        <div class="footer2"><a href="task258.html"><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2012/03/sol-kadhi-recipe-1.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kokum Sol Khadi</b></div></a></div>
+        <div class="footer2"><a href="task259.html"><img src="https://www.effortlessfoodie.com/wp-content/uploads/2022/03/banana-porridge-4.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Banana Daliya</b></div></a></div>  
+        <div class="footer2"><a href="task260.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2018/Drumstick_Leaves_Aloo_Sabzi_Murunga_Keerai_Urula_Poriyal_Recipes-1.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Moringa Ki Sabji</b></div></a></div>  
+       
+        <div class="footer2"><a href="task261.html"><img src="https://img-global.cpcdn.com/recipes/b221dcff3293129d/680x482cq70/%E0%A4%9A%E0%A4%B5%E0%A4%B2-%E0%A4%95-%E0%A4%86%E0%A4%9F-%E0%A4%B8-%E0%A4%95%E0%A4%A6%E0%A4%A6-%E0%A4%95-%E0%A4%9A%E0%A4%B2-chawal-ki-aate-se-kaddu-ki-cheela-recipe-in-hindi-%E0%A4%B0%E0%A4%B8%E0%A4%AA-%E0%A4%AE%E0%A4%96%E0%A4%AF-%E0%A4%A4%E0%A4%B8%E0%A4%B5%E0%A4%B0.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kaddu Ka Chilla</b></div></a></div>
+        <div class="footer2"><a href="task262.html"><img src="https://www.honeywhatscooking.com/wp-content/uploads/2023/11/Sweet-Potato-Chaat-main.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Bhune Sakarkand Ki Chaat</b></div></a></div>
+        <div class="footer2"><a href="task263.html"><img src="https://www.madhuseverydayindian.com/wp-content/uploads/2020/06/dry-fruits-laddu.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Gur Mewa Ke Ladoo</b></div></a></div>  
+        <div class="footer2"><a href="task264.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2017/09/Multigrain-Roti-3.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Mix Grain Roti</b></div></a></div>  
+       
+        <div class="footer2"><a href="task265.html"><img src="https://www.funfoodfrolic.com/wp-content/uploads/2023/01/Punjabi-Chitt-3.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Adrak Lesun Ki Sabji</b></div></a></div>
+        <div class="footer2"><a href="task266.html"><img src="https://www.easycookingwithmolly.com/wp-content/uploads/2016/08/khoba-roti-recipe-480x480.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Khuba Ki Roti</b></div></a></div>
+        <div class="footer2"><a href="task267.html"><img src="https://www.cookwithkushi.com/wp-content/uploads/2023/09/best_easy_badam_halwa_pudding_recipe-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Almond Ka Sheera</b></div></a></div>  
+        <div class="footer2"><a href="task268.html"><img src="https://sinfullyspicy.com/wp-content/uploads/2021/02/14.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Machhar Jhol</b></div></a></div>  
+       
+        <div class="footer2"><a href="task269.html"><img src="https://static.toiimg.com/photo/105701032.cms"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kadha</b></div></a></div>
+        <div class="footer2"><a href="task270.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl_sunitha/Gujarati_Style_Lapsi_Recipe_Millet_Sweet_Pudding_.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Bajre Ki Lapsi</b></div></a></div>
+        <div class="footer2"><a href="task271.html"><img src="https://www.jagranimages.com/images/newimg/17102021/17_10_2021-sattu_roti_22121600.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Sattu Ki Roti</b></div></a></div>  
+        <div class="footer2"><a href="#"><img src="https://www.allrecipes.com/thmb/95vaXGhKoNoJj_POc3RWX_dC0Ss=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-277220-russian-honey-cake-ddmfs-4x3-c4d6e70a2a73440486bf0039feced6f8.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Honey Cake</b></div></a></div>  
+     
+    </div>
+
+   
+</body>
+</html>

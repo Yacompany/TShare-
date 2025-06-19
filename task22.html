@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .a{
+        height:550px;
+        width:100%;
+        /* background-color:gray; */
+        background-image:url('Odisha.png');
+        background-size:100% 100%;
+        margin-top:1%;
+    }
+    .b{
+        /* height:50px;
+        width:100%;
+        background-color:gray; */
+        text-align:center;
+        font-size:40px;
+        color:red;
+        padding-top:1%;
+        text-shadow:1px 3px 0px black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .c{
+        height:350px;
+        width:100%;
+        background-color:gray;
+        margin-top:1%;
+        font-style: oblique;
+        text-align:center;
+        padding-top:5px;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px red;
+    }
+    .d{
+        height:40px;
+        width:100%;
+        background-color:gray;
+        text-align:center;
+        font-style: oblique;
+        margin-top:1%;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px aqua;
+    }
+    .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            margin:8px;
+           overflow: hidden;
+            box-sizing:border-box;
+            animation-name:mona;
+            transition:all ease 0s;
+            /* animation-duration:2s;
+            animation-iteration-count: 1; */
+        }
+        .f:hover img{
+            transition:all ease 1s;
+            transform: scale(1.2);
+        }
+        /* @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        } */
+        .f:hover .overlay {
+  opacity: 5;
+}
+@media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+        body{
+            background-color:gray;
+        }
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:5%;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+    /* body{
+        background-color:gray;
+    } */
+  </style>
+</head>
+<body>
+    <div class="b"><b>ODISHA CUISINE</b></div>
+    <div class="a">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635788.8146235286!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705152100251!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="c"><b>ABOUT</b></div>
+    <div class="d"><b>ALL DISHES</b></div>
+    <div class="b20">
+        <div class="f"><a href="task489.html"><img src="https://www.fabhotels.com/blog/wp-content/uploads/2022/07/Khicede-2.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Khicede</b></div></a></div>
+        <div class="f"><a href="task490.html"><img src="https://i.pinimg.com/originals/7f/5a/9d/7f5a9d54a0c5280b79b44d433835cff1.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chungdi Malai</b></div></a></div>
+        <div class="f"><a href="task491.html"><img src="https://tourmyodisha.com/wp-content/uploads/2022/07/25310987_721870011352253_381372337447131804_o.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Macha Ghanta</b></div></a></div>
+        <div class="f"><a href="task492.html"><img src="https://images.aws.nestle.recipes/original/d40be7ac794899f21dc625d07753feb3_Dalma_-_Plating.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Dal Ma</b></div></a></div>
+        
+        <div class="f"><a href="task493.html"><img src="https://img-global.cpcdn.com/recipes/a6b99c62478bedc1/1200x630cq70/photo.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Pakhala Bhata</b></div></a></div>
+        <div class="f"><a href="task494.html"><img src="https://img.freepik.com/premium-photo/panipuri-fuchka-gupchup-golgappa-pani-ke-patake-is-type-snack-that-originated-indian-subcontinent_466689-69045.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gupchup</b></div></a></div>
+        <div class="f"><a href="task495.html"><img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/subhasmita-panigrahi14617578555720a79f194fd.jpeg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Dahi Bada Aloo Dum</b></div></a></div>
+        <div class="f"><a href="task496.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Shaheen_Ali/Chhena_Poda.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chenna Poda</b></div></a></div>
+       
+        <div class="f"><a href="task497.html"><img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/ritu-arora020171101183006389.jpeg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Rasabali</b></div></a></div>
+        <div class="f"><a href="task498.html"><img src="https://img-global.cpcdn.com/recipes/54c1229fcb84c1f6/680x482cq70/kanika-pulao-odia-kanika-puri-kanika-recipe-main-photo.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kanika</b></div></a></div>
+        <div class="f"><a href="task499.html"><img src="https://www.seriouseats.com/thmb/AU4Bdzo8AfRMoNGuZ8tA7PsSTsU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20220627-RICEPILAF-ANDREWJANJIGIAN-Hero-850fb3b67ef84859a1cb8bc687e6e198.JPG"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Pailaf</b></div></a></div>
+        <div class="f"><a href="task500.html"><img src="https://img.jamieoliver.com/home/wp-content/uploads/features-import/2014/09/feature-header31.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Santula</b></div></a></div>
+       
+        <div class="f"><a href="task501.html"><img src="https://www.archanaskitchen.com//images/archanaskitchen/Indian_Vegetables_Gravy/Odia_Chatu_Besara_Recipe_Mushroom_in_Spicy_Mustard_Curry-1.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Chattu Rai</b></div></a></div>
+        <div class="f"><a href="task502.html"><img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/shashwatee-swagatica20180508194559365.jpeg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Aloo Potala Rasa</b></div></a></div>
+        <div class="f"><a href="task503.html"><img src="https://mahaprasadahome.files.wordpress.com/2020/09/img_2765.jpg?w=816&h=612&crop=1"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kadoli Manja Rai</b></div></a></div>
+        <div class="f"><a href="task504.html"><img src="https://img-global.cpcdn.com/recipes/7030768fc496cf35/680x482cq70/besara-recipe-main-photo.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Besara</b></div></a></div>
+       
+        <div class="f"><a href="task505.html"><img src="https://cdn.tarladalal.com/members/9306/procstepimgs/meetha-chutney-(1)-8-187018.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Khattas Chetney</b></div></a></div>
+        <div class="f"><a href="task506.html"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEiqx0_WI9_CIond2jhgA0kW-v70_GRcPis0nMM4JIu1RbUPOiIq-EtHbk0ISaNi6mRuRDKXaugDdHWzwwOe9B7dx24Ahe8QIo4NMlelz_ksxmO1uUC1OOq-6wG2LEmBphVaACXVttZLI9baf11gFZzLQplacF9svjJSG-uJhzc4uHbtF6c32ba5rQ=s16000"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chakuli Pitha</b></div></a></div>
+        <div class="f"><a href="task507.html"><img src="https://ritikart.com/cdn/shop/products/original1.3793504.3.jpg?v=1585830752"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kora Khai</b></div></a></div>
+        <div class="f"><a href="task508.html"><img src="https://img-global.cpcdn.com/recipes/9f9290bb9e44c6bc/400x400cq70/photo.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mudhi Mansa</b></div></a></div>
+    </div>
+</body>
+</html>

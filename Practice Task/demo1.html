@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Food</title>
+   <style>
+        * {
+            margin: 0px;
+            border: border-box;
+            padding: 0px;
+        }
+
+        .a {
+            height: 550px;
+            width: 100%;
+            background-image: url('x9.jpg');
+            background-size: 100% 100%;
+            animation-name: ram;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+            /* background:fixed; */
+        }
+
+        @keyframes ram {
+
+            0% {
+                background-image: url('l2.jpg');
+            }
+
+            10% {
+                background-image: url('l10.jpg');
+            }
+
+            20% {
+                background-image: url('l13.jpg');
+            }
+
+            40% {
+                background-image: url('l14.jpg');
+            }
+
+            60% {
+                background-image: url('l4.jpg');
+            }
+
+            80% {
+                background-image: url('l5.jpg');
+            }
+
+            100% {
+                background-image: url('l11.jpg');
+            }
+        }
+
+        .b {
+            height: 550px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .c {
+            height: 50px;
+            width: 100%;
+            /* background-color:rgba(0, 0, 0, .9); */
+        }
+
+        .e {
+            height: 50px;
+            width: 100px;
+            /* background-color:rgba(0, 0, 0, .5); */
+            float: right;
+            margin-left: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 14px;
+        }
+
+        .d {
+            color: white;
+            text-decoration: none;
+        }
+
+        .d:hover {
+            transition: all ease 1s;
+            color: red;
+            text-decoration: underline;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .f {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z20.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .f1 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('m9.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .f2 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z15.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .f3 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('m11.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .g {
+            padding-left: 10%;
+            padding-top: 5%;
+            font-size: 50px;
+            color: greenyellow;
+            animation-name: shubham;
+            animation-duration: 5s;
+            position: relative;
+            animation-delay: -2s;
+            animation-iteration-count: 1;
+            text-shadow: 3px 3px 5px red;
+
+        }
+
+        @keyframes shubham {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 0px;
+                top: 0px;
+            }
+
+            50% {
+                left: -600px;
+                top: 0px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .h {
+            padding-left: 10%;
+            /* padding-top:15%; */
+            font-size: 50px;
+            color: white;
+            animation-name: ramu;
+            animation-duration: 6.5s;
+            position: relative;
+            animation-delay: -1s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes ramu {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: -600px;
+                top: 0px;
+            }
+
+            50% {
+                left: 0px;
+                top: 0px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /* .i {
+            text-align: inherit;
+            line-height: 20px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+        }
+
+        .i:hover {
+            transition: all ease 1s;
+        } */
+
+        .j {
+            padding-left: 10%;
+            /* padding-top:15%; */
+            color: white;
+            text-align: justify;
+            animation-name: shiva;
+            animation-duration: 7.5s;
+            position: relative;
+            animation-delay: -1s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes shiva {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: -600px;
+                top: 0px;
+            }
+
+            50% {
+                left: 0px;
+                top: 0px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .l {
+            height: 270px;
+            width: 100%;
+            margin-top: 15px;
+            /* background-color: red; */
+        }
+
+        .m {
+
+            height: 270px;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .u {
+            font-size: 17px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .v {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z21.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .w {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow:102px102px51pxe; */
+            background-image: url('z27.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .x {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('m6.png');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .y {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow:102px102px51pxe; */
+            background-image: url('z16.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .z {
+            height: 230px;
+            width: 180px;
+            background-color: white;
+            margin-left: 19px;
+            margin-top: 10px;
+            border-radius: 10px;
+            float: left;
+            /* box-shadow: 10px 10px 5px ; */
+        }
+
+        .a1 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z31.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a2 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z18.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a3 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z17.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a4 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z19.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a5 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z32.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a6 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z25.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a7 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z22.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a8 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z33.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a9 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z23.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a10 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z35.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a11 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z26.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a12 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z34.jpg');
+            background-size: 100% 100%;
+            float: left;
+            transition:all ease 0s;
+        }
+    
+        .m56 {
+            color: white;
+            text-decoration: none;
+            margin-top: 9px;
+            font-size:16px;
+            border:none;
+
+        }
+
+        .m56:hover {
+            transition: all ease 1s;
+            color: red;
+            /* border:none; */
+            text-decoration: underline;
+        }
+        .b67 {
+            transition: all ease 0s;
+        }
+
+        .b67:hover {
+            transition: all ease 1s;
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <div class="e">
+                    <p><b><a href="#" class="d">LOGOUT</a></b></p>
+                </div>
+                <div class="e">
+                    <p><b><a href="#" class="d">ABOUT</a></b></p>
+                </div>
+
+                <!--boot-->
+                <div class="e">
+                    <a class=" btn dropdown-toggle m56" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b class="m56">PRODUCT</b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item b67" href="#"><b>Rustic Food</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Nutrition Consultancy</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Immunity Boasting Recipes</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Heart Healthy Recipes</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Weight Loss Food Recipes</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Gluten Free Dite Food Recipe</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Lactic Free Desserts</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Eatable Raw Foods</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Healthy Meals</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Kids Lunch Box Ideas</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Quick & Easy Meal</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>Healthy Salads</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"><b>World's Soups</b></a></li>
+                    </ul>
+                </div>
+                <!--booot close-->
+                <div class="e">
+                    <p><b><a href="demo7.html" class="d">SERVICE</a></b></p>
+                </div>
+                <div class="e">
+                    <p><b><a href="demo2.html" class="d">CONTACT</a></b></p>
+                </div>
+                <div class="e">
+                    <p><b><a href="#" class="d">HOME</a></b></p>
+                </div>
+            </div>
+            <!-- <div class="m99"><H1>RAUSTIC HEALTHY FOOD VIDESHI FAUSIONS</H1><BR/><H2>Jahan Har Swaad Ek Kahani Kehta Hai</H2></div> -->
+            <h1 class="g">Enjoy Healthy Life</h1>
+            <h1 class="h">And Testy Food.</h1>
+            <p class="j">
+                Tasty food can be important for good health.<br />
+                Eating tasty food can relax you, which is<br />
+                important for good digestion. Tasty <br />
+                food can also release dopamine, which<br />
+                is a neurotransmitter that<br />
+                makes you feel good.
+            </p>
+        </div>
+    </div>
+    <div class="m">
+        <a href="#">
+            <div class="f"></div>
+        </a>
+        <a href="#">
+            <div class="f1"></div>
+        </a>
+        <a href="#">
+            <div class="f2"></div>
+        </a>
+        <a href="#">
+            <div class="f3"></div>
+        </a>
+    </div>
+    <div class="l">
+        <a href="#">
+            <div class="v"></div>
+        </a>
+        <a href="#">
+            <div class="w"></div>
+        </a>
+        <a href="#">
+            <div class="x"></div>
+        </a>
+        <a href="#">
+            <div class="y"></div>
+        </a>
+    </div>
+    </div>
+    </div>
+    <div class="m">
+        <a href="#">
+            <div class="a1"></div>
+        </a>
+        <a href="#">
+            <div class="a2"></div>
+        </a>
+        <a href="#">
+            <div class="a3"></div>
+        </a>
+        <a href="#">
+            <div class="a4"></div>
+        </a>
+    </div>
+    <div class="m">
+        <a href="#">
+            <div class="a5"></div>
+        </a>
+        <a href="#">
+            <div class="a6"></div>
+        </a>
+        <a href="#">
+            <div class="a7"></div>
+        </a>
+        <a href="#">
+            <div class="a8"></div>
+        </a>
+    </div>
+    <div class="m">
+        <a href="#">
+            <div class="a9"></div>
+        </a>
+        <a href="#">
+            <div class="a10"></div>
+        </a>
+        <a href="#">
+            <div class="a11"></div>
+        </a>
+        <a href="#">
+            <div class="a12"></div>
+        </a>
+    </div>
+    <!--slider open-->
+
+
+    <!--slider close-->
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"> <img src="z2.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Tuk Tuk Basil Chicken Rice Bowl <br /><b><del
+                        style="color:red;font-size:20px;">499</b></del> &nbsp <b style="font-size:20px;">400 &nbsp
+                    50%off</b></p>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z3.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Thai Chilli Peanut Fried Rice <br /><b><del
+                        style="color:red;font-size:20px;">399</b></del> &nbsp <b style="font-size:20px;">350 &nbsp
+                    30%off</b></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z4.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Creamy Harissa Chicken Spaghetti <br /><b><del
+                        style="color:red;font-size:20px;">249</b></del> &nbsp <b style="font-size:20px;">200 &nbsp
+                    45%off</b></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z5.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Kampung Chilli Chicken Fried Rice <br /><b><del
+                        style="color:red;font-size:20px;">329</b></del> &nbsp <b style="font-size:20px;">300 &nbsp
+                    55%off</b></p>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z6.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Cilantro Chilli Chicken Bowl <br /><b><del
+                        style="color:red;font-size:20px;">299</b></del> &nbsp <b style="font-size:20px;">200 &nbsp
+                    35%off</b></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z7.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Asian Greens Veggies Bowl <br /><b><del style="color:red;font-size:20px;">249</b></del>
+                &nbsp <b style="font-size:20px;">220 &nbsp 25%off</b></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z8.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Mexican Burrito Bowl <br /><b><del style="color:red;font-size:20px;">199</b></del>
+                &nbsp <b style="font-size:20px;">150 &nbsp 25%off</b></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z9.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Classic Doner Chicken Bowl <br /><b><del
+                        style="color:red;font-size:20px;">139</b></del> &nbsp <b style="font-size:20px;">100 &nbsp
+                    20%off</b></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z10.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">BBQ Chicken Doner Bowl <br /><b><del style="color:red;font-size:20px;">259</b></del>
+                &nbsp <b style="font-size:20px;">240 &nbsp 40%off</b></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z14.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Crispy Honey Chilli Potato Rice <br /><b><del
+                        style="color:red;font-size:20px;">299</b></del> &nbsp <b style="font-size:20px;">250 &nbsp
+                    30%off</b></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z12.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Crunchy Churmur Paneer Bowl <br /><b><del
+                        style="color:red;font-size:20px;">299</b></del> &nbsp <b style="font-size:20px;">240 &nbsp
+                    20%off</b></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z13.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Firecracker Paneer Tikka Bowl <br /><b><del
+                        style="color:red;font-size:20px;">299</b></del> &nbsp <b style="font-size:20px;">260 &nbsp
+                    10%off</b></p>
+        </div>
+    </div>
+   
+    
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+        border:border-box;
+    }
+    .main{
+        height: 100vh;
+        width:100%;
+        background-image:url('https://www.mealpro.net/wp-content/uploads/2022/11/Chicken-Fajita-Plated.jpg');
+        background-size:100% 100%;
+        background-attachment: fixed;
+    }
+    .copy{
+        height:100vh;
+        width:100%;
+        background-color:rgba(0, 0, 0, .5);
+        float:left;
+    }
+    h1{
+        text-align: center;
+       margin:170px auto;
+       font-size:80px;
+       color:white;
+       font-style:oblique;
+    }
+    .footer{
+        height:50vh;
+        width:100%;
+        background-color:gray;
+        margin-top:15px;
+       justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+
+    }
+    .footer1{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+    @media screen and (max-width:1200px) {
+            .footer1{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer1{
+                width:90%;
+
+            }
+        }
+    .footer2{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin-top:20px;
+    }
+    @media screen and (max-width:1200px) {
+            .footer2{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer2{
+                width:90%;
+
+            }
+        }
+        .footer2:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+.footer2:hover .overlay {
+  opacity: 5;
+}
+        body{
+            background-color:gray;
+        }
+        .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .footer1:hover .overlay {
+  opacity: 5;
+}
+.footer1:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+m{
+    color:lawngreen;
+}
+n{
+ color:red;
+}
+.j99 span{
+        animation:amin 1s linear forwards;
+        opacity:0;
+        display:inline-block;
+       
+    }
+    @keyframes amin{
+        0%{
+            opacity: 0;
+            transform: rotatey(-90deg);
+            filter:blur(10px);
+        }
+        100%{
+            opacity: 1;
+            transform: rotatey(0deg);
+            filter:blur(0);
+        }
+    }
+    .j99 span:nth-child(1){
+        animation-delay: 0.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+       
+        
+    }
+    .j99 span:nth-child(2){
+        animation-delay: 1s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(3){
+        animation-delay: 1.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(4){
+        animation-delay: 2s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(5){
+        animation-delay: 2.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(6){
+        animation-delay: 3s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(7){
+        animation-delay: 3.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(8){
+        animation-delay: 4s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(9){
+        animation-delay: 4.5s;
+        color:red;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(10){
+        animation-delay: 5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(11){
+        animation-delay: 5.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(12){
+        animation-delay: 6s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(13){
+        animation-delay: 6.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(14){
+        animation-delay: 7s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(15){
+        animation-delay: 7.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(16){
+        animation-delay: 8s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(17){
+        animation-delay: 8.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(18){
+        animation-delay: 9s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(19){
+        animation-delay: 9.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(20){
+        animation-delay: 10s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(21){
+        animation-delay: 10.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(22){
+        animation-delay: 11s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(23){
+        animation-delay: 11.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+  </style>
+</head>
+<body>
+    <div class="main">
+        <div class="copy">
+            <h1 class="j99">
+                <span>I</span>
+                <span>N</span>
+                <span>D</span>
+                <span>I</span>
+                <span>A</span>
+                <span>N, </span>
+                <span>H</span>
+                <span>E</span>
+                <span>A</span>
+                <span>R</span>
+                <span>T, </span>
+                <span>H</span>
+                <span>E</span>
+                <span>A</span>
+                <span>L</span>
+                <span>T</span>
+                <span>H</span>
+                <span>Y, </span><BR>
+                <span>F</span>
+                <span>O</span>
+                <span>O</span>
+                <span>D</span>
+             
+            </h1>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1"><a href="task93.html"><img src="https://greenbowl2soul.com/wp-content/uploads/2020/01/moong-dal-khichdi.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Moong Dal Khichdi</b></div></a></div>
+        <div class="footer1"><a href="task94.html"><img src="https://www.funfoodfrolic.com/wp-content/uploads/2021/05/Dalia-Khichdi-Blog-Thumbnail.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Vegitable Daliya</b></div></a></div>
+        <div class="footer1"><a href="task95.html"><img src="https://www.indianveggiedelight.com/wp-content/uploads/2022/12/moong-dal-chilla-featured-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Moong Dal Palak Cheela</b></div></a></div>  
+        <div class="footer1"><a href="task96.html"><img src="https://pipingpotcurry.com/wp-content/uploads/2022/10/Tandoori-Mushroom-Tikka-Air-Fryer-indian-recipe-Piping-Pot-Curry.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tandoori Masala Mushroom</b></div></a></div>  
+      
+        <div class="footer2"><a href="task97.html"><img src="https://feastwithsafiya.com/wp-content/uploads/2021/08/Baked-fish-masala-recipe.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Grilled Masala Fish</b></div></a></div>
+        <div class="footer2"><a href="task98.html"><img src="https://www.cubesnjuliennes.com/wp-content/uploads/2022/12/Tandoori-Chicken-Recipe.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tandoori Chicken</b></div></a></div>
+        <div class="footer2"><a href="task99.html"><img src="https://www.fatrainbow.com/wp-content/uploads/2021/09/instant-pot-dal-palak.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Dal Palak</b></div></a></div>  
+        <div class="footer2"><a href="task100.html"><img src="https://www.indianveggiedelight.com/wp-content/uploads/2023/01/masala-chaas-featured.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Masala Chaas</b></div></a></div>  
+       
+        <div class="footer2"><a href="task101.html"><img src="https://cdn.loveandlemons.com/wp-content/uploads/2023/01/tomato-soup-recipe.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Soup's</b></div></a></div>
+        <div class="footer2"><a href="task102.html"><img src="https://www.chewoutloud.com/wp-content/uploads/2018/01/roasted-veggies-0.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Roasted Vegetable</b></div></a></div>
+        <div class="footer2"><a href="task103.html"><img src="https://www.cubesnjuliennes.com/wp-content/uploads/2021/03/Paneer-Bhurji.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Paneer Bhurji</b></div></a></div>  
+        <div class="footer2"><a href="task104.html"><img src="https://i.pinimg.com/736x/ab/41/e0/ab41e081be55056236f4ee3abefdc1e7.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Mix Vegetable Poha</b></div></a></div>  
+       
+        <div class="footer2"><a href="task105.html"><img src="https://www.puvi.co/uploaded_images/1664871235.png"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Makahna Kheer</b></div></a></div>
+        <div class="footer2"><a href="task106.html"><img src="https://www.idfreshfood.com/wp-content/uploads/2020/12/ewerewg.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Vegetable Uttapam</b></div></a></div>
+        <div class="footer2"><a href="task107.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2018/12/Missi-Roti-2-3.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Missi Roti</b></div></a></div>  
+        <div class="footer2"><a href="task108.html"><img src="https://www.ticklingpalates.com/wp-content/uploads/2020/12/lauki-chana-dal-recipe-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Lauki Chana Curry</b></div></a></div>  
+       
+        <div class="footer2"><a href="task109.html"><img src="https://www.wholesomeyum.com/wp-content/uploads/2023/01/wholesomeyum-Sauteed-Vegetables-6.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Saute Vegetable</b></div></a></div>
+        <div class="footer2"><a href="task110.html"><img src="https://vaya.in/wp-content/uploads/2021/03/Top-10-Delicious-Fruit-Juices-Perfect-for-Summer-Time.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Fresh Juice</b></div></a></div>
+        <div class="footer2"><a href="task111.html"><img src="https://www.carolinescooking.com/wp-content/uploads/2020/09/masala-omelette-photo.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Masala Omelette</b></div></a></div>  
+        <div class="footer2"><a href="task112.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/10/Jhal-Muri-2-3.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Jhal Mudi</b></div></a></div>  
+     
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .a{
+        height:550px;
+        width:100%;
+        /* background-color:gray; */
+        background-image:url('Punjab.png');
+        background-size:100% 100%;
+        margin-top:1%;
+    }
+    .b{
+        /* height:50px;
+        width:100%;
+        background-color:gray; */
+        text-align:center;
+        font-size:40px;
+        color:red;
+        padding-top:1%;
+        text-shadow:1px 3px 0px black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .c{
+        height:350px;
+        width:100%;
+        background-color:gray;
+        margin-top:1%;
+        text-align:center;
+        padding-top:5px;
+        font-size:35px;
+        font-style: oblique;
+        color:black;
+        text-shadow:2px 2px 0px red;
+    }
+    .d{
+        height:40px;
+        width:100%;
+        background-color:gray;
+        text-align:center;
+       font-style:oblique;
+        margin-top:1%;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px aqua;
+    }
+    .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            margin:8px;
+           overflow: hidden;
+            box-sizing:border-box;
+            animation-name:mona;
+            transition:all ease 0s;
+            /* animation-duration:2s;
+            animation-iteration-count: 1; */
+        }
+        .f:hover img{
+            transition:all ease 1s;
+            transform: scale(1.2);
+        }
+        /* @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        } */
+        .f:hover .overlay {
+  opacity: 5;
+}
+@media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+        body{
+            background-color:gray;
+        }
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:5%;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+    /* body{
+        background-color:gray;
+    } */
+  </style>
+</head>
+<body>
+    <div class="b"><b>PUNJABAI CUISINE</b></div>
+    <div class="a">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635788.8146235286!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705152100251!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="c"><b>ABOUT</b></div>
+    <div class="d"><b>ALL DISHES</b></div>
+    <div class="b20">
+        <div class="f"><a href="task309.html"><img src="https://images.immediate.co.uk/production/volatile/sites/30/2021/02/butter-chicken-ac2ff98.jpg?quality=90&resize=440,400"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Butter Chicken</b></div></a></div>
+        <div class="f"><a href="task310.html"><img src="https://c.ndtvimg.com/gws/349/assets/1.jpeg?1590728502"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chole Bhature</b></div></a></div>
+        <div class="f"><a href="task311.html"><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/11/gajar-halwa-carrot-halwa.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gajar Halwa</b></div></a></div>
+        <div class="f"><a href="task312.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/Kesar_Pista_Lassi_Recipe-3.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Lassi</b></div></a></div>
+        
+        <div class="f"><a href="task313.html"><img src="https://www.ticklingpalates.com/wp-content/uploads/2012/09/rajma-masala-recipe-500x500.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Rajma Kari</b></div></a></div>
+        <div class="f"><a href="task314.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/10/Punjabi-Chole-Masala-2-3.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Panjabi Chola Masala</b></div></a></div>
+        <div class="f"><a href="task315.html"><img src="https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-Blog.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Dal Makhani</b></div></a></div>
+        <div class="f"><a href="task316.html"><img src="https://shreejifoods.in/cdn/shop/products/aampapad1.jpg?v=1652171776"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Aam Papad</b></div></a></div>
+       
+        <div class="f"><a href="task317.html"><img src="https://www.kuchpakrahahai.in/wp-content/uploads/2016/05/Baingan-Bharta-Recipe.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Baigan Ka Bharta</b></div></a></div>
+        <div class="f"><a href="task318.html"><img src="https://www.cubesnjuliennes.com/wp-content/uploads/2022/12/Tandoori-Chicken-1.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Tandoori Murga</b></div></a></div>
+        <div class="f"><a href="task319.html"><img src="https://i0.wp.com/lovelaughmirch.com/wp-content/uploads/2024/01/sarson-ka-saag-2.jpeg?ssl=1"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Sarso Ka Saag</b></div></a></div>
+        <div class="f"><a href="task320.html"><img src="https://shwetainthekitchen.com/wp-content/uploads/2021/01/Makki-ki-roti.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Makke Ki Roti</b></div></a></div>
+       
+        <div class="f"><a href="task321.html"><img src="https://www.cookoverheels.com/wp-content/uploads/2020/03/30-min-Dhaba-Style-Kadhai-Paneer.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Kadhai Paneer</b></div></a></div>
+        <div class="f"><a href="task322.html"><img src="https://www.cookwithmanali.com/wp-content/uploads/2019/08/Palak-Paneer-500x500.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Palak Paneer</b></div></a></div>
+        <div class="f"><a href="task323.html"><img src="https://www.yummyoyummy.com/wp-content/uploads/2020/06/img_2580.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Amritsari Machi</b></div></a></div>
+        <div class="f"><a href="task324.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/nithya.anantham/Palak_And_Moong_Dal_Pakodas_Recipe__400.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Pakode</b></div></a></div>
+       
+        <div class="f"><a href="task325.html"><img src="https://static.toiimg.com/thumb/75543228.cms?width=573&height=430"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Bheja Fry</b></div></a></div>
+        <div class="f"><a href="task326.html"><img src="https://www.scrumptiously.com/wp-content/uploads/2023/01/KeemaMatar.webp"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Keema Matar</b></div></a></div>
+        <div class="f"><a href="task327.html"><img src="https://www.licious.in/blog/wp-content/uploads/2022/04/Rara-Ghosht_24339-min-1-1024x1024.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Rara Gosht</b></div></a></div>
+        <div class="f"><a href="task328.html"><img src="https://images.ckbk.com/eyJrZXkiOiJpbWFnZXMvZGlzaDkwNjYwYzA5czAwMXIwMDVnMDEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZSwid2lkdGgiOjc0NywiaGVpZ2h0Ijo3NDcsImZpdCI6ImNvdmVyIiwicG9zaXRpb24iOiJlbnRyb3B5In19fQ=="width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Malai Kulfi</b></div></a></div>
+    </div>
+</body>
+</html>

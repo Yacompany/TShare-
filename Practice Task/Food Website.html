@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <style>
+        * {
+            margin: 0px;
+            border: border-box;
+            padding: 0px;
+        }
+
+        .a {
+            height: 550px;
+            width: 100%;
+            background-image: url('x9.jpg');
+            background-size: 100% 100%;
+            animation-name: ram;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+            /* background:fixed; */
+        }
+
+        @keyframes ram {
+
+            0% {
+                background-image: url('data:image/jpeg;base64,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');
+            }
+
+            10% {
+                background-image: url('https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/w_1120,h_732,c_fill,g_auto/v1661347444/india-food-butter-chicken/india-food-butter-chicken-1120x732.jpg');
+            }
+
+            20% {
+                background-image: url('https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg');
+            }
+
+            40% {
+                background-image: url('https://www.healthifyme.com/blog/wp-content/uploads/2023/01/shutterstock_1478169152-1.jpg');
+            }
+
+            60% {
+                background-image: url('https://www.holidify.com/images/cmsuploads/compressed/shutterstock_649541308_20191010160155.png');
+            }
+
+            80% {
+                background-image: url('https://amritsr.com/wp-content/uploads/2020/08/Specialty-of-Indian-Cuisine.jpg');
+            }
+
+            100% {
+                background-image: url('https://uploads-ssl.webflow.com/61a0875915332c1fd8109f03/6305fd03621423bfc157c203_south-indian-diet-for-diabetes.jpg');
+            }
+        }
+
+        .b {
+            height: 550px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .c {
+            height: 52px;
+            width: 100%;
+            background-color:black;
+        }
+        /* .x45{
+            height: 55px;
+            width: 100%;
+            background-color:black;
+        } */
+        .e {
+            height: 50px;
+            width: 150px;
+            /* background-color:red; */
+            float: right;
+            /* margin-left: 1px; */
+            color: white;
+            text-align: center;
+        }
+        /* .e48{
+            height: 50px;
+            width: 90px;
+            background-color:red;
+            float: right;
+            margin-left: 1px;
+            color: white;
+            text-align: center;
+        } */
+        .e88{
+            height: 50px;
+            width: 120px;
+            /* background-color:red; */
+            float: right;
+            margin-left: 8%;
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 14px;
+        }
+
+        .d {
+            color: white;
+            text-decoration: none;
+            transition:all ease 0s;
+        }
+
+        .d:hover {
+            transition: all ease 0s;
+            text-decoration:2px underline aqua;
+           
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            /* background-color:aqua; */
+            /* border:1px solid black; */
+            /* background-image: url('z29.jpg');
+            
+            background-size:100% 100%; */
+            /* float:left; */
+            /* margin-top:10px;
+            margin-left:1%;
+            */margin:8px;
+            /* background-image: url('z20.jpg');
+            background-size: 100% 100%; */
+            box-sizing:border-box;
+            animation-name:mona;
+            /* position: relative; */
+            animation-duration:2s;
+            animation-iteration-count: 1;
+        }
+        @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        }
+        .f:hover .overlay {
+  opacity: 5;
+}
+        .f1{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            /* background-color:aqua; */
+            /* border:1px solid black; */
+            /* background-image: url('z29.jpg');
+            
+            background-size:100% 100%; */
+            /* float:left; */
+            /* margin-top:10px;
+            margin-left:1%;
+            */margin:8px;
+            /* background-image: url('z21.jpg');
+            background-size: 100% 100%; */
+            box-sizing:border-box;
+            animation-name:sita;
+            /* position: relative; */
+            animation-duration:3s;
+            animation-iteration-count: 1;
+        }
+        @keyframes sita{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.7);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        }
+        .f1:hover .overlay {
+  opacity: 5;
+}
+        .f2{
+            height:300px;
+            width:23%;
+               border-radius: 10px;
+            /* background-color:aqua; */
+            position:relative;
+            /* border:1px solid black; */
+            /* background-image: url('z29.jpg');
+            
+            background-size:100% 100%; */
+            /* float:left; */
+            /* margin-top:10px;
+            margin-left:1%;
+            */margin:8px;
+            /* background-image: url('z22.jpg');
+            background-size: 100% 100%; */
+            box-sizing:border-box;
+            animation-name:ram1;
+            /* position: relative; */
+            animation-duration:4s;
+            animation-iteration-count: 1;
+        }
+        @keyframes ram1{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.6);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        }
+        .f2:hover .overlay {
+  opacity: 5;
+}
+        .f3{
+            height:300px;
+            width:23%;
+               border-radius: 10px;
+               position:relative;
+            /* background-color:aqua; */
+            /* border:1px solid black; */
+            /* background-image: url('z29.jpg');
+            
+            background-size:100% 100%; */
+            /* float:left; */
+            /* margin-top:10px;
+            margin-left:1%;
+            */margin:8px;
+            /* background-image: url('z23.jpg');
+            background-size: 100% 100%; */
+            box-sizing:border-box;
+            animation-name:ram2;
+            /* position: relative; */
+            animation-duration:5s;
+            animation-iteration-count: 1;
+        }
+        @keyframes ram2{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.5);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        }
+     
+        .f3:hover .overlay {
+  opacity: 5;
+}
+       
+       
+    .f4{
+            height:300px;
+            width:23%;
+               border-radius: 10px;
+               position:relative;
+            /* background-color:aqua; */
+            /* border:1px solid black; */
+            /* background-image: url('z29.jpg');
+            
+            background-size:100% 100%; */
+            /* float:left; */
+            /* margin-top:10px;
+            margin-left:1%;
+            */margin:8px;
+            /* background-image: url('z23.jpg');
+            background-size: 100% 100%; */
+            box-sizing:border-box;
+            animation-name:ram3;
+            /* position: relative; */
+            animation-duration:6s;
+            animation-iteration-count: 1;
+        }
+        @keyframes ram3{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.4);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        }
+     
+        .f4:hover .overlay {
+  opacity: 5;
+}
+
+       
+        .f5{
+            height:300px;
+            width:23%;
+               border-radius: 10px;
+               position:relative;
+            /* background-color:aqua; */
+            /* border:1px solid black; */
+            /* background-image: url('z29.jpg');
+            
+            background-size:100% 100%; */
+            /* float:left; */
+            /* margin-top:10px;
+            margin-left:1%;
+            */margin:8px;
+            /* background-image: url('z23.jpg');
+            background-size: 100% 100%; */
+            box-sizing:border-box;
+            animation-name:ram4;
+            /* position: relative; */
+            animation-duration:7s;
+            animation-iteration-count: 1;
+        }
+        @keyframes ram4{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.3);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        }
+     
+        .f5:hover .overlay {
+  opacity: 5;
+}
+
+
+        .f6{
+            height:300px;
+            width:23%;
+               border-radius: 10px;
+               position:relative;
+            /* background-color:aqua; */
+            /* border:1px solid black; */
+            /* background-image: url('z29.jpg');
+            
+            background-size:100% 100%; */
+            /* float:left; */
+            /* margin-top:10px;
+            margin-left:1%;
+            */margin:8px;
+            /* background-image: url('z23.jpg');
+            background-size: 100% 100%; */
+            box-sizing:border-box;
+            animation-name:ram5;
+            /* position: relative; */
+            animation-duration:8s;
+            animation-iteration-count: 1;
+        }
+        @keyframes ram5{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.2);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        }
+     
+        .f6:hover .overlay {
+  opacity: 5;
+}
+
+
+
+        .f7{
+            height:300px;
+            width:23%;
+               border-radius: 10px;
+               position:relative;
+            /* background-color:aqua; */
+            /* border:1px solid black; */
+            /* background-image: url('z29.jpg');
+            
+            background-size:100% 100%; */
+            /* float:left; */
+            /* margin-top:10px;
+            margin-left:1%;
+            */margin:8px;
+            /* background-image: url('z23.jpg');
+            background-size: 100% 100%; */
+            box-sizing:border-box;
+            animation-name:ram6;
+            /* position: relative; */
+            animation-duration:9s;
+            animation-iteration-count: 1;
+        }
+        @keyframes ram6{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.1);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        }
+     
+        .f7:hover .overlay {
+  opacity: 5;
+}
+
+
+       
+        @media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+
+
+
+       
+        @media screen and (max-width:1200px) {
+            .f1{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f1{
+                width:90%;
+
+            }
+        }
+
+        
+
+
+        @media screen and (max-width:1200px) {
+            .f2{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f2{
+                width:90%;
+                border-radius: 10px;
+
+            }
+        }
+
+       
+
+
+        @media screen and (max-width:1200px) {
+            .f3{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f3{
+                width:90%;
+
+            }
+        }
+
+
+
+        @media screen and (max-width:1200px) {
+            .f4{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f4{
+                width:90%;
+
+            }
+        }
+
+
+
+        @media screen and (max-width:1200px) {
+            .f5{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f5{
+                width:90%;
+
+            }
+        }
+
+        
+
+        @media screen and (max-width:1200px) {
+            .f6{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f6{
+                width:90%;
+
+            }
+        }
+
+
+
+
+        @media screen and (max-width:1200px) {
+            .f7{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f7{
+                width:90%;
+
+            }
+        }
+
+
+
+
+        .g {
+            padding-left: 35%;
+            padding-top: 10%;
+            font-size: 35px;
+            line-height:30px;
+            animation-name: shubham;
+            animation-duration: 5s;
+            position: relative;
+            animation-delay: -2s;
+            animation-iteration-count: 1;
+            text-shadow: 3px 3px 0px red;
+            color: white;
+
+        }
+
+        @keyframes shubham {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 0px;
+                top: 0px;
+            }
+
+            50% {
+                left: -600px;
+                top: 0px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+.h99{
+    /* padding-left: 35%; */
+            /* padding-top:15%; */
+            padding-left: 38%;
+            font-size: 20px;
+            line-height:20px;
+            color: greenyellow;
+            text-shadow: 1px 1px 0px yellow;
+            animation-name: ramu;
+            animation-duration: 6.5s;
+            position: relative;
+            animation-delay: -1s;
+            animation-iteration-count: 1;
+}
+        .h {
+            padding-left: 44%;
+            /* padding-top:15%; */
+            font-size: 25px;
+            line-height:30px;
+            color: aqua;
+            text-shadow: 2px 2px 0px white;
+            animation-name: ramu;
+            animation-duration: 6.5s;
+            position: relative;
+            animation-delay: -1s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes ramu {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: -600px;
+                top: 0px;
+            }
+
+            50% {
+                left: 0px;
+                top: 0px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /* .i {
+            text-align: inherit;
+            line-height: 20px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+        }
+
+        .i:hover {
+            transition: all ease 1s;
+        } */
+
+        .j {
+            padding-left: 37%;
+            /* padding-top:15%; */
+            color: white;
+            line-height: 20px;
+            text-align: justify;
+            animation-name: shiva;
+            animation-duration: 7.5s;
+            position: relative;
+            animation-delay: -1s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes shiva {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: -600px;
+                top: 0px;
+            }
+
+            50% {
+                left: 0px;
+                top: 0px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .l {
+            height: 270px;
+            width: 100%;
+            margin-top: 15px;
+            /* background-color: red; */
+        }
+
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:15px;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+
+        .u {
+            font-size: 17px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .v {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z21.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .w {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow:102px102px51pxe; */
+            background-image: url('z27.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .x {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('m6.png');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .y {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow:102px102px51pxe; */
+            background-image: url('z16.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .z {
+            height: 230px;
+            width: 180px;
+            background-color: white;
+            margin-left: 19px;
+            margin-top: 10px;
+            border-radius: 10px;
+            float: left;
+            /* box-shadow: 10px 10px 5px ; */
+        }
+
+        .a1 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z31.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a2 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z18.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a3 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z17.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a4 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z19.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a5 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z32.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a6 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z25.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a7 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z22.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a8 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z33.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a9 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z23.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a10 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z35.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a11 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z26.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .a12 {
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z34.jpg');
+            background-size: 100% 100%;
+            float: left;
+            transition:all ease 0s;
+        }
+    
+        .m56 {
+            color: white;
+            text-decoration: none;
+            margin-top: 9px;
+            font-size:16px;
+            border:none;
+            transition:all ease 0s;
+
+        }
+
+        .m56:hover {
+            transition: all ease 0s;
+            /* border:none; */
+            text-decoration:2px  underline aqua;
+        }
+        .b67 {
+            transition: all ease 0s;
+            color:white;
+        }
+
+        .b67:hover {
+            transition: all ease 0s;
+            color: aqua;
+        }
+        .x90{
+            height:180px;
+            width:100%;
+            /* background-color:red; */
+            margin-top:13%; 
+        }
+        .a20{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z2.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a21{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z3.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a22{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z4.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a23{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z5.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a24{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z6.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a25{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z7.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a26{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z8.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a27{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z9.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }.a28{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z14.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a29{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z10.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a30{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z12.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .a31{
+            height: 250px;
+            width: 280px;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 19px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 5px ; */
+            background-image: url('z13.jpg');
+            background-size: 100% 100%;
+            float: left;
+        }
+        .l89{
+            text-align: center;
+            font-size:60px;
+            text-shadow: 3px 3px 5px red;
+            color: greenyellow;
+            animation-name: shubham;
+            line-height: 50px;
+            animation-duration: 5s;
+            position: relative;
+            animation-delay: -2s;
+            animation-iteration-count: 1;
+        }
+        @keyframes shubham {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 0px;
+                top: 0px;
+            }
+
+            50% {
+                left: -1150px;
+                top: 0px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+        .l90{
+            text-align: center;
+            font-size:60px;
+            text-shadow: 3px 3px 5px red;
+            color: greenyellow;
+            animation-name: ramu;
+            animation-duration: 6.5s;
+            position: relative;
+            line-height: 60px;
+            animation-delay: -1s;
+            animation-iteration-count: 1;
+        }
+        @keyframes ramu {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: -1150px;
+                top: 0px;
+            }
+
+            50% {
+                left: 0px;
+                top: 0px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+        .j70{
+            color:red;
+            float:left;
+        }
+        .v92{
+            font-size:24px;
+            color:yellow;
+            margin-top:5px;
+            margin-left:3px;
+            
+        }
+        .v93{
+            font-size:30px;
+            color:yellow;
+            margin-left:40%;
+            margin-top:25%;
+            animation-name: shiva;
+            animation-duration: 7.5s;
+            position: relative;
+            animation-delay: -1s;
+            animation-iteration-count: 1;
+            transition:all ease 0s;
+        }
+        .v93:hover{
+            transition:all ease 0s;
+            color:red;
+        }
+        .v94{
+            font-size:31px;
+            color:yellow;
+            margin-left:1%;
+            margin-top:10px;
+            animation-name: shiva;
+            animation-duration: 7.5s;
+            position: relative;
+            animation-delay: -1s;
+            animation-iteration-count: 1;
+            transition:all ease 0s;
+        }
+        .v94:hover{
+            transition:all ease 0s;
+            color:blue;
+        }
+        .v95{
+            font-size:31px;
+            color:yellow;
+            margin-left:1%;
+            margin-top:10px;   
+            animation-name: shiva;
+            animation-duration: 7.5s;
+            position: relative;
+            animation-delay: -1s;
+            animation-iteration-count: 1;
+            transition:all ease 0s;
+        }
+        .v95:hover{
+            transition:all ease 0s;
+            color:green;
+        }
+        @keyframes shiva {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: -800px;
+                top: 0px;
+            }
+
+            50% {
+                left: 0px;
+                top: 0px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+        .j67{
+            color:white;
+            float:left;
+        }
+        .j68{
+            color:yellowgreen;
+            float:left;
+        }
+        .j69{
+            color:aqua;
+            float:left;
+
+        }
+        /* .d20{
+            height:500px;
+            width:100%;
+            margin-top:25px;
+            background-color:red;
+        } */
+        /* .j90{
+            margin-left:1%;
+        } */
+        .j51{
+            color:white;
+            text-decoration: none;
+            padding-top:7px;
+        }
+        .j51:hover{
+            transition: all ease 0s;
+            /* border:none; */
+            text-decoration:2px  underline aqua;
+        }
+       .j62{
+        height:40px;
+        width:150px;
+        background-color:black;
+        color:white;
+        border:none;
+       }
+       .u45{
+        margin-left:5px;
+       }
+       .u46{
+        margin-left: 0px;
+       }
+     .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:white;
+ text-shadow:1px 2px 2px black;
+  font-size: 18px;
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+   
+   
+     /* .image {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+.container{
+    height:100px;
+    width:100%;
+  
+    margin-top:13%;
+    text-align: center;
+    text-shadow: 3px 3px 0px red;
+            color: white;
+            animation-name: shubham;
+            animation-duration: 5s;
+            position: relative;
+            animation-delay: -2s;
+            animation-iteration-count: 1;
+
+}
+@keyframes shubham {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 0px;
+                top: 0px;
+            }
+
+            50% {
+                left: 0px;
+                top: -500px;
+            }
+
+            75% {
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+.heading{
+    font-size:50px;
+    color:white;
+}
+.r67{
+    color:aqua;
+    text-shadow:3px 3px 0px black;
+}
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+
+                <nav class="navbar navbar-expand-sm bg-black navbar-dark">
+                    <div class="container-fluid">
+                      
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+<!-- 
+                        <ul class="navbar-nav j90">
+                          <li class="nav-item">
+                            <a class="nav-link j51" href="#">CONSULTANCY</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link j51" href="#">PAPULAR RECIPE</a>
+                          </li> -->
+
+
+
+                          <div class="dropdown u45">
+                            <button class="btn btn-secondary dropdown-toggle"style="background-color:black;border:none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <m class="j51">CONSULTENCY</m>
+                            </button>
+                            <ul class="dropdown-menu"style="background-color:black;">
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Nutrition Consultance</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Menu Plaining</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Cost Analysis</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Menu Engineering</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Sop Create</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Creative Food idea</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Low Budget Startup</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Food Persentation</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Online Food Classes</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Who To Control Food Wastage</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Recipes Priciny Analysts</a></li>
+                            </ul>
+                          </div>
+
+
+                          <div class="dropdown u45">
+                            <button class="btn btn-secondary dropdown-toggle"style="background-color:black;border:none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <m class="j51">PAPULAR RECIPE</m>
+                            </button>
+                            <ul class="dropdown-menu"style="background-color:black;">
+                              <li><a class="dropdown-item b67" href="#"style="background-color:black;">Chicken Makhani (Butter Chicken)</a></li>
+                              <li><a class="dropdown-item b67" href="#"style="background-color:black;">Samosas (Deep-Fried Potato/Veggie Dumpling)</a></li>
+                              <li><a class="dropdown-item b67" href="#"style="background-color:black;">Aloo Gobi (Potato and Cauliflower)</a></li>
+                              <li><a class="dropdown-item b67" href="#"style="background-color:black;">Naan (Flatbread)</a></li>
+                              <li><a class="dropdown-item b67" href="#"style="background-color:black;">Matar Paneer (Peas and Cooked Cottage Cheese)</a></li>
+                              <li><a class="dropdown-item b67" href="#"style="background-color:black;">Rogan Josh (Curried Meat)</a></li>
+                              <li><a class="dropdown-item b67" href="#"style="background-color:black;">Masala Chai</a></li>
+                              <li><a class="dropdown-item b67" href="#"style="background-color:black;">Lassi.</a></li>
+                            </ul>
+                          </div>
+
+
+                          <!-- <li class="nav-item">
+                            <a class="nav-link j51" href="#">PRODUCT LIST</a>
+                          </li> -->
+<!-- 
+                          <a class="form-control j62" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <m id="m56" onmouseover="this.stop();"onmouseout="this.start();"><m>PRODUCT LIST</m></m>
+                        </a>
+                        <ul class="dropdown-menu"id="option"style="background-color:black;margin-left:23%;">
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Rustic Food                 </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Nutrition Consultancy       </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Immunity Boasting Recipes   </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Heart Healthy Recipes       </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Weight Loss Food Recipes    </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Gluten Free Dite Food Recipe</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Lactic Free Desserts        </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Eatable Raw Foods           </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Healthy Meals               </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Kids Lunch Box Ideas        </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Quick & Easy Meal           </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Healthy Salads              </b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>World's Soups               </b></a></li>
+                        </ul> -->
+
+
+
+                          <!-- <li class="nav-item">
+                            <a class="nav-link j51" href="#">SERVICES</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link j51" href="#">CONTACT US</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link j51" href="#">HOME</a>
+                          </li>
+                        </ul> -->
+
+                        <div class="dropdown u45">
+                            <button class="btn btn-secondary dropdown-toggle"style="background-color:black;border:none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <m class="j51">PRODUCT LIST</m>
+                            </button>
+                            <ul class="dropdown-menu"style="background-color:black;">
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Rustic Food</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Nutrition Consultancy</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Immunity Boasting Recipes</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Heart Healthy Recipes</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Weight Loss Food Recipes</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Gluten Free Dite Food Recipe</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Lactic Free Desserts</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Eatable Raw Foods</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Healthy Meals</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Kids Lunch Box Ideas</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Quick & Easy Meal</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Healthy Salads</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">World's Soups</a></li>
+                            </ul>
+                          </div>
+
+
+                        <div class="dropdown u45">
+                            <button class="btn btn-secondary dropdown-toggle"style="background-color:black;border:none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <m class="j51">SERVICES</m>
+                            </button>
+                            <ul class="dropdown-menu"style="background-color:black;">
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Food presentation</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Food safety</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Spices and herbs</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Planning and budgeting</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Food packaging</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Clearing plates</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Food service style</a></li>
+                            </ul>
+                          </div>
+
+
+                        <div class="dropdown u45">
+                            <button class="btn btn-secondary dropdown-toggle"style="background-color:black;border:none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <m class="j51">CONTACT US</m>
+                            </button>
+                            <ul class="dropdown-menu"style="background-color:black;">
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Email</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Phone No</a></li>
+                                <li><a class="dropdown-item b67" href="https://www.youtube.com/"style="background-color:black;">Youtube</a></li>
+                                <li><a class="dropdown-item b67" href="https://www.instagram.com/"style="background-color:black;">Instagram</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Linked</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Whatsapp</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Facebook</a></li>
+                            </ul>
+                          </div>
+
+
+                        <div class="dropdown u45">
+                            <button class="btn btn-secondary"style="background-color:black;border:none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <m class="j51">HOME</m>
+                            </button>
+                            <!-- <ul class="dropdown-menu"style="background-color:black;">
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Action</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Another action</a></li>
+                                <li><a class="dropdown-item b67" href="#"style="background-color:black;">Something else here</a></li>
+                            </ul> -->
+                          </div>
+                       
+
+                      <!-- </div><a href="Food Website.html"><b class="j70"style="font-size:24px;margin-right:3px;">D<m class="j67"style="font-size:24px;margin-right:3px;">S</m><m class="j68"style="font-size:24px;margin-right:3px;">C</m><m class="j69"style="font-size:24px;margin-right:3px;">F</m></b></a>  <a href="Food Website.html"><i class="fa-solid fa-utensils v92"></i></a> -->
+                    </div>
+                  </nav>
+
+
+                <!-- <div class="x45"> -->
+              
+                    <!-- <b class="j70">&D<m class="j67">S</m><m class="j68">C</m><m class="j69">F</m></b>  <i class="fa-solid fa-utensils v92"></i> 
+                    <div class="e88">
+                    <p><a href="#" class="d">HOME</a></p>
+                </div>
+                <div class="e">
+                    <p><a href="#" class="d">CONTACT US</a></p>
+                </div>
+
+                <div class="e">
+                    <p><a href="#" class="d">SERVICES</a></p>
+                </div> -->
+
+
+                <!--boot-->
+
+
+                <!-- <div class="e">
+                    <a class=" btn dropdown m56" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <m id="m56" onmouseover="this.stop();"onmouseout="this.start();">PRODUCT LIST</m>
+                    </a>
+                    <ul class="dropdown-menu"id="option"style="background-color:black;margin-left:53%;">
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Rustic Food</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Nutrition Consultancy</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Immunity Boasting Recipes</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Heart Healthy Recipes</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Weight Loss Food Recipes</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Gluten Free Dite Food Recipe</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Lactic Free Desserts</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Eatable Raw Foods</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Healthy Meals</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Kids Lunch Box Ideas</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Quick & Easy Meal</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Healthy Salads</b></a></li>
+                        <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>World's Soups</b></a></li>
+                    </ul>
+                </div> -->
+
+
+                <!--booot close-->
+<!--               
+                <div class="e">
+                    <p><a href="demo2.html" class="d">PAPULAR RECIPE</a></p>
+                </div>
+            
+               -->
+
+                <!-- <div class="e"> -->
+
+
+                    <!-- <p><b><a href="#" class="d">HOME</a></b></p> -->
+
+
+                    <!-- <div class="e">
+                          <p><a href="#" class="d">CONSULTANCY</a></p> </div> -->
+
+
+                        <!-- <a class=" btn dropdown m56" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <m id="m56" onmouseover="this.stop();"onmouseout="this.start();">RAUSTIC FOOD</m>
+                        </a>
+                        <ul class="dropdown-menu"id="task" style="background-color:black;">
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Rustic Food</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Nutrition Consultancy</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Immunity Boasting Recipes</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Heart Healthy Recipes</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Weight Loss Food Recipes</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Gluten Free Dite Food Recipe</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Lactic Free Desserts</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Eatable Raw Foods</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Healthy Meals</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Kids Lunch Box Ideas</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Quick & Easy Meal</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>Healthy Salads</b></a></li>
+                            <li><a class="dropdown-item b67" href="#"style="background-color:black;"><b>World's Soups</b></a></li>
+                        </ul> -->
+                        
+                        <!-- </div> -->
+
+
+
+
+
+
+
+                   
+<!--             
+                </div>
+            </div> -->
+
+<!-- 
+        </div>
+    </div>
+  </nav> -->
+
+
+            <!-- <div class="m99"><H1>RAUSTIC HEALTHY FOOD VIDESHI FAUSIONS</H1><BR/><H2>Jahan Har Swaad Ek Kahani Kehta Hai</H2></div> -->
+           <!-- <div class="container"><h1 class="heading">RAUSTIC HEALTHY FOOOD VIDESHI FUSION </h1><h2 class="r67"style="line-height:30px;">Jahan Har Swaad Ek Kahaani Kehta Hai!</h2></div> -->
+             <!-- <h1 class="h">VIDESHI FUSION</h1>
+            <h1 class="h99">Jahan Har Swaad Ek Kahaani Kehta Hai!</h1> -->
+            <!-- <p class="j">
+                Tasty food can be important for good health.<br />
+                Eating tasty food can relax you, which is<br />
+                important for good digestion. Tasty <br />
+                food can also release dopamine, which<br />
+                is a neurotransmitter that<br />
+                makes you feel good.
+            </p> -->
+
+            <!-- <a href="#"><i class="fa-brands fa-facebook  v93"></i></a>  <a href="#"><i class="fa-brands fa-google-plus v94"></i></a>  <a href="#"><i class="fa-brands fa-square-twitter v95"></i></a> -->
+        <!-- <div class="x90">
+<p class="l89"><u><b><i>RAUSTIC HEALTHY FOOOD</i></b></p><p class="l90"><b><i>VIDESHI FUSION</i></b></p></u>
+            </div>  -->
+
+        </div>
+    </div>
+    <div class="b20">
+        <div class="f"><a href="demo10.html"><img src="https://d3gy1em549lxx2.cloudfront.net/c2d49173-b032-4c14-aef6-94906cc5e572.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Shaking Chicken</b></div></a></div>
+        <div class="f"><a href="demo12.html"><img src="https://d3gy1em549lxx2.cloudfront.net/c06ff04d-9912-46ad-b1d2-3911ea25cc4b.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Rangoli Paneer Rice Thali</b></div></a></div>
+        <div class="f"><a href="demo13.html"><img src="https://d3gy1em549lxx2.cloudfront.net/23091fc7-594f-4db4-b7e2-e575fe1fff53.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>BBQ-Honey Chilli Chicken</b></div></a></div>
+        <div class="f"><a href="demo14.html"><img src="https://d3gy1em549lxx2.cloudfront.net/22724b0e-83cb-4a60-8fb8-93672b979117.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Ginger Honey Stir-Fry Chicken</b></div></a></div>
+        <div class="f1"><a href="demo15.html"><img src="https://d3gy1em549lxx2.cloudfront.net/9f6f30f2-8b9c-49f4-8f5b-0347cd310aed.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Drunken Chicken Rice Bowl</b></div></a></div>
+        <div class="f1"><a href="demo16.html"><img src="https://d3gy1em549lxx2.cloudfront.net/b018a908-818d-4caf-9076-ba8127084095.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mexican Burrito Bowl</b></div></a></div>
+        <div class="f1"><a href="demo17.html"><img src="https://d3gy1em549lxx2.cloudfront.net/163820df-60ed-473e-b89a-3fe0ae38e728.JPG"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Signature Roast Chicken Rice Bowl</b></div></a></div>
+        <div class="f1"><a href="demo18.html"><img src="https://d3gy1em549lxx2.cloudfront.net/b5909622-ff8a-419c-bc3c-596c8581ceb2.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gomashio Crispy Chicken Rice Bowl</b></div></a></div>
+        <div class="f2"><a href="demo19.html"><img src="https://d3gy1em549lxx2.cloudfront.net/384638b6-cb8a-480b-a6d3-f3f0904c6947.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Schezwan Chicken Rice Bowl</b></div></a></div>
+        <div class="f2"><a href="demo20.html"><img src="https://d3gy1em549lxx2.cloudfront.net/63b913e8-9d2a-49b8-be96-1b074f35cded.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Soboro Don</b></div></a></div>
+        <div class="f2"><a href="demo21.html"><img src="https://d3gy1em549lxx2.cloudfront.net/2e0be241-f956-4742-9ffa-62612c8a8cd4.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Spicy Paneer Mexican Bowl</b></div></a></div>
+        <div class="f2"><a href="demo22.html"><img src="https://d3gy1em549lxx2.cloudfront.net/45d005eb-6bcd-425a-8853-7b99ab32e87a.JPG"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Spiced Chicken and Arrabiata Mac</b></div></a></div>
+        <div class="f3"><a href="demo23.html"><img src="https://d3gy1em549lxx2.cloudfront.net/e71d5d3d-d9cc-46e0-b0ad-84bc99e677c8.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Paneer Butter Masala Bowl</b></div></a></div>
+        <div class="f3"><a href="demo24.html"><img src="https://d3gy1em549lxx2.cloudfront.net/de46c389-9c73-4da6-8458-7bafdfb63802.JPG"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Papalote-Mexican Grill</b></div></a></div>
+        <div class="f3"><a href="demo25.html"><img src="https://d3gy1em549lxx2.cloudfront.net/c4947618-fc8b-459d-886a-7f05de3ae49e.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>K-Pop Chicken Rice Bowl</b></div></a></div>
+        <div class="f3"><a href="demo26.html"><img src="https://d3gy1em549lxx2.cloudfront.net/0f0fe05c-61af-434b-b190-c779d699e7cf.JPG"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Lean Schez Paneer Smart Meal</b></div></a></div>
+        <div class="f4"><a href="demo27.html"><img src="https://d3gy1em549lxx2.cloudfront.net/51ad5d2e-ff7d-4b9f-849a-67c62e4e1fe0.JPG"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Penne Arrabbiata</b></div></a></div>
+        <div class="f4"><a href="demo28.html"><img src="https://d3gy1em549lxx2.cloudfront.net/c6a31376-5eaf-41fb-8f1f-fc2c8c8d5712.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Cilantro Chilli Chicken Bowl</b></div></a></div>
+        <div class="f4"><a href="demo29.html"><img src="https://d3gy1em549lxx2.cloudfront.net/9935ed54-d04e-45ed-8d9a-1f79418022c2.JPG"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Peri Peri Chicken Superbowl</b></div></a></div>
+        <div class="f4"><a href="demo30.html"><img src="https://d3gy1em549lxx2.cloudfront.net/66e2eca9-5f57-4a6b-82c3-9dc076992699.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Lemon Bbq Paneer Bowl</b></div></a></div>
+        <div class="f5"><a href="demo31.html"><img src="https://d3gy1em549lxx2.cloudfront.net/7e3c72ac-221a-4403-b1d5-7ed6a042785b.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Pasta Al Pesto Popcorn Chicken</b></div></a></div>
+        <div class="f5"><a href="demo32.html"><img src="https://d3gy1em549lxx2.cloudfront.net/4be5f60b-f39c-4238-8ab6-52f95769bc86.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Crispy Honey Chilli Potato Rice Bowl</b></div></a></div>
+        <div class="f5"><a href="demo33.html"><img src="https://d3gy1em549lxx2.cloudfront.net/6d1b2594-1ce7-401b-9730-15ed5c2eb08c.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Firecracker Paneer Tikka Bowl</b></div></a></div>
+        <div class="f5"><a href="demo34.html"><img src="https://d3gy1em549lxx2.cloudfront.net/08b8f324-6567-46d2-97b0-340116fb706c.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Champaran Chicken Bowl</b></div></a></div>
+        <div class="f6"><a href="demo35.html"><img src="https://d3gy1em549lxx2.cloudfront.net/c5c8c471-3dcc-49ca-a1f8-761d8c254ece.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>BBQ Chicken Doner Bowl</b></div></a></div>
+        <div class="f6"><a href="demo36.html"><img src="https://d3gy1em549lxx2.cloudfront.net/8f2ad5ca-52bc-488b-a3dc-8e0596d60893.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Turkish Chicken Doner Bowl</b></div></a></div>
+        <div class="f6"><a href="demo37.html"><img src="https://d3gy1em549lxx2.cloudfront.net/18fca9a9-16ee-4529-bb48-9063276620f8.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Classic Doner Chicken Bowl</b></div></a></div>
+        <div class="f6"><a href="demo38.html"><img src="https://d3gy1em549lxx2.cloudfront.net/e8ed675b-509a-46bb-8eb8-52aeec42cdcd.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Asian Greens Veggies Bowl</b></div></a></div>
+        <div class="f7"><a href="#"><img src="https://d3gy1em549lxx2.cloudfront.net/b5294dc0-4406-49e4-9ad2-3a1996b602f0.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Crunchy Churmur Paneer Bowl</b></div></a></div>
+        <div class="f7"><a href="#"><img src="https://d3gy1em549lxx2.cloudfront.net/71e79f17-a07a-4f2a-ae0c-caacc6ff137e.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Lemon Teriyaki Chicken Popcorn Rice Bowl</b></div></a></div>
+        <div class="f7"><a href="#"><img src="https://d3gy1em549lxx2.cloudfront.net/faebcf85-5583-41bc-9ef5-43915596881d.JPG"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Chilli BBQ Chicken Rice Bowl</b></div></a></div>
+        <div class="f7"><a href="#"><img src="https://d3gy1em549lxx2.cloudfront.net/27fa2b8a-f169-40e2-a665-571fc409aad7.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Harissa Doner Bowl</b></div></a></div> 
+
+      
+    </div>
+  
+    <!-- <div class="l">
+        <a href="#">
+            <div class="v"></div>
+        </a>
+        <a href="#">
+            <div class="w"></div>
+        </a>
+        <a href="#">
+            <div class="x"></div>
+        </a>
+        <a href="#">
+            <div class="y"></div>
+        </a>
+    </div>
+    </div>
+    </div>
+    <div class="m">
+        <a href="#">
+            <div class="a1"></div>
+        </a>
+        <a href="#">
+            <div class="a2"></div>
+        </a>
+        <a href="#">
+            <div class="a3"></div>
+        </a>
+        <a href="#">
+            <div class="a4"></div>
+        </a>
+    </div>
+    <div class="m">
+        <a href="#">
+            <div class="a5"></div>
+        </a>
+        <a href="#">
+            <div class="a6"></div>
+        </a>
+        <a href="#">
+            <div class="a7"></div>
+        </a>
+        <a href="#">
+            <div class="a8"></div>
+        </a>
+    </div>
+    <div class="m">
+        <a href="#">
+            <div class="a9"></div>
+        </a>
+        <a href="#">
+            <div class="a10"></div>
+        </a>
+        <a href="#">
+            <div class="a11"></div>
+        </a>
+        <a href="#">
+            <div class="a12"></div>
+        </a>
+    </div>
+  
+    <div class="m">
+        <a href="#">
+            <div class="a20"></div>
+        </a>
+        <a href="#">
+            <div class="a21"></div>
+        </a>
+        <a href="#">
+            <div class="a22"></div>
+        </a>
+        <a href="#">
+            <div class="a23"></div>
+        </a>
+    </div>
+
+    <div class="m">
+        <a href="#">
+            <div class="a24"></div>
+        </a>
+        <a href="#">
+            <div class="a25"></div>
+        </a>
+        <a href="#">
+            <div class="a26"></div>
+        </a>
+        <a href="#">
+            <div class="a27"></div>
+        </a>
+    </div>
+
+    <div class="m">
+        <a href="#">
+            <div class="a28"></div>
+        </a>
+        <a href="#">
+            <div class="a29"></div>
+        </a>
+        <a href="#">
+            <div class="a30"></div>
+        </a>
+        <a href="#">
+            <div class="a31"></div>
+        </a>
+    </div> -->
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"> <img src="z2.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Tuk Tuk Basil Chicken Rice Bowl <br /><b><del
+                        style="color:red;font-size:20px;">499</b></del> &nbsp <b style="font-size:20px;">400 &nbsp
+                    50%off</b></p>
+        </div>
+    </div> -->
+
+<!-- 
+    <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z3.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Thai Chilli Peanut Fried Rice <br /><b><del
+                        style="color:red;font-size:20px;">399</b></del> &nbsp <b style="font-size:20px;">350 &nbsp
+                    30%off</b></p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z4.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Creamy Harissa Chicken Spaghetti <br /><b><del
+                        style="color:red;font-size:20px;">249</b></del> &nbsp <b style="font-size:20px;">200 &nbsp
+                    45%off</b></p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z5.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Kampung Chilli Chicken Fried Rice <br /><b><del
+                        style="color:red;font-size:20px;">329</b></del> &nbsp <b style="font-size:20px;">300 &nbsp
+                    55%off</b></p>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z6.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Cilantro Chilli Chicken Bowl <br /><b><del
+                        style="color:red;font-size:20px;">299</b></del> &nbsp <b style="font-size:20px;">200 &nbsp
+                    35%off</b></p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z7.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Asian Greens Veggies Bowl <br /><b><del style="color:red;font-size:20px;">249</b></del>
+                &nbsp <b style="font-size:20px;">220 &nbsp 25%off</b></p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z8.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Mexican Burrito Bowl <br /><b><del style="color:red;font-size:20px;">199</b></del>
+                &nbsp <b style="font-size:20px;">150 &nbsp 25%off</b></p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z9.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Classic Doner Chicken Bowl <br /><b><del
+                        style="color:red;font-size:20px;">139</b></del> &nbsp <b style="font-size:20px;">100 &nbsp
+                    20%off</b></p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z10.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">BBQ Chicken Doner Bowl <br /><b><del style="color:red;font-size:20px;">259</b></del>
+                &nbsp <b style="font-size:20px;">240 &nbsp 40%off</b></p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z14.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Crispy Honey Chilli Potato Rice <br /><b><del
+                        style="color:red;font-size:20px;">299</b></del> &nbsp <b style="font-size:20px;">250 &nbsp
+                    30%off</b></p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z12.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Crunchy Churmur Paneer Bowl <br /><b><del
+                        style="color:red;font-size:20px;">299</b></del> &nbsp <b style="font-size:20px;">240 &nbsp
+                    20%off</b></p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;margin-left:12px;margin-top:15px;float:left;">
+        <a href="#"><img src="z13.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+            <p class="card-text">Firecracker Paneer Tikka Bowl <br /><b><del
+                        style="color:red;font-size:20px;">299</b></del> &nbsp <b style="font-size:20px;">260 &nbsp
+                    10%off</b></p>
+        </div>
+    </div> -->
+   <!-- <script>
+    function stop(){
+        var a=document.getElementById("option");
+        a.style.display="block";
+    }
+    function start(){
+var b=document.getElementById("option");
+b.style.display="none";
+    }
+    function demo2(){
+        var a=document.getElementById("task");
+        a.style.display="block";
+    }
+    function demo3(){
+var b=document.getElementById("task");
+b.style.display="none";
+    }
+   </script> -->
+<!-- <div class="d20"></div> -->
+</body>
+
+</html>

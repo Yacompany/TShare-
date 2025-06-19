@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samrit Food</title>
+    <link rel="icon" href="i13.jpg">
+   <style>
+    *{
+        margin:0px;
+        padding:0px;
+        border:border-box;
+    }
+    .container{
+        height:500px;
+        width:100%; 
+        /* background-color: red; */
+    }
+    .a{
+height:450px;
+width:50%;
+/* background-color:red; */
+margin-left:2%;
+background-image:url('https://d3gy1em549lxx2.cloudfront.net/9f6f30f2-8b9c-49f4-8f5b-0347cd310aed.jpg');
+background-size:100% 100%;
+float:left;
+    }
+    .a1{
+height:500px;
+width:48%;
+/* background-color:red; */
+/* margin:auto;
+margin-top:1%; */
+background-color:white;
+background-size:100% 100%;
+float:left;
+    }
+   .b{
+    height:320px;
+            width:100%;
+            margin-top:15px;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+   }
+   .c{
+    margin-left:5%;
+    margin-top:2%;
+    color:red;
+    text-shadow:1px 1px 0px black;
+   }
+   .e{
+    line-height:25px;
+    text-align: justify;
+    padding-left:5%;
+    padding-right:10%;
+    padding-top:4%;
+   }
+   .f{
+    margin-top:2%;
+    margin-left:5%;
+    font-size:25px;
+    color:red;
+   }
+   .g{
+    color:black;
+    margin-left:2%;
+   }
+   .h{
+    color:blue;
+    margin-left:2%;
+    font-size:19px;
+    margin-top:0px;
+   }
+   .i{
+    height:300px;
+    width:23%;
+    margin:8px;
+    position:relative;
+    /* background-color:red; */
+    box-sizing:border-box;
+    border-radius:10px;
+    text-align: center;
+  
+   }
+   /* .j{
+    height:300px;
+    width:23%;
+    margin:8px;
+    position: relative;
+    background-color:red;
+    box-sizing:border-box;
+   
+   }
+   .k{
+    height:300px;
+    width:23%;
+    margin:8px;
+    position: relative;
+    background-color:red;
+    box-sizing:border-box;
+
+   }
+   .l{
+    height:300px;
+    width:23%;
+    margin:8px;
+    position: relative;
+    background-color:red;
+    box-sizing:border-box;
+  
+   } */
+   @media screen and (max-width:1200px){
+    .i{
+        width:40%
+    }
+   } 
+
+   @media screen and (max-width:600px){
+    .i{
+        width:90%
+    }
+   }
+/*    
+   @media screen and(max-width:1200px){
+    .j{
+        width:40%;
+    }
+   }
+   @media screen and(max-width:600px){
+    .j{
+        width:90%;
+    }
+   }
+
+   @media screen and(max-width:1200px){
+    .k{
+        width:40%;
+    }
+   }
+   @media screen and(max-width:600px){
+    .k{
+        width:90%;
+    }
+   } 
+
+   @media screen and(max-width:1200px){
+    .l{
+        width:40%;
+    }
+   }
+   @media screen and(max-width:600px){
+    .l{
+        width:90%;
+    }
+   } */
+   .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+ background-color:white; /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:white;
+ /* text-shadow:1px 2px 2px black; */
+  font-size: 18px;
+ 
+ padding-bottom:3px;
+ /* padding:10px; */
+ /* padding-top:10px; */
+ 
+     }
+     .i:hover .overlay {
+  opacity: 5;
+}
+.s{
+    margin-left:10px;
+    font-size:25px;
+    color:blue;
+}
+.t{
+    font-size:25px;
+    color:red;
+}
+   </style>
+</head>
+<body>
+    <div class="container">
+    <a href="#"><div class="a"></div></a>
+    <div class="a1">
+        <h1 class="c">Chicken Rice</h1>
+        <h3 class="f"><b><del>₹210</del><m class="g">₹150</m><m class="h">20%off</m></b></h3>
+        <p class="e">Chicken and rice can be a healthy meal choice for weight loss and muscle building. 
+            Chicken is a good source of lean protein, which is important for muscle repair, growth, and immune function. 
+            Rice provides complex carbohydrates, which can help fuel workouts and refuel after. 
+           
+
+
+             </p>
+    
+    </div>
+    </div>
+    <div class="b">
+<div class="i"><a href="#"><img src="https://modernmealmakeover.com/wp-content/uploads/2020/10/IMG_6548-4.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b class="t"><del>₹150</del><m class="s">₹120</m></b></div></a></div>
+<div class="i"><a href="#"><img src="https://i0.wp.com/www.justthefuckingrecipe.net/wp-content/uploads/2020/08/Instant-Pot-Teriyaki-Chicken-Rice-Bowl.jpg?fit=1931%2C2071&ssl=1"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b class="t"><del>₹149</del><m class="s">₹100</m></b></div></a></div>
+<div class="i"><a href="#"><img src="https://kwokspots.com/wp-content/uploads/2022/10/chicken-teriyaki-high.png"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b class="t"><del>₹199</del><m class="s">₹140</m></b></div></a></div>
+<div class="i"><a href="#"><img src="https://theheirloompantry.co/wp-content/uploads/2022/09/teriyaki-chicken-bowl-donburi-the-heirloom-pantry-03.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b class="t"><del>₹180</del><m class="s">₹160</m></b></div></a></div>
+    </div>
+
+</body>
+</html>

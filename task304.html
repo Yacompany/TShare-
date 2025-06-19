@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <style>
+    .a{
+        height: 220px;
+        width:100%;
+        background-color:gray;
+        margin-top:10px;
+    }
+    h1{
+        text-align: center;
+        font-size:47px;
+        font-style: oblique;
+        color:lawngreen;
+        font-weight:bold;
+        text-shadow: 2px 3px 0px red;
+    }
+    .b{
+        height: 450px;
+        width: 45%;
+        background-color:gray;
+       background-image: url('https://miro.medium.com/v2/resize:fit:1200/1*H1IN6THLfn9agWb0HnT8kA.jpeg');
+       background-size: 100% 100%;
+        margin: 30px auto;
+        border-radius:5px;
+    }
+    @media screen and (max-width:1200px) {
+            .b{
+                width:100%;
+                
+            }
+        }
+       body{
+        background-color:gray;
+       }
+       .c{
+        height: 150px;
+        width:100%;
+        margin-top:4%;
+        
+       }
+       .b1{
+        height: 250px;
+        width: 100%;
+       }
+       p{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-style:oblique;
+        color:white;
+       }
+       .size{
+        text-align: justify;
+        font-size: 19px;
+        padding-left: 2%;
+        padding-top: 10px;
+        font-style:oblique;
+        color:white;
+       }
+     
+       .d1{
+        height: 600px;
+        width:50%;
+        /* overflow-x:hidden; */
+        margin-top:1%;
+        float: left;
+        /* background-color: rgb(25, 24, 24); */
+       }
+       .d2{
+        height: 800px;
+        width:100%;
+        float: left;
+       margin-top:1%;
+       overflow-x:hidden;
+        /* background-color: rgb(45, 44, 44); */
+       }
+
+       
+       .d3{
+        height: 350px;
+        width:100%;
+        float: left;
+        overflow-x:auto;
+        margin-top:1%;
+        background-color:gray;
+       }
+     
+       /* .d4{
+        height: 350px;
+        width:100%;
+        border-radius:5px;
+        overflow-x:auto;
+        margin-top:3%;
+        background-color: rgb(28, 28, 28);
+       } */
+       .footer{
+        min-height:100vh;
+        width:100%;
+        background-color:gray;
+        margin-top:5%;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        /* background-color: red; */
+
+    }
+    .footer1{
+        height:40vh;
+        width:16%;
+        margin-left:4px;
+        border-radius:10px;
+        box-shadow:-2px -2px 1px gray,-4px -4px 2px aqua;
+        margin-top:1%;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+    @media screen and (max-width:1200px) {
+            .footer1{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer1{
+                width:90%;
+
+            }
+        }
+    .footer2{
+        height:40vh;
+        width:16%;
+        margin-left:4px;
+        margin-top:1%;
+        border-radius:10px;
+        box-shadow:-2px -2px 1px gray,-4px -4px 2px aqua;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        /* margin-top:20px; */
+    }
+    @media screen and (max-width:1200px) {
+            .footer2{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer2{
+                width:90%;
+
+            }
+        }
+        .footer2:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+.footer2:hover .overlay {
+  opacity: 5;
+}
+        body{
+            background-color:gray;
+        }
+        .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  /* opacity:0; */
+  color:black;
+ text-shadow:1px 0px 0px red;
+  font-size: 16px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .footer1:hover .overlay {
+  opacity: 5;
+}
+.footer1:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+     
+       @media screen and (max-width:1200px) {
+            .d1{
+                width:100%;
+                
+            }
+        }
+      
+        h2{
+            text-align: center;
+            color:lawngreen;
+            font-size: 38px;
+            padding-top: 10px;
+            font-style: oblique;
+            text-shadow:1px 2px 0px red;
+        }
+        h3{
+            text-align: center;
+            color:aqua;
+            font-weight: bold;
+            font-size: 25px;
+            padding-top: 10px;
+            text-shadow: 1px 2px 0px red;
+            font-style:oblique;
+            
+        }
+        .e{
+            height: 150px;
+            width: 100%;
+            background-color:gray;
+            margin-top:1%;
+            float: left;
+        }
+        .g{
+            text-align:center;
+        font-size: 20px;
+        /* padding-left:20%;
+        padding-right: 1%; */
+        color:white;
+        padding-top: 20px;
+        overflow:hidden;
+        text-shadow:1px 1px 0px  black;
+      
+        }
+   </style>
+</head>
+<body>
+    <div class="a"><h1>JALEBI RABRI</h1></div>
+    <div class="b"></div>
+    <div class="b1">
+        <p>Crispy, sticky, sweet, irresistible–that is the one and only Jalebi! If you’ve always wanted to try making your own at home this is your sign to do it! My mom’s recipe for the best Jalebi needs no fermentation, is ready in under an hour, and stays perfectly crunchy for days.</p>
+    </div>
+    <div class="c"><h1>INGREDIENT'S</h1>
+    <!-- <p class="size">
+        1. 1 cup wheat flour.<br>
+        2. 1/2 cup pigeon peas.<br>
+        3. 1 large onion chopped.<br>
+        4. 8-10 cloves of garlic chopped.<br>
+        5. 2 tomatoes chopped.<br>
+        6. 3 green chillies chopped.<br>
+        7. 1 bay leaf.<br>
+        8. 1 pinch asafoetida.<br>
+        9. 1 teaspoon turmeric powder.<br>
+       10. 1 teaspoon cumin powder.<br>
+       11. 1 teaspoon garam masala.<br>
+       12. 1 teaspoon vegetable masala.<br>
+       13. salt as per taste.<br>
+       14. A little coriander.<br>
+       15. oil as required.
+    </p> -->
+    </div>
+   
+ 
+            <div class="d1"><h2>Items No</h2>
+                <p class="g">
+                    1. all-purpose flour maida (120 grams).<br>
+                    2. gram flour.<br>
+                    3. plain yogurt.<br>
+                    4. ghee.<br> 
+                    5. warm water.<br>
+                    6. baking soda.<br>
+                    7. Oil or ghee for frying.<br>
+                    8. sugar.<br>
+                    9. water.<br>
+                   10. ground cardamom.<br>
+                   11. saffron crushed.<br>
+                   12. lemon juice.<br>
+                 
+                 
+                  
+                   
+                   
+                  
+                </p>
+            </div>
+        <div class="d1"><h2>Item Quantity</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. 1 cup.<br>
+                    2. 2 tablespoons.<br>
+                    3. 4 tablespoons.<br>
+                    4. 1 tablespoon.<br> 
+                    5. ½ cup.<br>
+                    6. ¼ teaspoon.<br>
+                    7. 1 cup.<br>
+                    8. ½ cup .<br>
+                    9. 1 teaspoon.<br>
+                   10. 1 pinch.<br>
+                   11. 1 teaspoon.<br>
+                  
+                   
+               
+                    
+                   
+                   
+                </p>
+            <!-- </marquee> -->
+        </div>
+    
+        <h1>Equipment Name Used In Dish</h1>
+        <div class="footer">
+
+            <div class="footer1"><a href="#"><img src="https://m.media-amazon.com/images/I/71dd-ebOROL.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Sieve Staine</b></div></a></div>
+            <div class="footer1"><a href="#"><img src="https://m.media-amazon.com/images/I/615fBPvMhdL._AC_UF894,1000_QL80_.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Jalebi Clothes</b></div></a></div>
+            <!-- <div class="footer1"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0564/2223/6320/products/1037721-BESS-LID-28CM-RED.png?v=1630982849"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Lid</b></div></a></div>   -->
+            <div class="footer1"><a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2022/7/LV/ZJ/EN/112274100/iron-jalebi-karahi.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Jalebi Kadhai</b></div></a></div>  
+          
+            <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/41sFaS9GRaL.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Parat</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://www.tredyfoods.com/cdn/shop/products/Basting-Extra-Deep-Ladle-Size-6.jpg?v=1637366664"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Ladle</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://grydle-sync.com/wp-content/uploads/2021/05/Utility-Tongs.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tong</b></div></a></div>  
+            <div class="footer2"><a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2024/2/389770730/JC/NM/PW/4275540/stainless-steel-amlet-palta.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Medium Size Palta</b></div></a></div>  
+           
+            <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/41p5o8YRGLS.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Big Handi</b></div></a></div>
+            <!-- <div class="footer2"><a href="#"><img src="https://5.imimg.com/data5/YI/LZ/NS/SELLER-28408967/stainless-steel-palta.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Palta</b></div></a></div> -->
+            <div class="footer2"><a href="#"><img src="https://bhalaria.in/cdn/shop/files/SMOOTH-DESIGN-DINNER-SPOON-_6-Pcs-Set_-1000-X1000_1000x.jpg?v=1696566463"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Spoon</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/64a55c505184fbf5974b0f91/1.png"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Water Jug</b></div></a></div>
+            <div class="footer2"><a href="#"><img src="https://cdn.moglix.com/p/Em2bmwYhQUPMZ-xxlarge.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kadhai</b></div></a></div>
+            <!-- <div class="footer2"><a href="#"><img src="https://m.media-amazon.com/images/I/212oPPmkj0L.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Brothel (Chakla)</b></div></a></div> -->
+            <div class="footer2"><a href="#"><img src="https://5.imimg.com/data5/IC/NJ/MY-6830673/pure-copper-bottle.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Perforated Spoon</b></div></a></div>
+            <!-- <div class="footer2"><a href="#"><img src="https://grydle-sync.com/wp-content/uploads/2021/05/Utility-Tongs.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tong</b></div></a></div> -->
+       
+
+
+        <div class="d2"><h2>Method Of Cocking</h2>
+       <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+        <p class="g">
+            1. Add all-purpose flour, gram flour, baking soda to a bowl and mix well.<br>
+            2. Add ghee, yogurt, and water and mix well until the batter is smooth and completely lump-free. You can also use a whisk for this. The batter will have cake-like consistency and when you lift the spoon it should fall in a thick ribbon pattern.<br>
+            3. Keep the batter aside for 20 minutes. <br>
+            4. Make the syrup, add sugar, water, cardamom powder, and saffron strands to a 4-QT saucepan and cook until it comes to a boil stirring frequently.<br>
+            5. Turn the heat to low and simmer for 7 to 8 minutes or until the syrup has a one-string consistency. Turn the heat off and stir in lemon juice.  <br>
+            6. Heat oil in a frying pan over medium heat.<br>
+            7. After 20 minutes you will see small bubbles on the batter. Pour the batter into a condiment bottle. Make sure the hole is out 2 to 3 mm wide for the dough to flow out. Once the oil is hot start making the jalebi by squeezing the bottle and making spirals starting from the inside and going outside.<br>
+            8. Fry for 1 to 2 minutes on low heat, then carefully flip the jalebis. Cook for another 2 minutes on low heat as they get lightly golden brown.<br>
+            9. Carefully lift the jalebis in a slotted spatula that will help drain out excess oil and add them to the warm sugar syrup. Keep the Jalebis in the syrup just for a few seconds.<br>
+           10. Turn the Jalebis over so both sides are coated with syrup and take them out using a pair of tongs leaving the excess syrup in the pot.<br>
+        
+
+
+            
+            
+        </p>
+    <!-- </marquee> -->
+        </div>
+        <div class="d3"><h2>Nutrition Value</h2>
+            <!-- <marquee direction="up"onmouseout="start(this)"onmouseover="stop(this)"> -->
+                <p class="g">
+                    1. Protein ---- <br>
+                    2. Carbohydrate ---- <br>
+                    3. Calcium ---- <br>
+                    4. Energy ---- <br>
+                    5. Iron ---- <br>
+                    6. Mineral ---- <br>
+                    7. Fta ---- 
+                    
+                </p>
+            <!-- </marquee> -->
+        </div>
+        <div class="e"><h3>NOTE</h3></div>
+    
+   
+</body>
+</html>
+
+

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+        border:border-box;
+    }
+    .main{
+        height: 100vh;
+        width:100%;
+        background-image:url('https://www.thedailymeal.com/img/gallery/which-indian-dish-do-you-most-want-to-try-exclusive-survey/intro-1674072240.jpg');
+        background-size:100% 100%;
+        background-attachment: fixed;
+    }
+    .copy{
+        height:100vh;
+        width:100%;
+        background-color:rgba(0, 0, 0, .7);
+        float:left;
+    }
+    h1{
+        text-align: center;
+       margin:220px auto;
+       font-size:80px;
+       color:white;
+       font-style:oblique;
+    }
+    .footer{
+        height:50vh;
+        width:100%;
+        background-color:gray;
+        margin-top:15px;
+       justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+
+    }
+    .footer1{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+    @media screen and (max-width:1200px) {
+            .footer1{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer1{
+                width:90%;
+
+            }
+        }
+    .footer2{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin-top:20px;
+    }
+    @media screen and (max-width:1200px) {
+            .footer2{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer2{
+                width:90%;
+
+            }
+        }
+        .footer2:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+.footer2:hover .overlay {
+  opacity: 5;
+}
+        body{
+            background-color:gray;
+        }
+        .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .footer1:hover .overlay {
+  opacity: 5;
+}
+.footer1:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+m{
+    color:lawngreen;
+}
+n{
+ color:red;
+}
+.j99 span{
+        animation:amin 1s linear forwards;
+        opacity:0;
+        display:inline-block;
+       
+    }
+    @keyframes amin{
+        0%{
+            opacity: 0;
+            transform: rotatey(-90deg);
+            filter:blur(10px);
+        }
+        100%{
+            opacity: 1;
+            transform: rotatey(0deg);
+            filter:blur(0);
+        }
+    }
+    .j99 span:nth-child(1){
+        animation-delay: 0.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+       
+        
+    }
+    .j99 span:nth-child(2){
+        animation-delay: 1s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(3){
+        animation-delay: 1.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(4){
+        animation-delay: 2s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(5){
+        animation-delay: 2.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(6){
+        animation-delay: 3s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(7){
+        animation-delay: 3.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(8){
+        animation-delay: 4s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(9){
+        animation-delay: 4.5s;
+        color:red;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(10){
+        animation-delay: 5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(11){
+        animation-delay: 5.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(12){
+        animation-delay: 6s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(13){
+        animation-delay: 6.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(14){
+        animation-delay: 7s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+  </style>
+</head>
+<body>
+    <div class="main">
+        <div class="copy">
+            <h1 class="j99">
+                <span>G</span>
+                <span>L</span>
+                <span>U</span>
+                <span>T</span>
+                <span>E</span>
+                <span>N</span>
+                <span>D</span>
+                <span>I</span>
+                <span>T</span>
+                <span>E</span>
+                <span>F</span>
+                <span>O</span>
+                <span>O</span>
+                <span>D</span>
+             
+            </h1>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1"><a href="#"><img src="https://www.indianveggiedelight.com/wp-content/uploads/2021/08/bombay-potatoes-featured-360x360.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Turmeric</b></div></a></div>
+        <div class="footer1"><a href="#"><img src="https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2023/06/top-North-Indian-resturants-in-Bangalore.jpg?fit=1000%2C667&ssl=1"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>BBC</b></div></a></div>
+        <div class="footer1"><a href="#"><img src="https://res.cloudinary.com/purnesh/image/upload/w_540,f_auto,q_auto:eco,c_limit/21657535517034.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Weelicious</b></div></a></div>  
+        <div class="footer1"><a href="#"><img src="https://assets.delawaretoday.com/2023/08/indian-food.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Sweet Orange</b></div></a></div>  
+      
+        <div class="footer2"><a href="#"><img src="https://images.squarespace-cdn.com/content/v1/612d4825ee7c3b7ba3e215b7/1667458982443-N6XGU1PU7335QEMVUP7M/Delicious+food.png"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>San Antonio</b></div></a></div>
+        <div class="footer2"><a href="#"><img src="https://legalnomads.smugmug.com/India/Jaipur-and-Ghost-Capital/i-brHCQgh/0/620x465/PB099096-620x465.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tripadvisor</b></div></a></div>
+        <div class="footer2"><a href="#"><img src="https://static.toiimg.com/photo/91623605.cms"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Anipasto</b></div></a></div>  
+        <div class="footer2"><a href="#"><img src="https://qph.cf2.quoracdn.net/main-qimg-8c47b686ea577e2d6dfe36eadaca2e53-lq"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Honey Cake</b></div></a></div>  
+       
+        <div class="footer2"><a href="#"><img src="https://www.healthifyme.com/blog/wp-content/uploads/2018/07/Indian-foods-feature-1024x683.jpeg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>San Antonio</b></div></a></div>
+        <div class="footer2"><a href="#"><img src="https://images.ctfassets.net/eexbcii1ci83/6OtN4KptCymRLwU8FZahSb/c20dbf0a1ec9fc40441c3c3c3fc7857f/Indian_non-veg_diet_plan_for_weight_loss.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tripadvisor</b></div></a></div>
+        <div class="footer2"><a href="#"><img src="https://images.ctfassets.net/eexbcii1ci83/5r6PHf2iTfxOAjH9VkY6ml/baa3f881ffe29085e5303f17cb7ba3af/Indian_non-veg_Diet_plan.png"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Anipasto</b></div></a></div>  
+        <div class="footer2"><a href="#"><img src="https://images1.livehindustan.com/uploadimage/library/2022/03/29/16_9/16_9_6/non_veg_diet_plan_1648556647.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Honey Cake</b></div></a></div>  
+       
+        <div class="footer2"><a href="#"><img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/05/40-iStock-653770008.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>San Antonio</b></div></a></div>
+        <div class="footer2"><a href="#"><img src="https://images.immediate.co.uk/production/volatile/sites/30/2023/02/High-protein-foods-268221e.jpg?quality=90&resize=556,505"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tripadvisor</b></div></a></div>
+        <div class="footer2"><a href="#"><img src="https://www.healthifyme.com/blog/wp-content/uploads/2021/11/shutterstock_1520270954-1.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Anipasto</b></div></a></div>  
+        <div class="footer2"><a href="#"><img src="https://static.toiimg.com/thumb/msid-67851393,width-400,resizemode-4/67851393.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Honey Cake</b></div></a></div>  
+       
+        <div class="footer2"><a href="#"><img src="https://www.healthifyme.com/blog/wp-content/uploads/2023/05/shutterstock_519485686-1.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>San Antonio</b></div></a></div>
+        <div class="footer2"><a href="#"><img src="https://hips.hearstapps.com/hmg-prod/images/close-up-of-healthy-salad-with-quinoa-green-peas-royalty-free-image-1638813663.jpg?crop=0.668xw:1.00xh;0.197xw,0&resize=2048:*"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tripadvisor</b></div></a></div>
+        <div class="footer2"><a href="#"><img src="https://keto-diet.today/wp-content/uploads/2022/02/good-carb-foods.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Anipasto</b></div></a></div>  
+        <div class="footer2"><a href="#"><img src="https://www.eatright.org/-/media/images/eatright-articles/eatright-article-thumbnails/whatistheketogenicdiet_600x450.jpg?h=450&w=600&rev=a611c614832d4b5fbc2bc87944f1353d&hash=5322C897F390BB4713E3E123EE5AF812"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Honey Cake</b></div></a></div>  
+     
+    </div>
+</body>
+</html>

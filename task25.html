@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .a{
+        height:600px;
+        width:100%;
+        /* background-color:gray; */
+        background-image:url('Rajasthan.png');
+        background-size:100% 100%;
+        margin-top:1%;
+    }
+    .b{
+        /* height:50px;
+        width:100%;
+        background-color:gray; */
+        text-align:center;
+        font-size:40px;
+        color:red;
+        padding-top:1%;
+        text-shadow:1px 3px 0px black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .c{
+        height:350px;
+        width:100%;
+        background-color:gray;
+        margin-top:1%;
+        text-align:center;
+        padding-top:5px;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px red;
+    }
+    .d{
+        height:40px;
+        width:100%;
+        background-color:gray;
+        text-align:center;
+       
+        margin-top:1%;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px aqua;
+    }
+    .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            margin:8px;
+           overflow: hidden;
+            box-sizing:border-box;
+            animation-name:mona;
+            transition:all ease 0s;
+            /* animation-duration:2s;
+            animation-iteration-count: 1; */
+        }
+        .f:hover img{
+            transition:all ease 1s;
+            transform: scale(1.2);
+        }
+        /* @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        } */
+        .f:hover .overlay {
+  opacity: 5;
+}
+@media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+        body{
+            background-color:gray;
+        }
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:5%;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+    /* body{
+        background-color:gray;
+    } */
+  </style>
+</head>
+<body>
+    <div class="b"><b>RAJASTHANI CUISINE</b></div>
+    <div class="a">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635788.8146235286!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705152100251!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="c"><b>ABOUT</b></div>
+    <div class="d"><b>ALL DISHES</b></div>
+    <div class="b20">
+        <div class="f"><a href="task329.html"><img src="https://www.sharmispassions.com/wp-content/uploads/2015/07/19729847952_b5cc81291a_o.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Dal Bati Churma</b></div></a></div>
+        <div class="f"><a href="task330.html"><img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/radhika-chhabra2018080619595011.jpeg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gulab Jamun Ki Sabzi</b></div></a></div>
+        <div class="f"><a href="task331.html"><img src="https://swatisani.net/kitchen/wp-content/uploads/2015/11/IMG_9546.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Laal Mass</b></div></a></div>
+        <div class="f"><a href="task332.html"><img src="https://media-cdn2.greatbritishchefs.com/media/eo2pcfil/img48215.whqc_768x512q80.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Khad Khargosh</b></div></a></div>
+        
+        <div class="f"><a href="task333.html"><img src="https://img-cdn.thepublive.com/fit-in/1200x675/sanjeev-kapoor/media/post_banners/294fc7b3942e9a0c95fea5d14dbc16710622d09126af6827b7719f7fa84b5068.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Pithori</b></div></a></div>
+        <div class="f"><a href="task334.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/14/d3/62/48/laal-maas-this-spicy.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mohan Mass</b></div></a></div>
+        <div class="f"><a href="task335.html"><img src="https://images.slurrp.com/prod/recipe_images/transcribe/nan/Rabodi-Ki-Sabzi.webp"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Rabodi Ki Sabzi</b></div></a></div>
+        <div class="f"><a href="task336.html"><img src="https://touresham.com/wp-content/uploads/2024/02/junglee-maas.jpeg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Janglee Maans</b></div></a></div>
+       
+        <div class="f"><a href="task337.html"><img src="https://vegecravings.com/wp-content/uploads/2017/06/Gatte-Ki-Sabzi-Recipe-Step-By-Step-Instructions.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Besan Ke Gatte</b></div></a></div>
+        <div class="f"><a href="task338.html"><img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/kamal-thakkar20180321214408754.jpeg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Aloo Mangodi Ki Sabzi</b></div></a></div>
+        <div class="f"><a href="task339.html"><img src="https://pbs.twimg.com/media/EctvvDuWoAEcINV.jpg:large"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Safead Maans</b></div></a></div>
+        <div class="f"><a href="task340.html"><img src="https://www.funfoodfrolic.com/wp-content/uploads/2022/08/Rajasthani-Kadhi-Blog.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Rajasthani Kadhi</b></div></a></div>
+       
+        <div class="f"><a href="task341.html"><img src="https://www.viniscookbook.com/wp-content/uploads/2021/01/2021-01-11-03-50-07.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Bajre Ki Raab</b></div></a></div>
+        <div class="f"><a href="task342.html"><img src="https://www.cookingcarnival.com/wp-content/uploads/2022/07/beans-ki-sabji-5.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Prepared Sabzi</b></div></a></div>
+        <div class="f"><a href="task343.html"><img src="https://maayeka.com/wp-content/uploads/2021/05/GUNDA-KAIRI-lasoda-500x500.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gunda Kairi Subzi</b></div></a></div>
+        <div class="f"><a href="task344.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2018/12/Missi-Roti-2-3.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Missi Roti</b></div></a></div>
+       
+        <div class="f"><a href="task345.html "><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Hina_Gujral/Bajri_Ki_Roti_Recipe_400.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Bajre Ki Roti Lehsun</b></div></a></div>
+        <div class="f"><a href="task346.html"><img src="https://static.toiimg.com/photo/60744429.cms"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Murgh Ka Mokul</b></div></a></div>
+        <div class="f"><a href="task347.html"><img src="https://www.awesomecuisine.com/wp-content/uploads/2012/12/Gosht-Lazeez-500x500.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Maas Ke Sooley</b></div></a></div>
+        <div class="f"><a href="task348.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/09/Ker-Sangri-2-3.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Ker Sangri Kumatia</b></div></a></div>
+        <div class="f"><a href="task850.html"><img src="https://images.herzindagi.info/image/2018/Mar/rajasthani-laapsi-recipe-article1.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Laapsi</b></div></a></div>
+        <div class="f"><a href="task851.html"><img src="https://cdn.shopify.com/s/files/1/0599/0206/6871/products/pyaz-kachori-sodhani-sodhani-169839.jpg?v=1700645606"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Pyaj Ki Kachori</b></div></a></div>
+        <div class="f"><a href="task852.html"><img src="https://jodhpursweets.com/wp-content/uploads/2022/08/Mawa-Kachori.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mawa Kachori</b></div></a></div>
+        <div class="f"><a href="task853.html"><img src="https://classicradheysweets.in/cdn/shop/products/MiniMalaiGhewar_13a415f2-9481-401b-b17b-5afcb0f8b67f.png?v=1659089082"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Ghewar</b></div></a></div>
+        <div class="f"><a href="task854.html"><img src="https://bhagatmishthan.com/imagecache/thumb/web_uploads__product__thumb/500x450/kalakand_12284.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mishri Mawa</b></div></a></div>
+        <div class="f"><a href="task855.html"><img src="https://www.sweedesi.com/cdn/shop/products/sohan-halwa-agarwal-caterers-699072.jpg?v=1687544956"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Sohan Halwa</b></div></a></div>
+        <div class="f"><a href="task856.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2021/11/Mirchi-Ke-Tipore-2-1.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mirch Ke Tipore</b></div></a></div>
+        <div class="f"><a href="task857.html"><img src="https://pipingpotcurry.com/wp-content/uploads/2021/11/Besan-burfi-recipe.-Besan-ki-chaki-Piping-Pot-Curry.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Besan Ki Chakki</b></div></a></div>
+        <div class="f"><a href="task858.html"><img src="https://thebaklavabox.com/cdn/shop/products/dil-kushal-131090.jpg?v=1683128068"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Dilkhusaal</b></div></a></div>
+    </div>
+</body>
+</html>

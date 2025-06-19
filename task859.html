@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+        border:border-box;
+    }
+    .main{
+        height: 100vh;
+        width:100%;
+        background-image:url('https://www.oliocarli.us/-/media/ita/hub_editoriale/articoli/vivere_con_gusto/stili_e_tendenze/finger_food/finger-food-f.ashx?h=600&iar=0&w=1200');
+        background-size:100% 100%;
+        background-attachment: fixed;
+    }
+    .copy{
+        height:100vh;
+        width:100%;
+        background-color:rgba(0, 0, 0, .6);
+        float:left;
+    }
+    h1{
+        text-align: center;
+       margin:172px auto;
+       font-size:80px;
+       color:white;
+       font-style:oblique;
+    }
+    .footer{
+        height:50vh;
+        width:100%;
+        background-color:gray;
+        margin-top:15px;
+       justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+
+    }
+    .footer1{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+    @media screen and (max-width:1200px) {
+            .footer1{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer1{
+                width:90%;
+
+            }
+        }
+    .footer2{
+        height:50vh;
+        width:23%;
+        margin-left:0px;
+        border-radius:10px;
+        position: relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin-top:20px;
+    }
+    @media screen and (max-width:1200px) {
+            .footer2{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .footer2{
+                width:90%;
+
+            }
+        }
+        .footer2:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+.footer2:hover .overlay {
+  opacity: 5;
+}
+        body{
+            background-color:gray;
+        }
+        .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .footer1:hover .overlay {
+  opacity: 5;
+}
+.footer1:hover img{
+    transform: scale(1.2);
+    transition:all ease 1s;
+}
+m{
+    color:lawngreen;
+}
+n{
+ color:red;
+}
+.j99 span{
+        animation:amin 1s linear forwards;
+        opacity:0;
+        display:inline-block;
+        margin-top:3%;
+    }
+    @keyframes amin{
+        0%{
+            opacity: 0;
+            transform: rotatey(-90deg);
+            filter:blur(10px);
+        }
+        100%{
+            opacity: 1;
+            transform: rotatey(0deg);
+            filter:blur(0);
+        }
+    }
+    .j99 span:nth-child(1){
+        animation-delay: 0.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+        
+    }
+    .j99 span:nth-child(2){
+        animation-delay: 1s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(3){
+        animation-delay: 1.5s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(4){
+        animation-delay: 2s;
+        color:yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+  
+    .j99 span:nth-child(5){
+        animation-delay: 2.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(6){
+        animation-delay: 3s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(7){
+        animation-delay: 3.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(8){
+        animation-delay: 4s;
+        color:lawngreen;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(9){
+        animation-delay: 4.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(10){
+        animation-delay: 5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+     .j99 span:nth-child(11){
+        animation-delay: 5.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+   /* .j99 span:nth-child(12){
+        animation-delay: 6s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(13){
+        animation-delay: 6.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(14){
+        animation-delay: 7s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(15){
+        animation-delay: 7.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(16){
+        animation-delay: 8s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    }
+    .j99 span:nth-child(17){
+        animation-delay: 8.5s;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+    } */
+  </style>
+</head>
+<body>
+    <div class="main">
+        <div class="copy">
+            <h1 class="j99">
+                <span>F</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+                <span>R</span>
+                <span>E,</span>
+                <span>F</span>
+                <span>O</span>
+                <span>O</span>
+                <span>D</span>
+                <!-- <span>T</span>
+                <span>I</span>
+                <span>C, </span>
+                <span>F</span>
+                <span>O</span>
+                <span>O</span>
+                <span>D</span> -->
+            </h1>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1"><a href="#"><img src="https://www.foodandwine.com/thmb/0qt5QTXg4MMtWVV00jH7oCY2KVc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Crispy-Smashed-Potatoes-With-Gin-Spiked-Sour-Cream-FT-RECIPE1121-302beeec2c714b69b7f7bb79c42f0618.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Wine's Best Finger</b></div></a></div>
+        <div class="footer1"><a href="#"><img src="https://www.fivehearthome.com/wp-content/uploads/2022/12/Mini-Cheese-Ball-Bites-Recipe-by-Five-Heart-Home_1200px-1-768x768.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Eassy To Finger</b></div></a></div>
+        <div class="footer1"><a href="#"><img src="https://www.rd.com/wp-content/uploads/2020/02/mini-cheese-balls_exps_toham20_246258_e11_07_10b.jpg?fit=700%2C700"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Reader's Digest Finger</b></div></a></div>  
+        <div class="footer1"><a href="#"><img src="https://hips.hearstapps.com/hmg-prod/images/finger-food-ideas-pigs-in-a-blanket-1675719427.jpeg?crop=0.9953358208955224xw:1xh;center,top&resize=980:*"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Party Finger</b></div></a></div>  
+      
+        <!-- <div class="footer2"><a href="task49.html"><img src="https://sameeraskitchen.files.wordpress.com/2021/12/img_20211027_115852__01__01.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kachalu Chaat</b></div></a></div>
+        <div class="footer2"><a href="task50.html"><img src="https://static.langimg.com/photo/imgsize-100640,msid-89715242/navbharat-times.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Dahi Ka Chilla</b></div></a></div>
+        <div class="footer2"><a href="task51.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Hina_Gujral/Bajri_Ki_Roti_Recipe.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Bajre Ki Roti</b></div></a></div>  
+        <div class="footer2"><a href="task52.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2014/12/Bathua-ka-Raita-2-3.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Bathua Ka Raita</b></div></a></div>  
+       
+        <div class="footer2"><a href="task53.html"><img src="https://www.viniscookbook.com/wp-content/uploads/2019/08/2019-08-06-00-43-32.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Besan Ki Rooti Lassi</b></div></a></div>
+        <div class="footer2"><a href="task54.html"><img src="https://spicecravings.com/wp-content/uploads/2021/08/Moong-Dal-Featured-1.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Mong Ki Daal</b></div></a></div>
+        <div class="footer2"><a href="task55.html"><img src="https://images.livemint.com/img/2023/01/11/1200x900/recipe_sarson_ka_saag_makki_ki_roti_1673434067783_1673434080193_1673434080193.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Makke Ki Roti Saag</b></div></a></div>  
+        <div class="footer2"><a href="task56.html"><img src="https://www.indianveggiedelight.com/wp-content/uploads/2023/01/sweet-lassi-recipe-featured.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Lassi</b></div></a></div>  
+       
+        <div class="footer2"><a href="task57.html"><img src="https://images.slurrp.com/prod/articles/3j5uwwfdo8o.webp"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Tudkiya Bhath</b></div></a></div>
+        <div class="footer2"><a href="task58.html"><img src="https://static.toiimg.com/thumb/71608958.cms?imgsize=1493213&width=800&height=800"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Babru</b></div></a></div>
+        <div class="footer2"><a href="task59.html"><img src="https://vegecravings.com/wp-content/uploads/2023/04/Rajma-Madra-Recipe-Step-By-Step-Instructions-scaled.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Madra</b></div></a></div>  
+        <div class="footer2"><a href="task60.html"><img src="https://static.toiimg.com/thumb/52554168.cms?imgsize=572669&width=800&height=800"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Chha Gosht</b></div></a></div>  
+       
+        <div class="footer2"><a href="task61.html"><img src="https://images.hindi.news18.com/ibnkhabar/uploads/2021/09/Siddu.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Siddu</b></div></a></div>
+        <div class="footer2"><a href="task62.html"><img src="https://static.toiimg.com/thumb/58975118.cms?imgsize=669328&width=800&height=800"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Arsha</b></div></a></div>
+        <div class="footer2"><a href="task63.html"><img src="https://www.funfoodfrolic.com/wp-content/uploads/2023/05/Badi-Bhaat-Blog.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Baadi</b></div></a></div>  
+        <div class="footer2"><a href="task64.html"><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2018/10/kulcha-recipe-1.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Khaldari Kulcha</b></div></a></div>  
+       
+        <div class="footer2"><a href="task65.html"><img src="https://blessmyfoodbypayal.com/wp-content/uploads/2023/11/IMG_1423.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Shufta</b></div></a></div>
+        <div class="footer2"><a href="task66.html"><img src="https://static.wixstatic.com/media/e33d1e_ae7ffe76a753469baf08c23308aea514~mv2.jpg/v1/fill/w_480,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/e33d1e_ae7ffe76a753469baf08c23308aea514~mv2.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Perukia</b></div></a></div>
+        <div class="footer2"><a href="task67.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Sai_Priya/Khaja_original_edited_400.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Khaja</b></div></a></div>  
+        <div class="footer2"><a href="task68.html"><img src="https://img-global.cpcdn.com/recipes/38bb1f4b32eabc41/680x482cq70/litti-chokha-recipe-main-photo.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Litti Chokha</b></div></a></div>  
+       
+        <div class="footer2"><a href="task69.html"><img src="https://i.redd.it/rsyr3jsfobb71.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Litti Murga</b></div></a></div>
+        <div class="footer2"><a href="task70.html"><img src="https://sinfullyspicy.com/wp-content/uploads/2021/02/14.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Machhi Jhol</b></div></a></div>
+        <div class="footer2"><a href="task71.html"><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2020/11/thekua-recipe-2.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Thikua</b></div></a></div>  
+        <div class="footer2"><a href="task72.html"><img src="https://static.vecteezy.com/system/resources/previews/016/283/169/large_2x/bhagar-is-indian-fasting-food-recipe-made-using-barnyard-millet-free-photo.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Bhagara Mand</b></div></a></div>  
+       
+        <div class="footer2"><a href="task73.html"><img src="https://images.slurrp.com/webstories/wp-content/uploads/2023/06/turai-chana-sabji-nenua-chana-Copy.jpg-rotated.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Biya Ki Sabji</b></div></a></div>
+        <div class="footer2"><a href="task74.html"><img src="https://pipingpotcurry.com/wp-content/uploads/2023/11/Lapsi-Recipe-Piping-Pot-Curry.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Puri Ki Lapsi</b></div></a></div>
+        <div class="footer2"><a href="task75.html"><img src="https://www.nehascookbook.com/wp-content/uploads/2022/10/Undhiyu-WS-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Undhiya</b></div></a></div>  
+        <div class="footer2"><a href="task76.html"><img src="https://vspiceroute.com/wp-content/uploads/2022/06/EF5E5D8D-C1EA-4919-92E0-8F66E09D726E-500x500.jpeg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Rasiya Muthiya</b></div></a></div>  
+       
+        <div class="footer2"><a href="task77.html"><img src="https://photo.foodgawker.com/wp-content/uploads/2023/04/3900839.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Rhengan Reveya</b></div></a></div>
+        <div class="footer2"><a href="task78.html"><img src="https://palatesdesire.com/wp-content/uploads/2022/05/aam-panna-recipe@palates-desire.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Neem Aam Ka Paana</b></div></a></div>
+        <div class="footer2"><a href="task79.html"><img src="https://www.flourandspiceblog.com/wp-content/uploads/2023/03/IMG_1953-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Arbi Ke Kofta Ka Salan</b></div></a></div>  
+        <div class="footer2"><a href="task80.html"><img src="https://images.herzindagi.info/image/2018/Feb/kerala-fish-curry-south-indian-recipe-main.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kelli Ki Machli Curry</b></div></a></div>  
+     
+        <div class="footer2"><a href="task81.html"><img src="https://aromaticessence.co/wp-content/uploads/2015/06/nankhatai_featured.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Naan Khati</b></div></a></div>
+        <div class="footer2"><a href="task82.html"><img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/07/Dal-Moradabad-Thumb.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Daal Muradabadi</b></div></a></div>
+        <div class="footer2"><a href="task83.html"><img src="https://www.spiceupthecurry.com/wp-content/uploads/2017/11/bedmi-aloo-recipe-9-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Bedmi Puri Sabji</b></div></a></div>  
+        <div class="footer2"><a href="task84.html"><img src="https://img-global.cpcdn.com/recipes/6bc509f23aee150c/400x400cq70/photo.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Matha Aloo</b></div></a></div>  
+     
+     
+        <div class="footer2"><a href="task85.html"><img src="https://www.spiceupthecurry.com/wp-content/uploads/2012/04/paratha-recipe-1-500x500.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Paratha</b></div></a></div>
+        <div class="footer2"><a href="task86.html"><img src="https://ministryofcurry.com/wp-content/uploads/2022/05/Jowar-Rotis-3.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Jowar Roti With Chouli Pallya</b></div></a></div>
+        <div class="footer2"><a href="task87.html"><img src="https://dicencook.com/storage/2017/04/Curry-leaves-tambui-featured-imag.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Badanekai Tumbagaali</b></div></a></div>  
+        <div class="footer2"><a href="task88.html"><img src="https://cookwithrenu.com/wp-content/uploads/2023/08/Green-Tomato-Dry-Vegetable_Featured-Image.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Rawgreen Tomato Sabji</b></div></a></div>  
+     
+     
+        <div class="footer2"><a href="task89.html"><img src="https://pbs.twimg.com/media/E140d8IVIAEm4dh.jpg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Dapati</b></div></a></div>
+        <div class="footer2"><a href="task90.html"><img src="https://images.squarespace-cdn.com/content/v1/5cef7b136434550001a53d10/1559743327684-Q8MS9BUPOWGP4CSTLYXQ/image-asset.jpeg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Kaima Unde</b></div></a></div>
+        <div class="footer2"><a href="task91.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sneha-archanaskitchen.com/Meal_Plate_Mutton_Saaru_Ragi_Mudde__Onions-1_preview.jpeg"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Ragi Mudde</b></div></a></div>  
+        <div class="footer2"><a href="task92.html"><img src="https://thephotowali.files.wordpress.com/2017/11/23244508_710766719112747_1870403964596812880_n.jpg?w=520&h=520"style="height:50vh;width:100%;border-radius:10px;transition:all ease 1s;"><div class="overlay"><b>Hellikai Citranna</b></div></a></div>  
+      -->
+    </div>
+</body>
+</html>

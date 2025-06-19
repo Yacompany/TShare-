@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .a{
+        height:600px;
+        width:100%;
+        /* background-color:gray; */
+        background-image:url('Telangana.png');
+        background-size:100% 100%;
+        margin-top:1%;
+    }
+    .b{
+        /* height:50px;
+        width:100%;
+        background-color:gray; */
+        text-align:center;
+        font-size:40px;
+        color:red;
+        padding-top:1%;
+        text-shadow:1px 3px 0px black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .c{
+        height:350px;
+        width:100%;
+        background-color:gray;
+        margin-top:1%;
+        text-align:center;
+        padding-top:5px;
+        font-size:35px;
+        font-style: oblique;
+        color:black;
+        text-shadow:2px 2px 0px red;
+    }
+    .d{
+        height:40px;
+        width:100%;
+        background-color:gray;
+        text-align:center;
+        font-style: oblique;
+        margin-top:1%;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px aqua;
+    }
+    .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            margin:8px;
+           overflow: hidden;
+            box-sizing:border-box;
+            animation-name:mona;
+            transition:all ease 0s;
+            /* animation-duration:2s;
+            animation-iteration-count: 1; */
+        }
+        .f:hover img{
+            transition:all ease 1s;
+            transform: scale(1.2);
+        }
+        /* @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        } */
+        .f:hover .overlay {
+  opacity: 5;
+}
+@media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+        body{
+            background-color:gray;
+        }
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:5%;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+    /* body{
+        background-color:gray;
+    } */
+  </style>
+</head>
+<body>
+    <div class="b"><b>TELANGANA CUISINE</b></div>
+    <div class="a">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635788.8146235286!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705152100251!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="c"><b>ABOUT</b></div>
+    <div class="d"><b>ALL DISHES</b></div>
+    <div class="b20">
+        <div class="f"><a href="task389.html"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/hyderabadi-biryani-recipe-chicken.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Hyderabadi Biryani</b></div></a></div>
+        <div class="f"><a href="task390.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2018/Andhra_Gongura_Pachadi_Recipe_-_Andhra_Style_Sorrel_Leaves_Chutney-10.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gongura Pachadi</b></div></a></div>
+        <div class="f"><a href="task391.html"><img src="https://rakskitchen.net/wp-content/uploads/2014/01/11961880893_0324a2475c_z-500x500.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Podi Sadham</b></div></a></div>
+        <div class="f"><a href="task392.html"><img src="https://ahahomefoods.com/wp-content/uploads/2023/02/Sakinalu-Red-Chilli.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Saki Nalu</b></div></a></div>
+        
+        <div class="f"><a href="task393.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2021/10/Andhra-Chicken-Curry-2-3.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Kodi Kura</b></div></a></div>
+        <div class="f"><a href="task394.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl_sunitha/Andhra_Style_Sarva_PindiGine_Pindi_Recipe_Rice_Flour_and_Chana_Dal_Flatbread_Recipe_.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Serva Pindi</b></div></a></div>
+        <div class="f"><a href="task395.html"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/11/mirchi-bajji-mirapakaya-bajji-recipe.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mirchi Bajji</b></div></a></div>
+        <div class="f"><a href="task396.html"><img src="https://www.madhuseverydayindian.com/wp-content/uploads/2020/07/andhra-pulihora-chintapandu-pulihora-500x500.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Polihora</b></div></a></div>
+       
+        <div class="f"><a href="task397.html"><img src="https://www.kuali.com/wp-content/uploads/2016/10/Tirupati-laddu.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Tirupati Laddu</b></div></a></div>
+        <div class="f"><a href="task398.html"><img src="https://www.foodandwine.com/thmb/3qrswgPxeXttFBwhZqXCyy8zNJY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Boti-Kabab-Skewered-Lamb-Marinated-in-Yogurt-and-Spices-XL-RECIPE0523-50b08b5f892146359b9e3b54fdbfae36.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Boti Kebab</b></div></a></div>
+        <div class="f"><a href="task399.html"><img src="https://www.thedeliciouscrescent.com/wp-content/uploads/2021/01/Mirchi-Ka-Salan-5.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mirchi Ka Salan</b></div></a></div>
+        <div class="f"><a href="task400.html"><img src="https://oneindiaone.in/wp-content/uploads/2024/05/jonna.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Jonna Roti</b></div></a></div>
+       
+        <div class="f"><a href="task401.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-Am4yr2cEt-vjswr68-eZUKxxokCVGnsJgf6FSw25h8xKWNvdJRqRZdrythvrsu53q5aCDZ73iK63qZwHgzuV1_4yg09bF_rY2tOgul_DMKbW--KFLvI-YQXxL3BavvqfuX0exHqLAPNC13XDpkPh2p3ATRH1561p6_vwWJBUsZYPdYIa9Dzk2sqE/s535/Pesarattu-recipe.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Pesarattu</b></div></a></div>
+        <div class="f"><a href="task402.html"><img src="https://www.cookshideout.com/wp-content/uploads/2006/10/Pachi-Pulusu_FI.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Pachi Pulusu</b></div></a></div>
+        <div class="f"><a href="task403.html"><img src="https://static.toiimg.com/thumb/53943291.cms?imgsize=330558&width=800&height=800"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Gutti Vankaya Curry</b></div></a></div>
+        <div class="f"><a href="task404.html"><img src="https://www.telanganapindivantalu.in/wp-content/uploads/2019/12/Garjalu.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Garijalu</b></div></a></div>
+       
+        <div class="f"><a href="task405.html"><img src="https://bandarmithai.in/cdn/shop/products/chekodi_2.jpg?v=1617381195"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Masala Chakodi</b></div></a></div>
+        <div class="f"><a href="task406.html"><img src="https://aahaaramonline.com/wp-content/uploads/2012/10/Coconut_Rice_Thengai_Sadam_Kobbari_Annam_Tenginakayi_Anna.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kobari Annam</b></div></a></div>
+        <div class="f"><a href="task407.html"><img src="https://foodtrails25.com/wp-content/uploads/2023/09/Puran-Poli-Recipe.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Polelu</b></div></a></div>
+        <div class="f"><a href="task408.html"><img src="https://images.slurrp.com/prod/articles/gas9mvx8rlk.webp"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Golichana Mamsam</b></div></a></div>
+    </div>
+</body>
+</html>

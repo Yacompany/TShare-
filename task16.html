@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Samrit Food</title>
+   <link rel="icon" href="i13.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .a{
+        height:530px;
+        width:100%;
+        /* background-color:gray; */
+        background-image:url('kerala.png');
+        background-size:100% 100%;
+        margin-top:1%;
+    }
+    .b{
+        /* height:50px;
+        width:100%;
+        background-color:gray; */
+        text-align:center;
+        font-size:40px;
+        color:red;
+        padding-top:1%;
+        text-shadow:1px 3px 0px black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .c{
+        height:350px;
+        width:100%;
+        background-color:gray;
+        margin-top:1%;
+        font-style: oblique;
+        text-align:center;
+        padding-top:5px;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px red;
+    }
+    .d{
+        height:40px;
+        width:100%;
+        background-color:gray;
+        text-align:center;
+        font-style: oblique;
+        margin-top:1%;
+        font-size:35px;
+        color:black;
+        text-shadow:2px 2px 0px aqua;
+    }
+    .overlay{
+        position: absolute; 
+  bottom: 10px; 
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.0); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:lawngreen;
+ text-shadow:1px 2px 2px black;
+  font-size: 25px;
+ 
+  border-radius:10px;
+ padding:5px;
+ /* padding:10px; */
+ 
+     }
+     .f{
+            height:300px;
+            width:23%;
+            position: relative;
+               border-radius: 10px;
+            margin:8px;
+           overflow: hidden;
+            box-sizing:border-box;
+            animation-name:mona;
+            transition:all ease 0s;
+            /* animation-duration:2s;
+            animation-iteration-count: 1; */
+        }
+        .f:hover img{
+            transition:all ease 1s;
+            transform: scale(1.2);
+        }
+        /* @keyframes mona{
+            0%{
+                bottom:0px;
+                top:0px;
+            }
+            25%{
+                bottom:0px;
+                top:200px;
+                transform:scale(0.8);
+            }
+            50%{
+                bottom:0px;
+                top:0px;
+            }
+            75%{
+                bottom:0px;
+                top:0px;
+            }
+        100%{
+                bottom:0px;
+                top:0px;
+            }
+        } */
+        .f:hover .overlay {
+  opacity: 5;
+}
+@media screen and (max-width:1200px) {
+            .f{
+                width:40%;
+                
+            }
+        }
+        @media screen and (max-width:600px) {
+            .f{
+                width:90%;
+
+            }
+        }
+        body{
+            background-color:gray;
+        }
+        .b20{
+            height:320px;
+            width:100%;
+            margin-top:5%;
+            /* background-color:blue; */
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+    /* body{
+        background-color:gray;
+    } */
+  </style>
+</head>
+<body>
+    <div class="b"><b>KERALA CUISINE</b></div>
+    <div class="a">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635788.8146235286!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705152100251!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <div class="c"><b>ABOUT</b></div>
+    <div class="d"><b>ALL DISHES</b></div>
+    <div class="b20">
+        <div class="f"><a href="task469.html"><img src="https://thetraditionalbawarchi.files.wordpress.com/2021/04/puttu-and-curry-1.jpeg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Puttu Kadala Curry</b></div></a></div>
+        <div class="f"><a href="task470.html"><img src="https://www.thetakeiteasychef.com/wp-content/uploads/2016/03/image.1024x1024-16.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Appam With Stew</b></div></a></div>
+        <div class="f"><a href="task471.html"><img src="https://i0.wp.com/gomathirecipes.com/wp-content/uploads/2021/10/vegkurma.jpg?resize=768%2C720&ssl=1"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Idiyappam</b></div></a></div>
+        <div class="f"><a href="task472.html"><img src="https://1.bp.blogspot.com/-e-GOmN5ct00/X1a5uEU4HrI/AAAAAAAAYsA/mh_OPlhyyv0RUGcCXTr_hh0W_sAkvf1HwCLcBGAsYHQ/s2048/nadan%2Bprawns%2Bfry%2B1.JPG"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Nodan Konghi Varthathu</b></div></a></div>
+        
+        <div class="f"><a href="task473.html"><img src="https://www.thetakeiteasychef.com/wp-content/uploads/2018/06/Kerala-Prawn-Curry-Image.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Kerala Prawn Curry</b></div></a></div>
+        <div class="f"><a href="task474.html"><img src="https://butfirstchai.com/wp-content/uploads/2023/03/kerala-beef-fry-recipe-500x500.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Beef Curry</b></div></a></div>
+        <div class="f"><a href="task475.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/04/Kerala-Parotta-3.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Malabar Parotta</b></div></a></div>
+        <div class="f"><a href="task476.html"><img src="https://www.whiskaffair.com/wp-content/uploads/2019/05/Fish-Molee-2-3.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Kerla Style Fish Molee</b></div></a></div>
+       
+        <div class="f"><a href="task477.html"><img src="https://imagevars.gulfnews.com/2021/01/04/Banana-fritters_176cca9d93b_medium.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Banana Fritters</b></div></a></div>
+        <div class="f"><a href="task478.html"><img src="https://static.toiimg.com/thumb/60322111.cms?imgsize=1228555&width=800&height=800"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Poloda Payasam</b></div></a></div>
+        <div class="f"><a href="task479.html"><img src="https://www.happiesthealth.com/wp-content/uploads/2023/08/Onam-Sadhya-Article.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Sadhya</b></div></a></div>
+        <div class="f"><a href="task480.html"><img src="https://www.ticklingpalates.com/wp-content/uploads/2022/09/mathanga-erissery-recipe.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Erissery</b></div></a></div>
+       
+        <div class="f"><a href="task481.html"><img src="https://farm5.staticflickr.com/4206/34630446624_ec6133ed16_o_d.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Thalassery Biryani</b></div></a></div>
+        <div class="f"><a href="task482.html"><img src="https://assets.unileversolutions.com/recipes-v2/217798.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Naadan Kazohi Curry</b></div></a></div>
+        <div class="f"><a href="task483.html"><img src="https://images.slurrp.com/prod/recipe_images/transcribe/main%20course/Erachi-Varutharacha-Curry.webp"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Erachi Varutharacha Curry</b></div></a></div>
+        <div class="f"><a href="task484.html"><img src="https://i0.wp.com/cookingfromheart.com/wp-content/uploads/2022/02/Ada-Pradhaman-4.jpg?resize=720%2C960&ssl=1"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Ada Pradhaman</b></div></a></div>
+       
+        <div class="f"><a href="task485.html"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl_sunitha/Kerala_Style_Chicken_Chatti_Pathiri_Recipe.jpg"width="100%"height="300px"style="border-radius:10px;">  <div class="overlay"><b>Ihatti Pathri</b></div></a></div>
+        <div class="f"><a href="task486.html"><img src="https://asianinspirations.com.au/wp-content/uploads/2018/12/Toddy-Coconut-Liquor.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Coconet Toddy</b></div></a></div>
+        <div class="f"><a href="task487.html"><img src="https://www.healthyseasonalrecipes.com/wp-content/uploads/2018/12/how-to-cook-mussels-sq-309.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Mussel Stil Fry</b></div></a></div>
+        <div class="f"><a href="task488.html"><img src="https://www.pachakam.com/wp-content/uploads/2021/02/C360_2021-01-18-16-27-05-073-scaled.jpg"width="100%"height="300px"style="border-radius:10px;"><div class="overlay"><b>Thattu Dosa With Chetney</b></div></a></div>
+    </div>
+</body>
+</html>
